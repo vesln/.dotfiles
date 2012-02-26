@@ -1,0 +1,36 @@
+[user]
+	name = Veselin Todorov
+	email = veselin@veselin.bg
+[github]
+	user = vesln
+[alias]
+  co = checkout
+  unstage = reset HEAD
+  staged = diff --cached
+  unstaged = diff
+  current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
+[apply]
+  whitespace = warn
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[help]
+  autocorrect = 1
+[status]
+  submodule = 1
+[merge]
+	tool = diffmerge
+	log = true
+	prompt = false
+[difftool]
+	prompt = false
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge --result=\"$MERGED\"\n  \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[mergetool "chdiff"]
+  cmd = /usr/bin/env chdiff --wait "$LOCAL" "$REMOTE"
+  keepBackup = false
+  trustExitCode = false
+[core]
+	excludesfile = .gitignore_global
