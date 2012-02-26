@@ -3,9 +3,9 @@
 ""
 
 " Define paths
-let g:janus_path = escape(fnamemodify(resolve(expand("<sfile>:p")), ":h"), ' ')
-let g:janus_vim_path = escape(fnamemodify(resolve(expand("<sfile>:p" . "vim")), ":h"), ' ')
-let g:janus_custom_path = expand("~/.janus")
+let g:janus_path = "~/.vim/janus"
+let g:janus_vim_path = "~/.vim/janus/vim"
+let g:janus_custom_path = expand("~/.dotfiles/vim")
 
 " Source janus's core
 exe 'source ' . g:janus_vim_path . '/core/before/plugin/janus.vim'
@@ -17,7 +17,7 @@ call janus#add_group("langs")
 call janus#add_group("colors")
 
 ""
-"" Customisations
+"" Customizations
 ""
 
 if filereadable(expand("~/.vimrc.before"))

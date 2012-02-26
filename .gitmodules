@@ -1,5 +1,5 @@
 [submodule "vim/vwilight"]
-	path = vim/vwilight
+	path = vim/vwilight.vim
 	url = https://github.com/bry4n/vwilight.vim.git
 [submodule "vim/AutoClose"]
 	path = vim/AutoClose
