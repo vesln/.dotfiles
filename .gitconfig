@@ -33,4 +33,4 @@
   keepBackup = false
   trustExitCode = false
 [core]
-  excludesfile = .gitignore_global
+  excludesfile = ~/.gitignore_global
