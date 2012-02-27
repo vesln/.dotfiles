@@ -15,3 +15,6 @@ endfunction
 
 " PHP.
 au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
+
+" Remap command key. @logicalparadox style.
+nnoremap ; :
