@@ -1,8 +1,8 @@
 [user]
-	name = Veselin Todorov
-	email = veselin@veselin.bg
+  name = Veselin Todorov
+  email = veselin@veselin.bg
 [github]
-	user = vesln
+  user = vesln
 [alias]
   co = checkout
   unstage = reset HEAD
@@ -21,16 +21,16 @@
 [status]
   submodule = 1
 [merge]
-	tool = diffmerge
-	log = true
-	prompt = false
+  tool = diffmerge
+  log = true
+  prompt = false
 [difftool]
-	prompt = false
+  prompt = false
 [mergetool "diffmerge"]
-	cmd = diffmerge --merge --result=\"$MERGED\"\n  \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+  cmd = diffmerge --merge --result=\"$MERGED\"\n  \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 [mergetool "chdiff"]
   cmd = /usr/bin/env chdiff --wait "$LOCAL" "$REMOTE"
   keepBackup = false
   trustExitCode = false
 [core]
-	excludesfile = .gitignore_global
+  excludesfile = .gitignore_global
