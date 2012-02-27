@@ -80,11 +80,6 @@ function! SetArrowKeysAsTextShifters()
   vnoremap <silent> <Up>     <Esc>:call <SID>MoveVisualUp()<CR>
   vnoremap <silent> <Down>   <Esc>:call <SID>MoveVisualDown()<CR>
 
-  " Insert mode
-  inoremap <silent> <Left>   <C-D>
-  inoremap <silent> <Right>  <C-T>
-  inoremap <silent> <Up>     <C-O>:call <SID>MoveLineUp()<CR>
-  inoremap <silent> <Down>   <C-O>:call <SID>MoveLineDown()<CR>
 endfunction
 
 call SetArrowKeysAsTextShifters()
