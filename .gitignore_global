@@ -46,3 +46,7 @@ Thumbs.db
 *.swp
 *.vi
 *~
+
+# Misc. #
+######################
+nbproject/
