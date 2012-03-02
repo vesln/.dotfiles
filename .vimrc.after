@@ -83,3 +83,5 @@ function! SetArrowKeysAsTextShifters()
 endfunction
 
 call SetArrowKeysAsTextShifters()
+
+let g:ctrlp_use_caching = 0
