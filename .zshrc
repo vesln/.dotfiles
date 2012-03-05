@@ -17,3 +17,5 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 
 # Node.js verison.
 nvm use 0.6.10 > /dev/null
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

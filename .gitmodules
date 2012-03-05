@@ -4,3 +4,6 @@
 [submodule "vim/AutoClose"]
 	path = vim/AutoClose
 	url = https://github.com/vim-scripts/AutoClose.git
+[submodule "vim/vim-slim"]
+	path = vim/vim-slim
+	url = https://github.com/bbommarito/vim-slim
