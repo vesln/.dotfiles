@@ -7,3 +7,6 @@
 [submodule "vim/vim-slim"]
 	path = vim/vim-slim
 	url = https://github.com/bbommarito/vim-slim
+[submodule "vim/distinguished"]
+	path = vim/distinguished
+	url = https://github.com/Lokaltog/vim-distinguished
