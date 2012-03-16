@@ -14,9 +14,6 @@ endif
 " Don't show the current command in the lower right corner.
 set showcmd
 
-" Set the status line 
-set stl=%f\ %m\ %r%{fugitive#statusline()}\ Line:%l/%L[%p%%]\ Col:%v\ Buf:#%n\ [%b][0x%B]
-
 " Tell VIM to always put a status line in, even if there is only one window
 set laststatus=2
 
