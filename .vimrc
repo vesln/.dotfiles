@@ -103,6 +103,9 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " Nerd Tree (toggle)
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
+" Toggle ZoomWin
+nnoremap <Leader>z :ZoomWin<CR>
+
 " PHP.
 au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
 
