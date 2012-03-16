@@ -1,21 +1,3 @@
-" Close the last buffer if it's NERDTree.
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
-" Theme
-colors distinguished
-
-" Close all open buffers on entering a window if the only
-" buffer that's left is the NERDTree buffer
-function s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
-
 " PHP.
 au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
 
@@ -86,5 +68,3 @@ function! SetArrowKeysAsTextShifters()
 endfunction
 
 call SetArrowKeysAsTextShifters()
-
-let g:ctrlp_use_caching = 0

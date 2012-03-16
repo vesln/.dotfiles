@@ -1,12 +1,12 @@
 [submodule "vim/vwilight"]
-	path = vim/vwilight.vim
+	path = vim/bundle/vwilight.vim
 	url = https://github.com/bry4n/vwilight.vim.git
-[submodule "vim/AutoClose"]
-	path = vim/AutoClose
+[submodule "vim/bundle/AutoClose"]
+	path = vim/bundle/AutoClose
 	url = https://github.com/vim-scripts/AutoClose.git
-[submodule "vim/vim-slim"]
+[submodule "vim/bundle/vim-slim"]
 	path = vim/vim-slim
 	url = https://github.com/bbommarito/vim-slim
-[submodule "vim/distinguished"]
+[submodule "vim/bundle/distinguished"]
 	path = vim/distinguished
 	url = https://github.com/Lokaltog/vim-distinguished

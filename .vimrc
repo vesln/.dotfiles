@@ -1,38 +1,7 @@
-""
-"" Janus setup
-""
-
-" Define paths
-let g:janus_path = "~/.vim/janus"
-let g:janus_vim_path = "~/.vim/janus/vim"
-let g:janus_custom_path = expand("~/.dotfiles/vim")
-
-" Source janus's core
-exe 'source ' . g:janus_vim_path . '/core/before/plugin/janus.vim'
-
-" You should note that groups will be processed by Pathogen in reverse
-" order they were added.
-call janus#add_group("tools")
-call janus#add_group("langs")
-call janus#add_group("colors")
-
-""
-"" Customizations
-""
-
-if filereadable(expand("~/.vimrc.before"))
-  source ~/.vimrc.before
-endif
-
-
-" Disable plugins prior to loading pathogen
-exe 'source ' . g:janus_vim_path . '/core/plugins.vim'
-
-""
-"" Pathogen setup
-""
-
-" Load all groups, custom dir, and janus core
-call janus#load_pathogen()
-
-" .vimrc.after is loaded after the plugins have loaded
+syntax on
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+filetype plugin on
+let Tlist_Show_One_File=1
+let NERDTreeHijackNetrw=0
