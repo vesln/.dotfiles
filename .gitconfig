@@ -26,6 +26,8 @@
   prompt = false
 [difftool]
   prompt = false
+[push]
+  default = tracking
 [mergetool "diffmerge"]
   cmd = diffmerge --merge --result=\"$MERGED\"\n  \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 [mergetool "chdiff"]
