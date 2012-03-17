@@ -1,4 +1,4 @@
-" Switch on syntax highlighting.
+" Switch on syntax highlighting
 syntax on
 
 filetype plugin on
@@ -11,7 +11,7 @@ if has("autocmd")
   filetype indent on
 endif
 
-" Don't show the current command in the lower right corner.
+" Don't show the current command in the lower right corner
 set showcmd
 
 " Tell VIM to always put a status line in, even if there is only one window
@@ -94,6 +94,9 @@ set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
 
+" PHP
+au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
+
 " Make , the leader key
 let mapleader = ","
 
@@ -109,8 +112,17 @@ nnoremap <Leader>z :ZoomWin<CR>
 " Toggle NERDCommenter
 map <D-/> <plug>NERDCommenterToggle<CR>
 
-" PHP.
-au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
+" Tabularize =
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+
+" Tabularize :
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
+
+" Tabularize |
+nmap <Leader>at :Tabularize /\|<CR>
+vmap <Leader>at :Tabularize /\|<CR>
 
 " Remap command key. @logicalparadox style.
 nnoremap ; :
