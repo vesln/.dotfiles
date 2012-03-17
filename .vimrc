@@ -100,11 +100,14 @@ let mapleader = ","
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
-" Nerd Tree (toggle)
+" Toggle NERDTree
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " Toggle ZoomWin
 nnoremap <Leader>z :ZoomWin<CR>
+
+" Toggle NERDCommenter
+map <D-/> <plug>NERDCommenterToggle<CR>
 
 " PHP.
 au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
