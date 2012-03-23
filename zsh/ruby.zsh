@@ -3,8 +3,18 @@ alias ree="RUBY_HEAP_MIN_SLOTS=1000000 RUBY_HEAP_SLOTS_INCREMENT=1000000 RUBY_HE
 alias b="bundle"
 alias be="bundle exec"
 
-alias cuke="clear && be cucumber"
-alias spec="clear && be rspec"
+alias cuke="clear && ree be cucumber --drb"
+alias spec="clear && ree be rspec --drb"
 
-export CUCUMBER_FORMAT='progress'
+alias spj="ree be specjour --workers 3"
 
+alias rdm="rake db:migrate"
+alias rdmr="rake db:migrate:reset"
+alias rdtp="rake db:test:prepare"
+
+alias rgm="rails g migration"
+
+alias spr="ree be spork rspec"
+alias spc="ree be spork cucumber"
+
+export CUCUMBER_FORMAT="progress"
