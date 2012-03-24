@@ -13,7 +13,7 @@ filetype indent on
 " Don't show the current command in the lower right corner
 set showcmd
 
-" Tell VIM to always put a status line in, even if there is only one window
+" Tell vim to always put a status line in, even if there is only one window
 set laststatus=2
 
 " Show the current mode
