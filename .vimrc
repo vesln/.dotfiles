@@ -1,11 +1,11 @@
 " Switch on syntax highlighting
 syntax on
 
-filetype plugin on
-
 " Pathogen
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+filetype plugin on
 
 if has("autocmd")
   filetype indent on
