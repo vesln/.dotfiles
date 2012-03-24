@@ -7,9 +7,8 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 filetype plugin on
 
-if has("autocmd")
-  filetype indent on
-endif
+" Indent
+filetype indent on
 
 " Don't show the current command in the lower right corner
 set showcmd
