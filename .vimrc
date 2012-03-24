@@ -93,11 +93,37 @@ set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
 
+" Set ignorecase in searches
+set ignorecase
+
+" Disable swap files
+set nobackup nowritebackup noswapfile
+
 " PHP
 au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
 
 " Make , the leader key
 let mapleader = ","
+
+" Remove s and Q
+nnoremap s <Nop>
+nnoremap Q <Nop>
+
+" Visual mode, marking a single line
+nnoremap vv _vg_
+
+" Toggle case
+nnoremap <C-u> mzg~iw`z
+
+" Split screens
+nnoremap gh <C-w>h
+nnoremap gj <C-w>j
+nnoremap gk <C-w>k
+nnoremap gl <C-w>l
+
+" SplitJoin
+nnoremap sj :SplitjoinSplit<CR>
+nnoremap sk :SplitjoinJoin<CR>
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
@@ -115,8 +141,12 @@ nnoremap <Leader>z :ZoomWin<CR>
 map <D-/> <plug>NERDCommenterToggle<CR>
 
 " Tabularize =
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>ae :Tabularize /=<CR>
+vmap <Leader>ae :Tabularize /=<CR>
+
+" Tabularize =>
+nmap <Leader>ar :Tabularize /=><CR>
+vmap <Leader>ar :Tabularize /=><CR>
 
 " Tabularize :
 nmap <Leader>a: :Tabularize /:\zs<CR>
