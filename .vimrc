@@ -37,9 +37,6 @@ set autoread
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=2048
 
-" Format the entire file
-nmap <leader>fef ggVG=
-
 " Use vim, no vi defaults
 set nocompatible
 
@@ -104,6 +101,9 @@ let mapleader = ","
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" Format the entire file
+nmap <leader>fef ggVG=
 
 " Toggle NERDTree
 nnoremap <Leader>n :NERDTreeToggle<CR>
