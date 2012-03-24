@@ -10,6 +10,9 @@ filetype plugin on
 " Indent
 filetype indent on
 
+" Colors
+colors distinguished
+
 " Don't show the current command in the lower right corner
 set showcmd
 
