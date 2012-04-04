@@ -6,7 +6,7 @@ alias be="bundle exec"
 alias cuke="clear && ree be cucumber --drb"
 alias spec="clear && ree be rspec --drb"
 
-alias spj="ree be specjour --workers 3"
+alias spj="ree be specjour --workers 2"
 
 alias rdm="rake db:migrate"
 alias rdmr="rake db:migrate:reset"
