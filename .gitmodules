@@ -13,9 +13,6 @@
 [submodule "vim/bundle/ack.vim"]
 	path = vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim
-[submodule "vim/bundle/snipmate.vim"]
-	path = vim/bundle/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim.git
 [submodule "vim/bundle/tabular"]
 	path = vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
@@ -49,18 +46,12 @@
 [submodule "vim/bundle/vim-indent-object"]
 	path = vim/bundle/vim-indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object
-[submodule "vim/bundle/vim-ruby"]
-	path = vim/bundle/vim-ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
 [submodule "vim/bundle/vim-powerline"]
 	path = vim/bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline
-[submodule "vim/bundle/ZoomWin"]
-	path = vim/bundle/ZoomWin
-	url = https://github.com/vim-scripts/ZoomWin
 [submodule "vim/bundle/vim-easymotion"]
 	path = vim/bundle/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
