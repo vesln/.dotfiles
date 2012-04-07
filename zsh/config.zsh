@@ -1,11 +1,11 @@
-# Correction for commands
+## Correction for commands
 setopt correct_all
 
-# Colors
+## Colors
 autoload colors; colors;
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
-# Auto cd
+## Auto cd
 setopt auto_cd
 
 setopt multios
@@ -18,6 +18,6 @@ autoload -U compinit
 compinit -C
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-# Make search up and down work
+## Make search up and down work
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
