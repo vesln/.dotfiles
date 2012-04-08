@@ -122,8 +122,8 @@ nnoremap gk <C-w>k
 nnoremap gl <C-w>l
 
 " SplitJoin
-nnoremap sj :SplitjoinSplit<CR>
-nnoremap sk :SplitjoinJoin<CR>
+nnoremap bs :SplitjoinSplit<CR>
+nnoremap bj :SplitjoinJoin<CR>
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
