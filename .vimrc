@@ -67,6 +67,8 @@ set list
 " Reset the listchars
 set listchars=""
 
+" Make command line two lines high
+set ch=2
 " A tab should display as "    "
 set listchars=tab:\ \ 
 
