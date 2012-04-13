@@ -102,11 +102,14 @@ set nobackup nowritebackup noswapfile
 " PHP
 au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
 
+" NERDTree use minimal UI
+let NERDTreeMinimalUI = 1
+
 " Make , the leader key
 let mapleader = ","
 
-" NERDTree use minimal UI
-let NERDTreeMinimalUI = 1
+" Easy ESC in insert mode
+imap jj <esc>
 
 " Remove s and Q
 nnoremap s <Nop>
