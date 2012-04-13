@@ -105,6 +105,9 @@ au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
 " Make , the leader key
 let mapleader = ","
 
+" NERDTree use minimal UI
+let NERDTreeMinimalUI = 1
+
 " Remove s and Q
 nnoremap s <Nop>
 nnoremap Q <Nop>
