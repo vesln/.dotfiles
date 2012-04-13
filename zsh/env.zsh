@@ -1,5 +1,5 @@
-## Ruby
+# Ruby
 export CUCUMBER_FORMAT="progress"
 
-## Load nvm
+# Load nvm
 . ~/.nvm/nvm.sh

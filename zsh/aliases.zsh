@@ -1,9 +1,9 @@
-## ls
+# ls
 alias ls="ls -G"
 alias l="ls -lahF"
 alias ll="l"
 
-## Git
+# Git
 alias g="git"
 alias gb="git branch"
 alias gbd="git branch -D"
@@ -25,7 +25,7 @@ alias gs="git stash"
 alias gsp="git stash pop"
 alias gco="git checkout"
 
-## Ruby
+# Ruby
 alias ree="RUBY_HEAP_MIN_SLOTS=1000000 RUBY_HEAP_SLOTS_INCREMENT=1000000 RUBY_HEAP_SLOTS_GROWTH_FACTOR=1 RUBY_GC_MALLOC_LIMIT=1000000000 RUBY_HEAP_FREE_MIN=500000"
 alias b="bundle"
 alias be="bundle exec"
@@ -43,6 +43,6 @@ function gci () {
   git commit -m "$*"
 }
 
-## Projects
+# Projects
 alias lookk="cd ~/Projects/garmz/"
 alias garmz="cd ~/Projects/garmz/"
