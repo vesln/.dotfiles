@@ -67,7 +67,7 @@ set list
 " Reset the listchars
 set listchars=""
 
-" A tab should display as "|    "
+" A tab should display as "    "
 set listchars=tab:\ \ 
 
 " Show trailing spaces as dots

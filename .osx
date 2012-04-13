@@ -1,27 +1,27 @@
-# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+## Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Enable subpixel font rendering on non-Apple LCDs
+## Enable subpixel font rendering on non-Apple LCDs
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
-# Show remaining battery time; hide percentage
+## Show remaining battery time; hide percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 defaults write com.apple.menuextra.battery ShowTime -string "YES"
 
-# Expand save panel by default
+## Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
-# Disable the “Are you sure you want to open this application?” dialog
+## Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-# Disable press-and-hold for keys in favor of key repeat
+## Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-# Increase window resize speed for Cocoa applications
+## Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
-# Avoid creating .DS_Store files on network volumes
+## Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-# Only use UTF-8 in Terminal.app
+## Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4

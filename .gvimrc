@@ -1,11 +1,11 @@
-" Hide toolbar and menubar.
+" Hide toolbar and menubar
 set guioptions-=T
 set guioptions-=m
 
-" Colors.
+" Colors
 colors vwilight
 
-" Font.
+" Font
 set guifont=Monaco:h12
 
 " Scrollbars
