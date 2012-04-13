@@ -7,10 +7,8 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 ## Auto cd
 setopt auto_cd
-
 setopt multios
 setopt cdablevarS
-
 setopt prompt_subst
 
 ## Case-insensitive (all) completion
