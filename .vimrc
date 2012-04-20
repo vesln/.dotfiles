@@ -172,7 +172,7 @@ vmap <Leader>at :Tabularize /\|<CR>
 " CtrlP clear cache
 nnoremap <D-5> :CtrlPClearCache<CR>
 
-" Remap command key. @logicalparadox style.
+" Remap command key. @logicalparadox style
 nnoremap ; :
 
 " http://jeetworks.org/node/89
