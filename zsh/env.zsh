@@ -1,3 +1,6 @@
+# Editor
+export EDITOR="mvim"
+
 # Ruby
 export CUCUMBER_FORMAT="progress"
 
