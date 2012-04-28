@@ -120,6 +120,10 @@ let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn'
 
 " Show hidden files
 let NERDTreeShowHidden=1
+
+" Strip whitespace on save for these files
+autocmd FileType c,cpp,java,php,javascript,ruby autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 " Ctrl-P ignore list
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|lib-cov$\|node_modules$'
 
