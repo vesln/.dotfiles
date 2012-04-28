@@ -109,6 +109,9 @@ set nobackup nowritebackup noswapfile
 " PHP
 au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
 
+" Hard code tabs in Makefiles
+au FileType make setlocal noexpandtab
+
 " NERDTree use minimal UI
 let NERDTreeMinimalUI = 1
 
