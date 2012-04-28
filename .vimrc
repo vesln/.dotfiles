@@ -115,6 +115,11 @@ au FileType make setlocal noexpandtab
 " NERDTree use minimal UI
 let NERDTreeMinimalUI = 1
 
+" NERDTree ignore list
+let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
+
+" Show hidden files
+let NERDTreeShowHidden=1
 " Make , the leader key
 let mapleader = ","
 
