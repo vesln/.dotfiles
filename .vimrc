@@ -120,6 +120,9 @@ let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn'
 
 " Show hidden files
 let NERDTreeShowHidden=1
+" Ctrl-P ignore list
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|lib-cov$\|node_modules$'
+
 " Make , the leader key
 let mapleader = ","
 
