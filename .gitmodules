@@ -84,3 +84,6 @@
 [submodule "vim/bundle/bufexplorer"]
 	path = vim/bundle/bufexplorer
 	url = https://github.com/corntrace/bufexplorer.git
+[submodule "vim/bundle/vim-nexus"]
+	path = vim/bundle/vim-nexus
+	url = https://github.com/skanev/vim-nexus.git
