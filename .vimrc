@@ -258,3 +258,5 @@ function! RenameFile()
 endfunction
 
 map <leader>r :call RenameFile()<cr>
+map <leader>f <Plug>NexusRunFile <SID>run('file')
+map <leader>d <Plug>NexusRunLine <SID>run('run')
