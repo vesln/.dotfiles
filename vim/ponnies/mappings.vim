@@ -28,7 +28,7 @@ nnoremap sj :SplitjoinJoin<CR>
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Format the entire file
-nmap <leader>fef ggVG=
+nmap <leader>ef ggVG=
 
 " Toggle NERDTree
 nnoremap <Leader>n :NERDTreeToggle<CR>
@@ -62,16 +62,16 @@ nnoremap <D-5> :CtrlPClearCache<CR>
 nnoremap ; :
 
 " Nexus run file
-map <leader>f <Plug>NexusRunTestFile
+map <Leader>f <Plug>NexusRunTestFile
 
 " Nexus run lien
-map <leader>d <Plug>NexusRunTestLine
+map <Leader>d <Plug>NexusRunTestLine
 
 " Rename the current file
-map <leader>r :call RenameFile()<cr>
+map <Leader>r :call RenameFile()<cr>
 
 " Promote to let
-map <leader>p :PromoteToLet<cr>
+map <Leader>p :PromoteToLet<cr>
 
 " Next buffer
 map <C-o> :bn<cr>
