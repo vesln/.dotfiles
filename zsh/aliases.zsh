@@ -37,6 +37,8 @@ alias gdc="git diff --cached"
 alias gst="git status"
 alias gco="git checkout"
 
+alias gsf="git submodule foreach git pull origin master"
+
 function gci () {
   git commit -m "$*"
 }
