@@ -274,9 +274,10 @@ function! RenameFile()
     endif
 endfunction
 
+map <leader>f <Plug>NexusRunTestFile
+map <leader>d <Plug>NexusRunTestLine
+
 map <leader>r :call RenameFile()<cr>
-map <leader>f <Plug>NexusRunFile <SID>run('file')
-map <leader>d <Plug>NexusRunLine <SID>run('run')
 
 function! PromoteToLet()
   :normal! dd
