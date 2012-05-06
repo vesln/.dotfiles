@@ -28,11 +28,7 @@
   prompt = false
 [push]
   default = tracking
-[mergetool "diffmerge"]
-  cmd = diffmerge --merge --result=\"$MERGED\"\n  \"$LOCAL\" \"$BASE\" \"$REMOTE\"
-[mergetool "chdiff"]
-  cmd = /usr/bin/env chdiff --wait "$LOCAL" "$REMOTE"
-  keepBackup = false
-  trustExitCode = false
+[merge]
+  tool = vimdiff
 [core]
   excludesfile = ~/.gitignore_global
