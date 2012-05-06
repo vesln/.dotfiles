@@ -9,6 +9,8 @@
   staged = diff --cached
   unstaged = diff
   current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
+  l = !bash -c 'source ~/.githelpers && git_log_pretty'
+  la = !bash -c 'source ~/.githelpers && git_log_pretty --all'
 [apply]
   whitespace = warn
 [color]
