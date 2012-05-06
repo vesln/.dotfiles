@@ -118,6 +118,8 @@ let NERDTreeMinimalUI = 1
 " NERDTree ignore list
 let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
 
+let NERDTreeDirArrows=0
+
 " Show hidden files
 let NERDTreeShowHidden=1
 
