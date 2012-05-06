@@ -64,9 +64,12 @@ alias rgm="rails g migration"
 alias spr="ree be spork rspec"
 alias spc="ree be spork cucumber"
 
+# Node.js
+alias t="clear && make test"
+
 # Projects
-alias lookk="cd ~/Projects/garmz/"
 alias garmz="cd ~/Projects/garmz/"
+
 # Redis
 alias redis-start='redis-server /usr/local/etc/redis.conf > /dev/null &'
 alias redis-stop='killall redis-server'
