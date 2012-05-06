@@ -88,3 +88,6 @@
 [submodule ".vim/bundle/vimerl"]
 	path = .vim/bundle/vimerl
 	url = https://github.com/oscarh/vimerl.git
+[submodule ".vim/bundle/vim-markdown"]
+	path = .vim/bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
