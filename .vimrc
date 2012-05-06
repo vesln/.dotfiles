@@ -275,3 +275,13 @@ endfunction
 map <leader>r :call RenameFile()<cr>
 map <leader>f <Plug>NexusRunFile <SID>run('file')
 map <leader>d <Plug>NexusRunLine <SID>run('run')
+
+function! PromoteToLet()
+  :normal! dd
+  :normal! P
+  :.s/\(\w\+\) = \(.*\)$/let(:\1) { \2 }/
+  :normal ==
+endfunction
+
+command! PromoteToLet :call PromoteToLet()
+map <leader>p :PromoteToLet<cr>
