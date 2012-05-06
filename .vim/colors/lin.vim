@@ -42,7 +42,7 @@ hi Number  guifg=#cf6a4c guibg=NONE gui=NONE
 hi Operator  guifg=#cda869 guibg=NONE gui=NONE
 hi PreProc  guifg=#cda869 guibg=NONE gui=NONE
 hi Special  guifg=#f8f8f8 guibg=NONE gui=NONE
-hi SpecialKey  guifg=#4f4f4f guibg=#1b1b1b gui=NONE
+hi SpecialKey  guifg=#4f4f4f guibg=#000000 gui=NONE
 hi Statement  guifg=#cda869 guibg=NONE gui=NONE
 hi StorageClass  guifg=#f9ee98 guibg=NONE gui=NONE
 hi String  guifg=#8f9d6a guibg=NONE gui=NONE
