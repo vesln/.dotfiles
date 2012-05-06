@@ -32,3 +32,5 @@
   tool = vimdiff
 [core]
   excludesfile = ~/.gitignore_global
+[branch]
+  autosetuprebase = always
