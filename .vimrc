@@ -288,3 +288,4 @@ endfunction
 
 command! PromoteToLet :call PromoteToLet()
 map <leader>p :PromoteToLet<cr>
+let g:ctrlp_max_height = 30
