@@ -3,7 +3,7 @@ set guioptions-=T
 set guioptions-=m
 
 " Colors
-colors vwilight
+colors lin
 
 " Font
 set guifont=Monaco:h12
