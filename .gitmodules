@@ -87,3 +87,6 @@
 [submodule "vim/bundle/vim-nexus"]
 	path = vim/bundle/vim-nexus
 	url = https://github.com/skanev/vim-nexus.git
+[submodule "vim/bundle/gundo.vim"]
+	path = vim/bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim.git
