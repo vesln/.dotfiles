@@ -87,3 +87,9 @@ map <C-x> :!gitx .<cr><cr>
 
 " Magic
 call SetArrowKeysAsTextShifters()
+
+" Fast movement
+nmap <C-j> 4j
+nmap <C-k> 4k
+nmap <C-l> 4l
+nmap <C-h> 4h
