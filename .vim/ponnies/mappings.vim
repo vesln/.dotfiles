@@ -82,9 +82,6 @@ map <C-i> :bp<cr>
 " Toggle gundo
 map <C-g> :GundoToggle<cr>
 
-" Run gitx
-map <C-x> :!gitx .<cr><cr>
-
 " Magic
 call SetArrowKeysAsTextShifters()
 

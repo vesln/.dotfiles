@@ -1,4 +1,5 @@
-" Promote to rspec let
+" Promote to Rspec let
+" TODO: docs
 function! PromoteToLet()
   :normal! dd
   :normal! P
@@ -7,6 +8,9 @@ function! PromoteToLet()
 endfunction
 
 command! PromoteToLet :call PromoteToLet()
+
+" TODO: docs
+command! Gx execute "!gitx ."
 
 " Rename current file
 function! RenameFile()
