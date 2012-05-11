@@ -5,7 +5,7 @@ let g:Powerline_symbols = 'fancy'
 let NERDTreeMinimalUI = 1
 
 " NERDTree ignore list
-let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
+let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr', '\.DS_Store']
 
 " Fancy NERDTree
 let NERDTreeDirArrows = 0
