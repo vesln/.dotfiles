@@ -18,8 +18,10 @@ hi StatusLine  guifg=#f8f8f8 guibg=#3f3f3f gui=bold
 hi StatusLineNC  guifg=#f8f8f8 guibg=#3f3f3f gui=NONE
 hi Pmenu  guifg=#9b703f guibg=NONE gui=NONE
 hi PmenuSel  guifg=NONE guibg=#919309 gui=NONE
-hi IncSearch  guifg=NONE guibg=#343a44 gui=NONE
-hi Search  guifg=NONE guibg=#343a44 gui=NONE
+
+hi IncSearch  guifg=white guibg=red gui=NONE
+hi Search guibg=NONE guifg=yellow gui=underline
+
 hi Directory  guifg=#cf6a4c guibg=NONE gui=NONE
 hi Folded  guifg=#5f5a60 guibg=#000000 gui=NONE
 
@@ -51,6 +53,7 @@ hi Title  guifg=#f8f8f8 guibg=NONE gui=bold
 hi Todo  guifg=#5f5a60 guibg=NONE gui=inverse,bold,italic
 hi Type  guifg=#9b703f guibg=NONE gui=NONE
 hi Underlined  guifg=NONE guibg=NONE gui=underline
+
 hi rubyClass  guifg=#cda869 guibg=NONE gui=NONE
 hi rubyFunction  guifg=#9b703f guibg=NONE gui=NONE
 hi rubyInterpolationDelimiter  guifg=NONE guibg=NONE gui=NONE
@@ -74,21 +77,26 @@ hi rubyRailsARAssociationMethod  guifg=#dad085 guibg=NONE gui=NONE
 hi rubyRailsARMethod  guifg=#dad085 guibg=NONE gui=NONE
 hi rubyRailsRenderMethod  guifg=#dad085 guibg=NONE gui=NONE
 hi rubyRailsMethod  guifg=#dad085 guibg=NONE gui=NONE
+
 hi erubyDelimiter  guifg=NONE guibg=NONE gui=NONE
 hi erubyComment  guifg=#5f5a60 guibg=NONE gui=italic
 hi erubyRailsMethod  guifg=#dad085 guibg=NONE gui=NONE
+
 hi htmlTag  guifg=#ac885b guibg=NONE gui=NONE
 hi htmlEndTag  guifg=#ac885b guibg=NONE gui=NONE
 hi htmlTagName  guifg=#ac885b guibg=NONE gui=NONE
 hi htmlArg  guifg=#ac885b guibg=NONE gui=NONE
 hi htmlSpecialChar  guifg=#cf6a4c guibg=NONE gui=NONE
+
 hi javaScriptFunction  guifg=#f9ee98 guibg=NONE gui=NONE
 hi javaScriptRailsFunction  guifg=#dad085 guibg=NONE gui=NONE
 hi javaScriptBraces  guifg=NONE guibg=NONE gui=NONE
+
 hi yamlKey  guifg=#9b703f guibg=NONE gui=NONE
 hi yamlAnchor  guifg=#7587a6 guibg=NONE gui=NONE
 hi yamlAlias  guifg=#7587a6 guibg=NONE gui=NONE
 hi yamlDocumentHeader  guifg=#8f9d6a guibg=NONE gui=NONE
+
 hi cssURL  guifg=#7587a6 guibg=NONE gui=NONE
 hi cssFunctionName  guifg=#dad085 guibg=NONE gui=NONE
 hi cssColor  guifg=#cf6a4c guibg=NONE gui=NONE
