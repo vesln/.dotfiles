@@ -12,6 +12,9 @@ command! PromoteToLet :call PromoteToLet()
 " TODO: docs
 command! Gx execute "!gitx ."
 
+" TODO: docs
+command! Cc :set cursorcolumn!
+
 " Rename current file
 function! RenameFile()
     let old_name = expand('%')
