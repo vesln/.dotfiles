@@ -37,7 +37,7 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>z :ZoomWin<CR>
 
 " Toggle NERDCommenter
-map <D-/> <plug>NERDCommenterToggle<CR>
+nnoremap <D-/> <plug>NERDCommenterToggle<CR>
 
 " Tabularize =
 nmap <Leader>ae :Tabularize /=<CR>
@@ -62,25 +62,31 @@ nnoremap <D-5> :CtrlPClearCache<CR>
 nnoremap ; :
 
 " Nexus run file
-map <Leader>f <Plug>NexusRunTestFile
+nnoremap <Leader>f <Plug>NexusRunTestFile
 
 " Nexus run lien
-map <Leader>d <Plug>NexusRunTestLine
+nnoremap <Leader>d <Plug>NexusRunTestLine
 
 " Rename the current file
-map <Leader>r :call RenameFile()<cr>
+nnoremap <Leader>r :call RenameFile()<cr>
 
 " Promote to let
-map <Leader>p :PromoteToLet<cr>
-
-" Next buffer
-map <C-o> :bn<cr>
+nnoremap <Leader>p :PromoteToLet<cr>
 
 " Previous buffer
-map <C-i> :bp<cr>
+nnoremap <silent> [b :bprevious<CR>
+
+" Next buffer
+nnoremap <silent> ]b :bnext<CR>
+
+" First buffer
+nnoremap <silent> [B :bfirst<CR>
+
+" Last buffer
+nnoremap <silent> ]B :blast<CR>
 
 " Toggle gundo
-map <C-g> :GundoToggle<cr>
+nnoremap <C-g> :GundoToggle<cr>
 
 " Magic
 call SetArrowKeysAsTextShifters()
