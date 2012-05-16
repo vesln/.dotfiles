@@ -39,10 +39,6 @@ alias gco="git checkout"
 
 alias gsf="git submodule foreach git pull origin master"
 
-function gci () {
-  git commit -m "$*"
-}
-
 # Ruby
 alias ree="RUBY_HEAP_MIN_SLOTS=1000000 RUBY_HEAP_SLOTS_INCREMENT=1000000 RUBY_HEAP_SLOTS_GROWTH_FACTOR=1 RUBY_GC_MALLOC_LIMIT=1000000000 RUBY_HEAP_FREE_MIN=500000"
 alias b="bundle"
@@ -58,6 +54,7 @@ alias spjf="be specjour features"
 alias rdm="rake db:migrate"
 alias rdmr="rake db:migrate:reset"
 alias rdtp="rake db:test:prepare"
+alias rdr="rake db:rollback"
 
 alias rgm="rails g migration"
 
