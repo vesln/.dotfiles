@@ -10,6 +10,7 @@ runtime ponnies/plugins.vim
 runtime ponnies/commands.vim
 runtime ponnies/autocmd.vim
 runtime ponnies/mappings.vim
+runtime ponnies/gui.vim
 
 " Load local vimrc if any
 if filereadable(fnamemodify('~/.vimrc.local', ':p'))
