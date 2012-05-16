@@ -7,6 +7,7 @@ filetype plugin on
 " Include the hot stuff
 runtime ponnies/settings.vim
 runtime ponnies/plugins.vim
+runtime ponnies/functions.vim
 runtime ponnies/commands.vim
 runtime ponnies/autocmd.vim
 runtime ponnies/mappings.vim
