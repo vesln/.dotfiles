@@ -9,35 +9,35 @@ nnoremap s <Nop>
 nnoremap Q <Nop>
 
 " Visual mode, marking a single line
-nnoremap vv _vg_
+nmap vv _vg_
 
 " Toggle case
-nnoremap <C-u> mzg~iw`z
+nmap <C-u> mzg~iw`z
 
 " Split screens
-nnoremap gh <C-w>h
-nnoremap gj <C-w>j
-nnoremap gk <C-w>k
-nnoremap gl <C-w>l
+nmap gh <C-w>h
+nmap gj <C-w>j
+nmap gk <C-w>k
+nmap gl <C-w>l
 
 " SplitJoin
-nnoremap ss :SplitjoinSplit<CR>
-nnoremap sj :SplitjoinJoin<CR>
+nmap ss :SplitjoinSplit<CR>
+nmap sj :SplitjoinJoin<CR>
 
 " Clear search results when hitting space
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Format the entire file
 nmap <leader>ef ggVG=
 
 " Toggle NERDTree
-nnoremap <Leader>n :NERDTreeToggle<CR>
+nmap <Leader>n :NERDTreeToggle<CR>
 
 " Toggle ZoomWin
-nnoremap <Leader>z :ZoomWin<CR>
+nmap <Leader>z :ZoomWin<CR>
 
 " Toggle NERDCommenter
-nnoremap <D-/> <plug>NERDCommenterToggle<CR>
+nmap <D-/> <plug>NERDCommenterToggle<CR>
 
 " Tabularize =
 nmap <Leader>ae :Tabularize /=<CR>
@@ -56,19 +56,19 @@ nmap <Leader>at :Tabularize /\|<CR>
 vmap <Leader>at :Tabularize /\|<CR>
 
 " CtrlP clear cache
-nnoremap <D-5> :CtrlPClearCache<CR>
+nmap <C-q> :CtrlPClearCache<CR>
 
 " Remap command key. @logicalparadox style
 nnoremap ; :
 
 " Nexus run file
-nnoremap <Leader>f <Plug>NexusRunTestFile
+nmap <Leader>f <Plug>NexusRunTestFile
 
-" Nexus run lien
-nnoremap <Leader>d <Plug>NexusRunTestLine
+" Nexus run line
+nmap <Leader>d <Plug>NexusRunTestLine
 
 " Rename the current file
-nnoremap <Leader>r :call RenameFile()<cr>
+nmap <Leader>r :call RenameFile()<cr>
 
 " Promote to let
 nnoremap <Leader>p :PromoteToLet<cr>
@@ -86,7 +86,7 @@ nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
 
 " Toggle gundo
-nnoremap <C-g> :GundoToggle<cr>
+nmap <C-g> :GundoToggle<cr>
 
 " Magic
 call SetArrowKeysAsTextShifters()
