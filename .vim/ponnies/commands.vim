@@ -15,6 +15,9 @@ command! Gx execute "!gitx ."
 " TODO: docs
 command! Cc :set cursorcolumn!
 
+" Refresh vimrc
+command! CRefresh source $MYVIMRC
+
 " Rename current file
 function! RenameFile()
     let old_name = expand('%')
