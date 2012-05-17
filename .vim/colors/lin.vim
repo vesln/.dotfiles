@@ -7,10 +7,11 @@ endif
 
 let g:colors_name = "lin"
 
-hi Cursor  guifg=NONE guibg=#fffd00 gui=NONE
-hi Visual  guifg=NONE guibg=#919309 gui=NONE
+hi Cursor  guifg=#000000 guibg=#fffd00 gui=NONE
+hi Visual  guifg=#000000 guibg=#919309 gui=NONE
 hi CursorLine  guifg=NONE guibg=#3a3a3a gui=NONE
 hi CursorColumn  guifg=NONE guibg=#3a3a3a gui=NONE
+
 hi LineNr  guifg=#868686 guibg=#000000 gui=NONE
 hi VertSplit  guifg=#ffffff guibg=#3f3f3f gui=NONE
 hi MatchParen  guifg=#cda869 guibg=NONE gui=NONE
