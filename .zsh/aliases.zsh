@@ -47,9 +47,10 @@ alias be="bundle exec"
 alias cuke="clear && be cucumber --drb"
 alias spec="clear && be rspec --drb"
 
-alias spj="be specjour"
-alias spjs="be specjour spec"
-alias spjf="be specjour features"
+alias spj="ree bundle exec xvfb-run specjour --rsync-port=8991"
+alias spjs="ree bundle exec xvfb-run specjour spec --rsync-port=8991"
+alias spjf="ree bundle exec xvfb-run specjour features --rsync-port=8991"
+alias spp="bundle exec specjour prepare --rsync-port=8991"
 
 alias rdm="rake db:migrate"
 alias rdmr="rake db:migrate:reset"
