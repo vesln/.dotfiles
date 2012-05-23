@@ -1,5 +1,6 @@
 # Correction for commands
-setopt correct_all
+setopt CORRECT
+setopt CORRECTALL
 
 # Colors
 autoload colors; colors;
