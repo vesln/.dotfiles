@@ -13,6 +13,8 @@ set showcmd
 " Tell vim to always put a status line in, even if there is only one window
 set laststatus=2
 
+set clipboard=unnamed
+
 " Show the current mode
 set showmode
 
