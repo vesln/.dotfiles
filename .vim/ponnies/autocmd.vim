@@ -1,5 +1,5 @@
-" Strip whitespace on save for these files
-au FileType c,cpp,java,php,javascript,ruby autocmd BufWritePre <buffer> :%s/\s\+$//e
+" Strip whitespace on save
+au FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Jump to last cursor position unless it's invalid or in an event handler
 au BufReadPost *

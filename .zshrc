@@ -5,3 +5,9 @@
 . ~/.zsh/colors.zsh
 . ~/.zsh/paths.zsh
 . ~/.zsh/env.zsh
+
+if [[ $(uname) == 'Linux' ]]; then
+  . ~/.zsh/linux/aliases.zsh
+else
+  . ~/.zsh/mac/aliases.zsh
+fi

@@ -1,5 +1,4 @@
 # ls
-alias ls="ls -G"
 alias l="ls -lahF"
 alias ll="l"
 
@@ -46,10 +45,6 @@ alias be="bundle exec"
 
 alias cuke="clear && be cucumber --drb"
 alias spec="clear && be rspec --drb"
-
-alias spj="be specjour"
-alias spjs="be specjour spec"
-alias spjf="be specjour features"
 
 alias rdm="rake db:migrate"
 alias rdmr="rake db:migrate:reset"

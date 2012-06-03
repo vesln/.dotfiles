@@ -36,9 +36,6 @@ nmap <Leader>n :NERDTreeToggle<CR>
 " Toggle ZoomWin
 nmap <Leader>z :ZoomWin<CR>
 
-" Toggle NERDCommenter
-nmap <D-/> <plug>NERDCommenterToggle<CR>
-
 " Tabularize =
 nmap <Leader>ae :Tabularize /=<CR>
 vmap <Leader>ae :Tabularize /=<CR>
