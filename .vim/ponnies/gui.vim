@@ -11,8 +11,5 @@ set guioptions-=r
 " Colors
 colors lin
 
-" Font
-set guifont=Monaco:h12
-
 " Turn off blinking in normal mode
 set gcr=n:blinkon0

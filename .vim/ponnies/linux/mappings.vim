@@ -25,9 +25,9 @@ map <C-9> 9gt
 imap <C-9> <Esc>9gt
 
 " Paste
-map <C-v> "+p
+map <C-\> "+p
 
-" Paste
+" New tab
 map <C-t> :tabe<CR>
 
 " Toggle NERDCommenter

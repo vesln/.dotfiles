@@ -5,3 +5,5 @@ alias spjf="ree bundle exec specjour features --rsync-port=8991"
 alias command="nocorrect command"
 
 alias ls="ls --color=auto"
+
+alias mvim='gvim'

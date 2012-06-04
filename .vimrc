@@ -14,10 +14,12 @@ runtime ponnies/mappings.vim
 runtime ponnies/gui.vim
 
 if has('gui_macvim') && has('gui_running')
+  runtime ponnies/mac/settings.vim
   runtime ponnies/mac/mappings.vim
 else
   runtime ponnies/linux/settings.vim
   runtime ponnies/linux/mappings.vim
+  runtime ponnies/linux/gui.vim
 endif
 
 " Load local vimrc if any

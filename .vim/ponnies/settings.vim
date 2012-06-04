@@ -4,9 +4,6 @@ syntax on
 " Indent
 filetype indent on
 
-" Colors
-colors distinguished
-
 " Don't show the current command in the lower right corner
 set showcmd
 
@@ -69,7 +66,7 @@ set ch=2
 set scrolloff=8
 
 " A tab should display as "    "
-set listchars=tab:\ \ 
+set listchars=tab:\ \
 
 " Show trailing spaces as dots
 set listchars+=trail:.
