@@ -96,3 +96,12 @@ set ignorecase
 
 " Disable swap files
 set nobackup nowritebackup noswapfile
+
+" Always use the popup. Insert the longest common text of the matches.
+set completeopt=menuone,longest
+
+" Complete options. See complete-items.
+set complete=.,w,b,k
+
+" Disable inserting two spaces
+set nojoinspaces
