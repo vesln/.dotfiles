@@ -93,3 +93,9 @@ nmap <C-j> 4j
 nmap <C-k> 4k
 nmap <C-l> 4l
 nmap <C-h> 4h
+
+" Rails alternate. Example: model -> spec
+map [f :A<CR>
+
+" Rails related. Example: action -> view
+map ]f :R<CR>
