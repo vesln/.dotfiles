@@ -19,9 +19,11 @@ runtime ponnies/mappings.vim
 if os == 'Darwin'
   runtime ponnies/mac/settings.vim
   runtime ponnies/mac/mappings.vim
+  runtime ponnies/mac/commands.vim
 else
   runtime ponnies/linux/settings.vim
   runtime ponnies/linux/mappings.vim
+  runtime ponnies/linux/commands.vim
 endif
 
 " GUI stuff
