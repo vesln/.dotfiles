@@ -34,7 +34,7 @@ set nocompatible
 " Show line numbers
 set number
 
-" Show line and column number
+" Show line and column numbers
 set ruler
 
 " Set default encoding to UTF-8
@@ -114,3 +114,10 @@ set splitbelow
 
 " Put the new split right of the current one
 set splitright
+
+" Use wild menu
+set wildmenu
+
+" List all matches, complete till longest common string, complete the next
+" full match
+set wildmode=list:longest,full
