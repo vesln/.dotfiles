@@ -1,7 +1,3 @@
-if !has("gui_running")
-  finish
-endif
-
 " Hide toolbar and menubar
 set guioptions-=T
 set guioptions-=m

@@ -1,3 +1,6 @@
+" OS
+let os = substitute(system('uname'), "\n", "", "")
+
 " Pathogen
 filetype off
 call pathogen#runtime_append_all_bundles()
@@ -11,15 +14,25 @@ runtime ponnies/functions.vim
 runtime ponnies/commands.vim
 runtime ponnies/autocmd.vim
 runtime ponnies/mappings.vim
-runtime ponnies/gui.vim
 
-if has('gui_macvim') && has('gui_running')
+" OS specific configurations
+if os == 'Darwin'
   runtime ponnies/mac/settings.vim
   runtime ponnies/mac/mappings.vim
 else
   runtime ponnies/linux/settings.vim
   runtime ponnies/linux/mappings.vim
-  runtime ponnies/linux/gui.vim
+endif
+
+" GUI stuff
+if has('gui_running')
+  runtime ponnies/gui.vim
+
+  if os == 'Darwin'
+    runtime ponnies/mac/gui.vim
+  else
+    runtime ponnies/linux/gui.vim
+  endif
 endif
 
 " Load local vimrc if any
