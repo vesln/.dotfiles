@@ -1,3 +1,4 @@
+alias spp="ree bundle exec specjour prepare --rsync-port=8991"
 alias spj="ree bundle exec specjour --rsync-port=8991"
 alias spjs="ree bundle exec specjour spec --rsync-port=8991"
 alias spjf="ree bundle exec specjour features --rsync-port=8991"
