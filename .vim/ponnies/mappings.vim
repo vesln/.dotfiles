@@ -71,16 +71,10 @@ nmap <Leader>r :call RenameFile()<cr>
 nnoremap <Leader>p :PromoteToLet<cr>
 
 " Previous buffer
-nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> [b :BufSurfBack<CR>
 
 " Next buffer
-nnoremap <silent> ]b :bnext<CR>
-
-" First buffer
-nnoremap <silent> [B :bfirst<CR>
-
-" Last buffer
-nnoremap <silent> ]B :blast<CR>
+nnoremap <silent> ]b :BufSurfForward<CR>
 
 " Toggle gundo
 nmap <C-g> :GundoToggle<cr>
