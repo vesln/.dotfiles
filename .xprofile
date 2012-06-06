@@ -1,0 +1,3 @@
+xset r rate 230 50
+setxkbmap -layout us,bg
+xmodmap ~/.xmodmap
