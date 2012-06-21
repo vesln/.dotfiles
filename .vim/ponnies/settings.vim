@@ -91,6 +91,9 @@ set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
 
+" Disable images
+set wildignore+=*.jpg,*.jpeg,*.png,*.gif,*.bmp
+
 " Set ignorecase in searches
 set ignorecase
 
