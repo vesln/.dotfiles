@@ -52,8 +52,8 @@ vmap <Leader>a: :Tabularize /:\zs<CR>
 nmap <Leader>at :Tabularize /\|<CR>
 vmap <Leader>at :Tabularize /\|<CR>
 
-" CtrlP clear cache
-nmap <C-q> :CtrlPClearCache<CR>
+" Command T clear cache
+nmap <Leader>q :CommandTFlush<CR>
 
 " Remap command key. @logicalparadox style
 nnoremap ; :
