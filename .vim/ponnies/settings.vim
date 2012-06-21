@@ -97,6 +97,9 @@ set wildignore+=*.jpg,*.jpeg,*.png,*.gif,*.bmp
 " Set ignorecase in searches
 set ignorecase
 
+" Set smartcase
+set smartcase
+
 " Disable swap files
 set nobackup nowritebackup noswapfile
 
