@@ -31,3 +31,6 @@ let g:notes_tagsindex = '~/.vim-notes/tags.txt'
 
 " vim notes index
 let g:notes_indexfile = '~/.vim-notes/index.pickle'
+
+" AutoClose only those things
+let g:AutoClosePairs = "{}"
