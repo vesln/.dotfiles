@@ -1,5 +1,5 @@
 # Commit without the quotes
-gci () {
+gci() {
   git commit -m "$*"
 }
 
