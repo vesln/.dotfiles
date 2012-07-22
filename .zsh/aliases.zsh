@@ -44,7 +44,7 @@ alias b="bundle"
 alias be="bundle exec"
 
 alias cuke="clear && be cucumber --drb"
-alias spec="clear && be rspec --drb"
+alias spec="clear && be rspec . --drb"
 
 alias rdm="rake db:migrate"
 alias rdmr="rake db:migrate:reset"
