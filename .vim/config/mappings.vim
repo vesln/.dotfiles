@@ -8,9 +8,6 @@ imap jj <esc>
 nnoremap s <Nop>
 nnoremap Q <Nop>
 
-" Visual mode, marking a single line
-nmap vv _vg_
-
 " Toggle case
 nmap <C-u> mzg~iw`z
 
