@@ -42,8 +42,8 @@ alias gsf="git submodule foreach git pull origin master"
 alias b="bundle"
 alias be="bundle exec"
 
-alias cuke="clear && be cucumber --drb"
-alias spec="clear && be rspec . --drb"
+alias cuke="be cucumber --drb"
+alias spec="be rspec . --drb"
 
 alias rdm="rake db:migrate"
 alias rdmr="rake db:migrate:reset"
@@ -56,7 +56,7 @@ alias spr="be spork rspec"
 alias spc="be spork cucumber"
 
 # Node.js
-alias t="clear && make test"
+alias t="make test"
 
 # Projects
 alias garmz="cd ~/Projects/garmz/"
