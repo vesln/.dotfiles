@@ -16,3 +16,6 @@ let NERDTreeShowHidden = 1
 " Disable netrw
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
+
+" Auto close only {}
+let g:AutoPairs = {'{':'}'}
