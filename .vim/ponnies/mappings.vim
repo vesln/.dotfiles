@@ -21,8 +21,8 @@ nmap gk <C-w>k
 nmap gl <C-w>l
 
 " SplitJoin
-nmap ss :SplitjoinSplit<CR>
-nmap sj :SplitjoinJoin<CR>
+nmap + :SplitjoinSplit<CR>
+nmap - :SplitjoinJoin<CR>
 
 " Clear search results when hitting space
 nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
