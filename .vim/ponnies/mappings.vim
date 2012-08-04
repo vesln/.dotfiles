@@ -40,10 +40,6 @@ nmap <Leader>z :ZoomWin<CR>
 nmap <Leader>ae :Tabularize /=<CR>
 vmap <Leader>ae :Tabularize /=<CR>
 
-" Tabularize =>
-nmap <Leader>ar :Tabularize /=><CR>
-vmap <Leader>ar :Tabularize /=><CR>
-
 " Tabularize :
 nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
@@ -55,7 +51,7 @@ vmap <Leader>at :Tabularize /\|<CR>
 " Command T clear cache
 nmap <Leader>q :CommandTFlush<CR>
 
-" Remap command key. @logicalparadox style
+" Remap command key
 nnoremap ; :
 
 " Nexus run file
@@ -76,10 +72,7 @@ nnoremap <silent> [b :BufSurfBack<CR>
 " Next buffer
 nnoremap <silent> ]b :BufSurfForward<CR>
 
-" Toggle gundo
-nmap <C-g> :GundoToggle<cr>
-
-" Magic
+" Powerful arrow keys
 call SetArrowKeysAsTextShifters()
 
 " Fast movement

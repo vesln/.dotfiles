@@ -1,2 +1,2 @@
 " Colors
-colors distinguished
+colors vividchalk
