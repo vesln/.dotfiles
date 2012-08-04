@@ -97,3 +97,6 @@
 [submodule ".vim/bundle/vim-gitignore"]
 	path = .vim/bundle/vim-gitignore
 	url = https://github.com/vitaly/vim-gitignore.git
+[submodule ".vim/bundle/auto-pairs"]
+	path = .vim/bundle/auto-pairs
+	url = git://github.com/vim-scripts/Auto-Pairs.git
