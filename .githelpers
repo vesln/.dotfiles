@@ -8,7 +8,7 @@ SUBJECT="%s"
 
 FORMAT="$HASH}$RELATIVE_TIME<time>}$AUTHOR<author>}$REFS $SUBJECT"
 
-git_log_pretty() {
+git-log-pretty() {
     git log --color --graph --abbrev-commit --date=relative --pretty="tformat:${FORMAT}" $* |
         sed -E -e 's/\(([[:digit:]]+) ([[:alpha:]]+).* ago\)/(\1 \2)/' |
         awk '

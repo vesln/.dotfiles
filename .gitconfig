@@ -4,13 +4,8 @@
 [github]
   user = vesln
 [alias]
-  co = checkout
-  unstage = reset HEAD
-  staged = diff --cached
-  unstaged = diff
   current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
-  l = !bash -c 'source ~/.githelpers && git_log_pretty'
-  la = !bash -c 'source ~/.githelpers && git_log_pretty --all'
+  pretty-log = !bash -c 'source ~/.githelpers && git-log-pretty --all'
 [apply]
   whitespace = warn
 [color]
@@ -23,15 +18,13 @@
 [status]
   submodule = 1
 [merge]
-  tool = diffmerge
+  tool = vimdiff
   log = true
   prompt = false
 [difftool]
   prompt = false
 [push]
   default = tracking
-[merge]
-  tool = vimdiff
 [core]
   excludesfile = ~/.gitignore_global
 [branch]
