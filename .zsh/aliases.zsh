@@ -1,6 +1,5 @@
 # ls
 alias l="ls -lahF"
-alias ll="l"
 
 # Git
 alias g="git"
