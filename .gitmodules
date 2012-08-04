@@ -70,12 +70,6 @@
 [submodule ".vim/bundle/vim-nexus"]
 	path = .vim/bundle/vim-nexus
 	url = https://github.com/skanev/vim-nexus.git
-[submodule ".vim/bundle/gundo.vim"]
-	path = .vim/bundle/gundo.vim
-	url = https://github.com/sjl/gundo.vim.git
-[submodule ".vim/bundle/gitv"]
-	path = .vim/bundle/gitv
-	url = https://github.com/gregsexton/gitv.git
 [submodule ".vim/bundle/vimerl"]
 	path = .vim/bundle/vimerl
 	url = https://github.com/oscarh/vimerl.git
@@ -94,9 +88,6 @@
 [submodule ".vim/bundle/acp"]
 	path = .vim/bundle/acp
 	url = https://github.com/vim-scripts/AutoComplPop
-[submodule ".vim/bundle/vim-notes"]
-	path = .vim/bundle/vim-notes
-	url = https://github.com/xolox/vim-notes.git
 [submodule ".vim/bundle/vim-bufsurf"]
 	path = .vim/bundle/vim-bufsurf
 	url = https://github.com/ton/vim-bufsurf.git
