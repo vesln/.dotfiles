@@ -8,32 +8,32 @@ call pathogen#helptags()
 filetype plugin on
 
 " Include the hot stuff
-runtime ponnies/settings.vim
-runtime ponnies/plugins.vim
-runtime ponnies/functions.vim
-runtime ponnies/commands.vim
-runtime ponnies/autocmd.vim
-runtime ponnies/mappings.vim
+runtime config/settings.vim
+runtime config/plugins.vim
+runtime config/functions.vim
+runtime config/commands.vim
+runtime config/autocmd.vim
+runtime config/mappings.vim
 
 " OS specific configurations
 if os == 'Darwin'
-  runtime ponnies/mac/settings.vim
-  runtime ponnies/mac/mappings.vim
-  runtime ponnies/mac/commands.vim
+  runtime config/mac/settings.vim
+  runtime config/mac/mappings.vim
+  runtime config/mac/commands.vim
 else
-  runtime ponnies/linux/settings.vim
-  runtime ponnies/linux/mappings.vim
-  runtime ponnies/linux/commands.vim
+  runtime config/linux/settings.vim
+  runtime config/linux/mappings.vim
+  runtime config/linux/commands.vim
 endif
 
 " GUI stuff
 if has('gui_running')
-  runtime ponnies/gui.vim
+  runtime config/gui.vim
 
   if os == 'Darwin'
-    runtime ponnies/mac/gui.vim
+    runtime config/mac/gui.vim
   else
-    runtime ponnies/linux/gui.vim
+    runtime config/linux/gui.vim
   endif
 endif
 
