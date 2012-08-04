@@ -94,9 +94,6 @@
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = https://github.com/wincent/Command-T.git
-[submodule ".vim/bundle/vim-autoclose"]
-	path = .vim/bundle/vim-autoclose
-	url = https://github.com/Townk/vim-autoclose.git
 [submodule ".vim/bundle/vim-gitignore"]
 	path = .vim/bundle/vim-gitignore
 	url = https://github.com/vitaly/vim-gitignore.git
