@@ -11,6 +11,9 @@ alias gbd="git branch -D"
 alias gl="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
 alias gpr="git pull --rebase"
 
+alias gp="git push"
+alias gpu="git-push-with-tracking"
+
 alias ga="git add"
 alias gaa="git add -A"
 
@@ -38,18 +41,15 @@ alias gco="git checkout"
 
 alias gsf="git submodule foreach git pull origin master"
 
-# Ruby
+# Rails
 alias b="bundle"
 alias be="bundle exec"
 
 alias cuke="be cucumber --drb"
 alias spec="be rspec . --drb"
 
-alias rdm="rake db:migrate"
-alias rdmr="rake db:migrate:reset"
-alias rdtp="rake db:test:prepare"
-alias rdr="rake db:rollback"
-
+alias rdm="rails-db-migrate"
+alias rdmr="rails-db-migrate-reset"
 alias rgm="rails g migration"
 
 alias spr="be spork rspec"
@@ -57,9 +57,6 @@ alias spc="be spork cucumber"
 
 # Node.js
 alias t="make test"
-
-# Projects
-alias garmz="cd ~/Projects/garmz/"
 
 # Redis
 alias redis-start='redis-server /usr/local/etc/redis.conf > /dev/null &'

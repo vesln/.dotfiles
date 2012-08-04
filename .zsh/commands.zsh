@@ -9,15 +9,20 @@ kill-spork() {
 }
 
 # Kill Spork, run the migrations and prepare
-mig() {
+rails-db-migrate() {
   kill-spork
   rake db:migrate
   rake db:test:prepare
 }
 
 # Kill Spork, run the migrations with reset and prepare
-migr() {
+rails-db-migrate-reset() {
   kill-spork
   rake db:migrate:reset
   rake db:test:prepare
+}
+
+# Push and set tracking
+git-push-with-tracking() {
+  git push -u origin $(git branch | grep "*" | sed "s/* //")
 }
