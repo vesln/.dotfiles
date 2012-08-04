@@ -112,9 +112,6 @@ set complete=.,w,b,k
 " Disable inserting two spaces
 set nojoinspaces
 
-" Put the new split below
-set splitbelow
-
 " Put the new split below the current one
 set splitbelow
 
