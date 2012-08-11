@@ -51,11 +51,14 @@ nmap <Leader>q :CommandTFlush<CR>
 " Remap command key
 nnoremap ; :
 
-" Nexus run file
-nmap <Leader>f <Plug>NexusRunTestFile
+" Run the current test
+nmap <Leader>f <Plug>TimxRunFile
 
-" Nexus run line
-nmap <Leader>d <Plug>NexusRunTestLine
+" Run the current test line
+nmap <Leader>d <Plug>TimxRunLine
+
+" Run everything
+nmap <Leader>s <Plug>TimxRunAll
 
 " Rename the current file
 nmap <Leader>r :call RenameFile()<cr>
