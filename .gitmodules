@@ -100,3 +100,6 @@
 [submodule ".vim/bundle/auto-pairs"]
 	path = .vim/bundle/auto-pairs
 	url = git://github.com/vim-scripts/Auto-Pairs.git
+[submodule ".vim/bundle/vim-reload"]
+	path = .vim/bundle/vim-reload
+	url = https://github.com/xolox/vim-reload
