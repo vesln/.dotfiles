@@ -57,8 +57,11 @@ nmap <Leader>f <Plug>TimxRunFile
 " Run the current test line
 nmap <Leader>d <Plug>TimxRunLine
 
-" Run everything
+" Run everything from the current test type (rspec, cuke, mocha)
 nmap <Leader>s <Plug>TimxRunAll
+
+" Run the whole test case
+nmap <Leader>w :call RunTests()<CR>
 
 " Rename the current file
 nmap <Leader>r :call RenameFile()<cr>
