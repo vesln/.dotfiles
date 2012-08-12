@@ -64,7 +64,7 @@ nmap <Leader>s <Plug>TimxRunAll
 nmap <Leader>r :call RenameFile()<cr>
 
 " Promote to let
-nnoremap <Leader>p :PromoteToLet<cr>
+nnoremap <Leader>p :call PromoteToLet()<cr>
 
 " Previous buffer
 nnoremap <silent> [b :BufSurfBack<CR>
