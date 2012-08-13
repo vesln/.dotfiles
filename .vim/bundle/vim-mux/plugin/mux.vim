@@ -10,13 +10,14 @@
 " * separate the tmux calls from the other logic
 " * handle messages better
 " * last command should remember commands by type
+" * ask before creating a new session
 
-let s:name = 'timx'
+let s:name = 'mux'
 let s:session = ''
 let s:initialized = 0
 
 function! s:sendInitializedMessage()
-  echohl MoreMsg | echo "Timx: Good to go." | echohl None
+  echohl MoreMsg | echo "Mux: Good to go." | echohl None
 endfunction
 
 function! s:created(session)
@@ -51,13 +52,13 @@ endfunction
 
 function! s:send(command)
   if !s:initialized
-    echohl WarningMsg | echo 'Timx: Not initialized yet. Run `:Timx session-name` to initialize.' | echohl None
+    echohl WarningMsg | echo 'Mux: Not initialized yet. Run `:Mux session-name` to initialize.' | echohl None
     return
   end
 
   echo a:command
 
-  call system("tmux send-keys -t " . s:session . ":timx C-l C-u " . shellescape(a:command) . " C-m")
+  call system("tmux send-keys -t " . s:session . ":mux C-l C-u " . shellescape(a:command) . " C-m")
 endfunction
 
 let s:modes = {}
@@ -97,16 +98,16 @@ function! s:run(type)
   elseif exists("g:lastCommand")
     call s:send(g:lastCommand)
   else
-    echohl ErrorMsg | echo "Timx: I have not idea how to handle that." | echohl None
+    echohl ErrorMsg | echo "Mux: I have not idea how to handle that." | echohl None
     return
   end
 endfunction
 
-command! -bang -nargs=1 Timx call s:initialize(<q-args>)
-command! -bang -nargs=1 TimxSend call s:send(<q-args>)
+command! -bang -nargs=1 Mux call s:initialize(<q-args>)
+command! -bang -nargs=1 MuxSend call s:send(<q-args>)
 
-noremap <expr> <Plug>TimxRunFile <SID>run('file')
-noremap <expr> <Plug>TimxRunLine <SID>run('line')
-noremap <expr> <Plug>TimxRunAll <SID>run('all')
+noremap <expr> <Plug>MuxRunFile <SID>run('file')
+noremap <expr> <Plug>MuxRunLine <SID>run('line')
+noremap <expr> <Plug>MuxRunAll <SID>run('all')
 
 " vim:set et ft=vim foldmethod=marker ts=2 sts=2 sw=2
