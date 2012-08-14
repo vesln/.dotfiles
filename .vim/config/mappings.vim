@@ -37,6 +37,10 @@ nmap <Leader>z :ZoomWin<CR>
 nmap <Leader>ae :Tabularize /=<CR>
 vmap <Leader>ae :Tabularize /=<CR>
 
+" Tabularize =>
+nmap <Leader>ah :Tabularize /=<CR>
+vmap <Leader>ah :Tabularize /=><CR>
+
 " Tabularize :
 nmap <Leader>a: :Tabularize /:\zs<CR>
 vmap <Leader>a: :Tabularize /:\zs<CR>
