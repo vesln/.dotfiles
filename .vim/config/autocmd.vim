@@ -18,3 +18,6 @@ au BufEnter *.ctp set filetype=php
 
 " JSON -> JavaScript
 au BufEnter *.json set filetype=javascript
+
+" Cucumber - open step in a vertical split
+au FileType cucumber nmap <silent> <C-[> <C-W>]<C-W>L
