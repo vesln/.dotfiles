@@ -60,3 +60,7 @@ alias t="make test"
 # Redis
 alias redis-start='redis-server /usr/local/etc/redis.conf > /dev/null &'
 alias redis-stop='killall redis-server'
+
+# MongoDB
+alias mongo-start='mongod run --config /usr/local/etc/mongod.conf > /dev/null &'
+alias mongo-stop='killall -9 mongod'
