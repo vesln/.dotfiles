@@ -8,7 +8,7 @@ au BufReadPost *
   \ endif
 
 " PHP
-au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 noexpandtab
+au FileType php setlocal softtabstop=4 shiftwidth=4 tabstop=4 expandtab
 
 " Hard code tabs in Makefiles
 au FileType make setlocal noexpandtab
