@@ -7,17 +7,17 @@ au BufReadPost *
   \   exe "normal g`\"" |
   \ endif
 
-" PHP
+" PHP - 4 spaces
 au FileType php setlocal softtabstop=4 shiftwidth=4 tabstop=4 expandtab
 
 " Hard code tabs in Makefiles
 au FileType make setlocal noexpandtab
 
-" CakePHP's template files
+" CakePHP -> PHP
 au BufEnter *.ctp set filetype=php
 
 " JSON -> JavaScript
 au BufEnter *.json set filetype=javascript
 
 " Cucumber - open step in a vertical split
-au FileType cucumber nmap <silent> <C-[> <C-W>]<C-W>L
+au FileType cucumber nmap <C-p> <C-W>]<C-W>L

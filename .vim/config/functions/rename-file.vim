@@ -8,4 +8,3 @@ function! RenameFile()
     redraw!
   endif
 endfunction
-
