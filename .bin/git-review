@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 git fetch
 git checkout origin/$1
 ps ax | grep spork | awk '{print $1}' | xargs kill > /dev/null 2>&1

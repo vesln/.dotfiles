@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+cyan=$(echo -e '\033[96m')
+reset=$(echo -e '\033[39m')
+
+repos=(
+  "$HOME/.dotfiles/:Dotfiles"
+  "$HOME/.tmuxinator/:Tmuxinator"
+)
+
+for hash in ${repos[@]} ; do
+  path=${hash%%:*}
+  name=${hash##*:}
+
+  echo "${cyan}$name: syncing...$reset"
+  echo "==========="
+
+  cd $path
+  git checkout master
+  git pull --rebase
+
+  echo ""
+done
