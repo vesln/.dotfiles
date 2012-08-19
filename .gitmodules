@@ -100,3 +100,6 @@
 [submodule ".vim/bundle/vim-reload"]
 	path = .vim/bundle/vim-reload
 	url = https://github.com/xolox/vim-reload
+[submodule ".vim/bundle/switch.vim"]
+	path = .vim/bundle/switch.vim
+	url = git://github.com/AndrewRadev/switch.vim.git
