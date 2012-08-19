@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+git checkout master &> /dev/null
+git fetch &> /dev/null
+git remote prune origin &> /dev/null
+
+echo "Deleting local branches..."
+git branch --merged master | grep -v 'master$' | xargs git branch -d
+
+echo "Going to delete the following remote branches:"
+git branch -r --merged master | sed 's/ *origin\///' | grep -v 'master$'
+
+read -p "Continue (y/n)? "
+
+if [ "$REPLY" == "y" ]
+then
+   git branch -r --merged master | sed 's/ *origin\///' | grep -v 'master$' | xargs -I% git push origin :%
+fi
