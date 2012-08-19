@@ -16,7 +16,7 @@ for hash in ${repos[@]} ; do
   echo "==========="
 
   cd $path
-  git checkout master
+  git checkout master &> /dev/null
   git pull --rebase
 
   echo ""
