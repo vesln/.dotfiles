@@ -19,7 +19,10 @@ nmap gl <C-w>l
 
 " SplitJoin
 nmap + :SplitjoinSplit<CR>
-nmap - :SplitjoinJoin<CR>
+nmap _ :SplitjoinJoin<CR>
+
+" Switch
+nmap - :Switch<CR>
 
 " Clear search results when hitting space
 nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
