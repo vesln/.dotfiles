@@ -42,6 +42,9 @@ nmap <C-k> 4k
 nmap <C-l> 4l
 nmap <C-h> 4h
 
+" Insert a hash rocket with <C-L>
+imap <C-l> <space>=><space>
+
 " Run the current test
 nmap <Leader>f <Plug>MuxRunFile
 
