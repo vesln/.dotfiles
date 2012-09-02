@@ -10,6 +10,9 @@ au BufReadPost *
 " PHP - 4 spaces
 au FileType php setlocal softtabstop=4 shiftwidth=4 tabstop=4 expandtab
 
+" Python
+au FileType python set sw=4 sts=4 et
+
 " Hard code tabs in Makefiles
 au FileType make setlocal noexpandtab
 
