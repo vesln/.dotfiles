@@ -2,7 +2,8 @@
 let mapleader = ","
 
 " Easy ESC in insert mode
-imap jj <esc>
+inoremap jj <esc>
+inoremap jk <esc>
 
 " Remove s and Q
 nnoremap s <Nop>
