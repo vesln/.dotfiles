@@ -19,3 +19,6 @@ let g:loaded_netrwPlugin = 1
 
 " Auto close only {}
 let g:AutoPairs = {'{':'}'}
+
+" Command-T show dot files
+let g:CommandTAlwaysShowDotFiles = 1
