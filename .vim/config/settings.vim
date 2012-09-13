@@ -79,19 +79,19 @@ set listchars+=extends:>
 " off and the line continues beyond the right of the screen
 set listchars+=precedes:<
 
-" Disable output and VCS files
+" Ignore output and VCS files
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
 
-" Disable archive files
+" Ignore archive files
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 
 " Ignore bundler and sass cache
 set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 
-" Disable temp and backup files
+" Ignore temp and backup files
 set wildignore+=*.swp,*~,._*
 
-" Disable images
+" Ignore images
 set wildignore+=*.jpg,*.jpeg,*.png,*.gif,*.bmp
 
 " Set ignorecase in searches

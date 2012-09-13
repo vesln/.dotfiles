@@ -1,23 +1,19 @@
-" Make shift-insert work like in Xterm
-map <S-Insert> <MiddleMouse>
-map! <S-Insert> <MiddleMouse>
-
 " Map Control-# to switch tabs
-map <F1> :tabnext 1<CR>
-map <F2> :tabnext 2<CR>
-map <F3> :tabnext 3<CR>
-map <F4> :tabnext 4<CR>
-map <F5> :tabnext 5<CR>
-map <F6> :tabnext 6<CR>
-map <F7> :tabnext 7<CR>
-map <F8> :tabnext 8<CR>
-map <F9> :tabnext 9<CR>
+noremap <F1> :tabnext 1<CR>
+noremap <F2> :tabnext 2<CR>
+noremap <F3> :tabnext 3<CR>
+noremap <F4> :tabnext 4<CR>
+noremap <F5> :tabnext 5<CR>
+noremap <F6> :tabnext 6<CR>
+noremap <F7> :tabnext 7<CR>
+noremap <F8> :tabnext 8<CR>
+noremap <F9> :tabnext 9<CR>
 
 " Paste
-map <C-\> "+p
+noremap <C-\> "+p
 
 " New tab
-map <C-t> :tabe<CR>
+nnoremap <C-t> :tabe<CR>
 
 " Toggle NERDCommenter
-nmap <C-/> <plug>NERDCommenterToggle<CR>
+nnoremap <C-/> <plug>NERDCommenterToggle<CR>
