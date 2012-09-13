@@ -40,6 +40,8 @@ alias gco="git checkout"
 
 alias gsf="git submodule foreach git pull origin master"
 
+alias gdm="git delete-merged"
+
 # Rails
 alias b="bundle"
 alias be="bundle exec"
