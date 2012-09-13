@@ -1,34 +1,28 @@
-" Make , the leader key
+" Make `,` the leader key
 let mapleader = ","
 
 " Easy ESC in insert mode
 inoremap jj <esc>
 inoremap jk <esc>
 
-" Remove s and Q
-nnoremap s <Nop>
+" Remove `Q`
 nnoremap Q <Nop>
 
-" Toggle case
-nmap <C-u> mzg~iw`z
-
 " Split screens
-nmap gh <C-w>h
-nmap gj <C-w>j
-nmap gk <C-w>k
-nmap gl <C-w>l
+nnoremap gh <C-w>h
+nnoremap gj <C-w>j
+nnoremap gk <C-w>k
+nnoremap gl <C-w>l
 
 " Clear search results when hitting space
-nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-
-" Format the entire file
-nmap <leader>ef ggVG=
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Remap command key
 nnoremap ; :
+nnoremap s ;
 
 " Rename the current file
-nmap <Leader>r :call RenameFile()<cr>
+nnoremap <Leader>r :call RenameFile()<cr>
 
 " Promote to let
 nnoremap <Leader>p :call PromoteToLet()<cr>
@@ -37,38 +31,32 @@ nnoremap <Leader>p :call PromoteToLet()<cr>
 call SetArrowKeysAsTextShifters()
 
 " Fast movement
-nmap <C-j> 4j
-nmap <C-k> 4k
-nmap <C-l> 4l
-nmap <C-h> 4h
+nnoremap <C-j> 4j
+nnoremap <C-k> 4k
+nnoremap <C-l> 4l
+nnoremap <C-h> 4h
 
-" Insert a hash rocket with <C-L>
-imap <C-l> <space>=><space>
+" Insert a hash rocket
+inoremap <C-l> <space>=><space>
 
 " Run the current test
-nmap <Leader>f <Plug>MuxRunFile
+nnoremap <Leader>f <Plug>MuxRunFile
 
 " Run the current test line
-nmap <Leader>d <Plug>MuxRunLine
+nnoremap <Leader>d <Plug>MuxRunLine
 
-" Run everything from the current test type (rspec, cuke, mocha)
-nmap <Leader>s <Plug>MuxRunAll
+" Run everything from the current test type
+nnoremap <Leader>s <Plug>MuxRunAll
 
 " Run the whole test case
-nmap <Leader>w :call RunTests()<CR>
+nnoremap <Leader>w :call RunTests()<CR>
 
 " SplitJoin
-nmap + :SplitjoinSplit<CR>
-nmap _ :SplitjoinJoin<CR>
+nnoremap + :SplitjoinSplit<CR>
+nnoremap _ :SplitjoinJoin<CR>
 
 " Switch
-nmap - :Switch<CR>
-
-" Rails alternate. Example: model -> spec
-map [f :A<CR>
-
-" Rails related. Example: action -> view
-map ]f :R<CR>
+nnoremap - :Switch<CR>
 
 " Previous buffer
 nnoremap <silent> [b :BufSurfBack<CR>
@@ -77,26 +65,26 @@ nnoremap <silent> [b :BufSurfBack<CR>
 nnoremap <silent> ]b :BufSurfForward<CR>
 
 " Tabularize =
-nmap <Leader>ae :Tabularize /=<CR>
-vmap <Leader>ae :Tabularize /=<CR>
+nnoremap <Leader>ae :Tabularize /=<CR>
+vnoremap <Leader>ae :Tabularize /=<CR>
 
 " Tabularize =>
-nmap <Leader>ah :Tabularize /=<CR>
-vmap <Leader>ah :Tabularize /=><CR>
+nnoremap <Leader>ah :Tabularize /=<CR>
+vnoremap <Leader>ah :Tabularize /=><CR>
 
 " Tabularize :
-nmap <Leader>a: :Tabularize /:\zs<CR>
-vmap <Leader>a: :Tabularize /:\zs<CR>
+nnoremap <Leader>a: :Tabularize /:\zs<CR>
+vnoremap <Leader>a: :Tabularize /:\zs<CR>
 
 " Tabularize |
-nmap <Leader>at :Tabularize /\|<CR>
-vmap <Leader>at :Tabularize /\|<CR>
+nnoremap <Leader>at :Tabularize /\|<CR>
+vnoremap <Leader>at :Tabularize /\|<CR>
 
 " Toggle NERDTree
-nmap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " Toggle ZoomWin
-nmap <Leader>z :ZoomWin<CR>
+nnoremap <Leader>z :ZoomWin<CR>
 
-" Command T clear cache
-nmap <Leader>q :CommandTFlush<CR>
+" Command-T clear cache
+nnoremap <Leader>q :CommandTFlush<CR>
