@@ -88,6 +88,12 @@ let s:modes.mocha.file = '"./node_modules/.bin/mocha " . expand("%") . ""'
 let s:modes.mocha.line = '"./node_modules/.bin/mocha " . expand("%") . ""'
 let s:modes.mocha.all = '"./node_modules/.bin/mocha"'
 
+let s:modes.python = {}
+let s:modes.python.matcher = 'test_.*\.py$'
+let s:modes.python.file = '"nosetests " . expand("%") . ""'
+let s:modes.python.line = s:modes.python.file
+let s:modes.python.all = '"nosetests tests/"'
+
 function! s:run(type)
   let commands = {}
 
