@@ -40,13 +40,13 @@ nnoremap <C-h> 4h
 inoremap <C-l> <space>=><space>
 
 " Run the current test
-nnoremap <Leader>f <Plug>MuxRunFile
+nmap <Leader>f <Plug>MuxRunFile
 
 " Run the current test line
-nnoremap <Leader>d <Plug>MuxRunLine
+nmap <Leader>d <Plug>MuxRunLine
 
 " Run everything from the current test type
-nnoremap <Leader>s <Plug>MuxRunAll
+nmap <Leader>s <Plug>MuxRunAll
 
 " Run the whole test case
 nnoremap <Leader>w :call RunTests()<CR>
