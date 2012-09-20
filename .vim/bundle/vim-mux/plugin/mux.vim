@@ -11,6 +11,7 @@
 " * handle messages better
 " * last command should remember commands by type
 " * ask before creating a new session
+" * .muxrc
 
 let s:name = 'mux'
 let s:session = ''
