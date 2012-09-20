@@ -31,10 +31,8 @@ nnoremap <Leader>p :call PromoteToLet()<cr>
 call SetArrowKeysAsTextShifters()
 
 " Fast movement
-nnoremap <C-j> 4j
-nnoremap <C-k> 4k
-nnoremap <C-l> 4l
-nnoremap <C-h> 4h
+nnoremap <C-j> 8j
+nnoremap <C-k> 8k
 
 " Insert a hash rocket
 inoremap <C-l> <space>=><space>
