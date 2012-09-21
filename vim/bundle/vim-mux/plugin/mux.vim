@@ -59,7 +59,7 @@ function! s:send(command)
 
   echo a:command
 
-  call system("tmux send-keys -t " . s:session . ":mux C-l C-u " . shellescape(a:command) . " C-m")
+  call system("tmux send-keys -t " . s:session . ":mux.1 C-l C-u " . shellescape(a:command) . " C-m")
 endfunction
 
 let s:modes = {}
