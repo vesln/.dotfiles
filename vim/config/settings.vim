@@ -65,7 +65,7 @@ set ch=2
 " lines from the bottom
 set scrolloff=8
 
-" A tab should display as "    "
+" A tab should display as " \"
 set listchars=tab:\ \
 
 " Show trailing spaces as dots
