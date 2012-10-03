@@ -14,7 +14,7 @@ set laststatus=2
 set showmode
 
 " Keep some stuff in the history
-set history=100
+set history=1000
 
 " Enable search highlighting
 set hlsearch
