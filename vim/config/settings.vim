@@ -13,6 +13,9 @@ set laststatus=2
 " Show the current mode
 set showmode
 
+" When a bracket is inserted, briefly jump to the matching one
+set showmatch
+
 " Keep some stuff in the history
 set history=1000
 
