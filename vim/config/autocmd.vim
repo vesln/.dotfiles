@@ -30,3 +30,6 @@ au BufEnter *.ri set filetype=ruby
 
 " Cucumber - open step in a vertical split
 au FileType cucumber nmap <C-p> <C-W>]<C-W>L
+
+" Spell checking
+au Filetype cucumber,markdown set spell
