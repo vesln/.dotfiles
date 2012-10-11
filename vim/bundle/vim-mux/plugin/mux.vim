@@ -68,7 +68,7 @@ let s:modes.cucumber = {}
 let s:modes.cucumber.matcher = '^features\/.*\.feature$'
 let s:modes.cucumber.file = '"bundle exec cucumber " . expand("%") . " --drb"'
 let s:modes.cucumber.line = '"bundle exec cucumber " . expand("%") . ":" . line(".") . " --drb"'
-let s:modes.cucumber.all = '"bundle exec cucumber"'
+let s:modes.cucumber.all = '"bundle exec cucumber --drb"'
 
 " Turnip does not support to run a test line
 let s:modes.turnip = {}
