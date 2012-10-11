@@ -66,3 +66,6 @@ alias redis-stop='killall redis-server'
 # MongoDB
 alias mongo-start='mongod run --config /usr/local/etc/mongod.conf > /dev/null &'
 alias mongo-stop='killall -9 mongod'
+
+# Ngen
+alias gen='ngen -d ~/.dotfiles/ngen'
