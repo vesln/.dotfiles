@@ -28,3 +28,7 @@ let g:CommandTAlwaysShowDotFiles = 1
 
 " snipMate directory
 let g:snippets_dir = expand('~/.vim/snippets/')
+
+" Top to bottom
+let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:SuperTabContextDefaultCompletionType = "<c-n>"

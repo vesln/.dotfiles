@@ -106,8 +106,8 @@ set smartcase
 " Disable swap files
 set nobackup nowritebackup noswapfile
 
-" Always use the popup. Insert the longest common text of the matches.
-set completeopt=menuone,longest
+" Use the popup only when needed
+set completeopt=menu
 
 " Complete options. See complete-items.
 set complete=.,w,b,k
