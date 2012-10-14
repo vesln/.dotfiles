@@ -10,3 +10,9 @@ var chai = require('chai');
  */
 
 global.should = chai.should();
+
+/**
+ * Include stack traces.
+ */
+
+chai.Assertion.includeStack = true;
