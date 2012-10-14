@@ -13,9 +13,6 @@ let NERDTreeDirArrows = 0
 " Show hidden files
 let NERDTreeShowHidden = 1
 
-" Change the CWD
-let NERDTreeChDirMode=2
-
 " Disable netrw
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
