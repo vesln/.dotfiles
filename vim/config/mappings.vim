@@ -78,9 +78,6 @@ vnoremap <Leader>a: :Tabularize /:\zs<CR>
 nnoremap <Leader>at :Tabularize /\|<CR>
 vnoremap <Leader>at :Tabularize /\|<CR>
 
-" Toggle NERDTree
-nnoremap <Leader>n :NERDTreeToggle<CR>
-
 " Toggle ZoomWin
 nnoremap <Leader>z :ZoomWin<CR>
 
