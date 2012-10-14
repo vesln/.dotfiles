@@ -69,3 +69,6 @@ alias mongo-stop='killall -9 mongod'
 
 # Ngen
 alias gen='ngen -d ~/.dotfiles/ngen'
+
+# Vim
+alias vi="vim"
