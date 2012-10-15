@@ -22,9 +22,9 @@ bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
 
 # Completion
-unsetopt menu_complete
 unsetopt flowcontrol
 setopt auto_menu
+setopt menu_complete
 setopt complete_in_word
 setopt always_to_end
 
