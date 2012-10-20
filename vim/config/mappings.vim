@@ -83,3 +83,6 @@ nnoremap <Leader>z :ZoomWin<CR>
 
 " Command-T clear cache
 nnoremap <Leader>q :CommandTFlush<CR>
+
+" Toggle comment
+map <Leader><Leader> <plug>NERDCommenterToggle<CR>
