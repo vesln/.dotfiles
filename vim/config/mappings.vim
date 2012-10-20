@@ -86,3 +86,6 @@ nnoremap <Leader>q :CommandTFlush<CR>
 
 " Toggle comment
 map <Leader><Leader> <plug>NERDCommenterToggle<CR>
+
+" NERDTree
+map <Leader>n :NERDTreeToggle<CR>
