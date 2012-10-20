@@ -36,3 +36,12 @@ if &term =~ "xterm" || &term =~ "screen"
   let g:CommandTSelectNextMap = ['<C-n>', '<C-j>', '<ESC>OB']
   let g:CommandTSelectPrevMap = ['<C-p>', '<C-k>', '<ESC>OA']
 endif
+
+" vim notes directoruy
+let g:notes_directory = '~/.vim-notes/'
+
+" vim notes tags
+let g:notes_tagsindex = '~/.vim-notes/tags.txt'
+
+" vim notes index
+let g:notes_indexfile = '~/.vim-notes/index.pickle'

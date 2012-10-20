@@ -106,3 +106,6 @@
 [submodule "vim/bundle/supertab"]
 	path = vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
+[submodule "vim/bundle/vim-notes"]
+	path = vim/bundle/vim-notes
+	url = git://github.com/xolox/vim-notes.git
