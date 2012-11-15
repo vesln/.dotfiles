@@ -1,8 +1,6 @@
 
-/**
+/*!
  * Template variables.
- *
- * @type {Object}
  */
 
 exports.variables = {

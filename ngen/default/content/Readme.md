@@ -4,6 +4,12 @@
 
 ## Synopsis
 
+## Installation
+
+```bash
+npm install {{project}}
+```
+
 ## Requirements
 
 - Node.js >= 0.6.0
