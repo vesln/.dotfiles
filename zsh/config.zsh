@@ -1,13 +1,8 @@
-# Correction for commands
-setopt CORRECT
-setopt CORRECTALL
-
 # Colors
 autoload colors; colors;
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 # Auto cd
-setopt auto_cd
 setopt multios
 setopt cdablevarS
 setopt prompt_subst
