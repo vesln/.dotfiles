@@ -1,10 +1,9 @@
 # Colors
-autoload colors; colors;
+autoload colors
+colors
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
-# Auto cd
 setopt multios
-setopt cdablevarS
 setopt prompt_subst
 
 # Case-insensitive (all) completion
