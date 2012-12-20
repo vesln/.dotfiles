@@ -32,4 +32,4 @@ au BufEnter *.ri set filetype=ruby
 au FileType cucumber nmap <C-p> <C-W>]<C-W>L
 
 " Spell checking
-au BufEnter cucumber,markdown,gitcommit set spell
+au FileType cucumber,markdown,gitcommit set spell
