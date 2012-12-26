@@ -17,8 +17,7 @@ let NERDTreeShowHidden = 1
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
 
-" Auto close only {}
-let g:AutoPairs = {'{':'}'}
+let g:AutoPairs = {}
 
 " Command-T show dot files
 let g:CommandTAlwaysShowDotFiles = 1
