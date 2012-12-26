@@ -17,6 +17,8 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
 
+bindkey -e
+
 # Completion
 unsetopt flowcontrol
 setopt auto_menu
