@@ -6,9 +6,11 @@ endfunction
 
 function! s:GetRelatedFile(file)
   if match(a:file, '_spec\.rb$') != -1
-    return substitute(substitute(a:file, "_spec.rb", ".rb", ""), 'spec/', 'app/', '')
+    let root = match(a:file, '^spec/lib/') != -1 ? '' : 'app/'
+    return substitute(substitute(a:file, "_spec.rb", ".rb", ""), 'spec/', root, '')
   else
-    return substitute(substitute(a:file, ".rb", "_spec.rb", ""), 'app/', 'spec/', '')
+    let root = match(a:file, '^app') != -1 ? 'app/' : ''
+    return substitute(substitute(a:file, ".rb", "_spec.rb", ""), root, 'spec/', '')
   endif
 endfunction
 
