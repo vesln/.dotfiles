@@ -8,6 +8,9 @@ cdpath=(~)
 setopt multios
 setopt prompt_subst
 
+setopt AUTO_PUSHD
+setopt PUSHD_IGNORE_DUPS
+
 # Case-insensitive (all) completion
 autoload -U compinit
 compinit -C
