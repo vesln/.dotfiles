@@ -3,6 +3,8 @@ autoload colors
 colors
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
+cdpath=(~)
+
 setopt multios
 setopt prompt_subst
 
