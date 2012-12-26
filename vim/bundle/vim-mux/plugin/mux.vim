@@ -59,7 +59,7 @@ function! s:send(command)
 
   echo a:command
 
-  call system("tmux send-keys -t " . s:session . ":mux.1 C-l C-u " . shellescape(a:command) . " C-m")
+  call system("tmux send-keys -t " . s:session . ":mux.1 C-l C-u " . a:command)
 endfunction
 
 let s:modes = {}
@@ -106,7 +106,7 @@ function! s:run(type)
   endfor
 
   if has_key(commands, a:type)
-    let command = eval(commands[a:type])
+    let command = shellescape(eval(commands[a:type])) . " C-m"
     let g:lastCommand = command
     call s:send(command)
   elseif exists("g:lastCommand")

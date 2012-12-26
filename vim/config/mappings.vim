@@ -49,6 +49,9 @@ nmap <Leader>s <Plug>MuxRunAll
 " Run the whole test case
 nnoremap <Leader>w :call RunTests()<CR>
 
+" Send ctrl-c
+nnoremap <Leader>x :MuxSend C-c<CR>
+
 " SplitJoin
 nnoremap + :SplitjoinSplit<CR>
 nnoremap _ :SplitjoinJoin<CR>
