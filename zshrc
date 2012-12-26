@@ -4,3 +4,4 @@
 . ~/.zsh/colors.zsh
 . ~/.zsh/paths.zsh
 . ~/.zsh/env.zsh
+. ~/.zsh/tmux/completion.zsh
