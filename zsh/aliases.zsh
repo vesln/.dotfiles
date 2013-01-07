@@ -53,7 +53,7 @@ alias b="bundle"
 alias be="bundle exec"
 
 alias cuke="be cucumber --drb"
-alias spec="be rspec . --drb"
+alias spec="be rspec spec/ --drb"
 
 alias rdm="rails-db-migrate"
 alias rdmr="rails-db-migrate-reset"

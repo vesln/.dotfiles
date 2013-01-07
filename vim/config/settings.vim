@@ -124,6 +124,9 @@ set splitright
 " Use wild menu
 set wildmenu
 
+" Extra extensions for "gf"
+set suffixesadd+=.js
+
 " List all matches, complete till longest common string, complete the next
 " full match
 set wildmode=list:full
