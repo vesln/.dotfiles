@@ -67,3 +67,4 @@ alias gen='ngen -d ~/.dotfiles/ngen'
 
 # Vim
 alias vi="vim"
+alias m="mvim"
