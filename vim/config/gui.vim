@@ -9,3 +9,6 @@ colors lin
 
 " Turn off blinking in normal mode
 set gcr=n:blinkon0
+
+" Don't wrap lines
+set nowrap

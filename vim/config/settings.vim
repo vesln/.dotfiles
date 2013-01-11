@@ -43,8 +43,8 @@ set ruler
 " Set default encoding to UTF-8
 set encoding=utf-8
 
-" Don't wrap lines
-set nowrap
+" Wrap lines
+set wrap
 
 " A tab is two spaces
 set tabstop=2
