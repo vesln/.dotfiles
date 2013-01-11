@@ -11,6 +11,11 @@ setopt prompt_subst
 setopt AUTO_PUSHD
 setopt PUSHD_IGNORE_DUPS
 
+# Edit the current command in editor
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '\C-x\C-e' edit-command-line
+
 # Case-insensitive (all) completion
 autoload -U compinit
 compinit -C
