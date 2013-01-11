@@ -1,2 +1,2 @@
 " Colors
-colors vividchalk
+colors ir_black
