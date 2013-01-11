@@ -42,7 +42,7 @@
 	url = https://github.com/Lokaltog/vim-easymotion.git
 [submodule "vim/bundle/vim-slim"]
 	path = vim/bundle/vim-slim
-	url = https://github.com/bbommarito/vim-slim.git
+	url = git://github.com/slim-template/vim-slim.git
 [submodule "vim/bundle/splitjoin.vim"]
 	path = vim/bundle/splitjoin.vim
 	url = https://github.com/AndrewRadev/splitjoin.vim.git
