@@ -1,5 +1,5 @@
 # Editor
 export EDITOR="vim"
 
-# Ruby
+# Cucumber format
 export CUCUMBER_FORMAT="progress"

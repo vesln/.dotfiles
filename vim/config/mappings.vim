@@ -18,7 +18,6 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Remap command key
 nnoremap ; :
-nnoremap s ;
 
 " Rename the current file
 nnoremap <Leader>r :call RenameFile()<cr>
@@ -32,9 +31,6 @@ call SetArrowKeysAsTextShifters()
 " Fast movement
 noremap <C-j> 8j
 noremap <C-k> 8k
-
-" Insert a hash rocket
-inoremap <C-l> <space>=><space>
 
 " Run the current test
 nmap <Leader>f <Plug>MuxRunFile
@@ -68,20 +64,9 @@ nnoremap <silent> ]b :BufSurfForward<CR>
 nnoremap <Leader>ae :Tabularize /=<CR>
 vnoremap <Leader>ae :Tabularize /=<CR>
 
-" Tabularize =>
-nnoremap <Leader>ah :Tabularize /=<CR>
-vnoremap <Leader>ah :Tabularize /=><CR>
-
-" Tabularize :
-nnoremap <Leader>a: :Tabularize /:\zs<CR>
-vnoremap <Leader>a: :Tabularize /:\zs<CR>
-
 " Tabularize |
 nnoremap <Leader>at :Tabularize /\|<CR>
 vnoremap <Leader>at :Tabularize /\|<CR>
-
-" Toggle ZoomWin
-nnoremap <Leader>z :ZoomWin<CR>
 
 " Command-T clear cache
 nnoremap <Leader>q :CommandTFlush<CR>
