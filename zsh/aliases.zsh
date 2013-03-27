@@ -48,16 +48,11 @@ alias gdm="git delete-merged"
 alias gm='git merge --no-ff'
 alias gmf='git merge --ff-only'
 
-# Rails
-alias b="bundle"
+# Ruby / Rails
 alias be="bundle exec"
 
 alias cuke="be cucumber --drb"
 alias spec="be rspec spec/ --drb"
-
-alias rdm="rails-db-migrate"
-alias rdmr="rails-db-migrate-reset"
-alias rgm="rails g migration"
 
 alias spr="be spork rspec"
 alias spc="be spork cucumber"
@@ -67,4 +62,3 @@ alias gen='ngen -d ~/.dotfiles/ngen'
 
 # Vim
 alias vi="vim"
-alias m="mvim"
