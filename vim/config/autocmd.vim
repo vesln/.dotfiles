@@ -25,11 +25,5 @@ au BufEnter *.ctp set filetype=php
 " JSON -> JavaScript
 au BufEnter *.json set filetype=javascript
 
-" Ri -> Ruby
-au BufEnter *.ri set filetype=ruby
-
-" Cucumber - open step in a vertical split
-au FileType cucumber nmap <C-p> <C-W>]<C-W>L
-
 " Spell checking
 au FileType cucumber,markdown,gitcommit set spell

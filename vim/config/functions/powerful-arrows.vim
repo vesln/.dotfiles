@@ -1,6 +1,7 @@
 " Arrow key remapping:
 " Up/Dn = move line up/dn
 " Left/Right = indent/unindent
+
 function! s:MoveLineUp()
   call <SID>MoveLineOrVisualUp(".", "")
 endfunction

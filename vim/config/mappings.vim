@@ -1,10 +1,10 @@
-" Make `,` the leader key
+" Make "," the leader key
 let mapleader = ","
 
 " Easy ESC in insert mode
 inoremap jk <esc>
 
-" Remove `Q`
+" Remove "Q"
 nnoremap Q <Nop>
 
 " Split screens

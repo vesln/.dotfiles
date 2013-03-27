@@ -133,3 +133,6 @@ set wildmode=list:full
 
 " Disable visual error flash and error beeps
 set visualbell t_vb=
+
+" Colors
+colors ir_black

@@ -12,3 +12,6 @@ set gcr=n:blinkon0
 
 " Don't wrap lines
 set nowrap
+
+" Font
+set guifont=Monaco:h12
