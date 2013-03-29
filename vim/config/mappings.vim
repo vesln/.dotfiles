@@ -47,13 +47,6 @@ nnoremap <Leader>w :call RunTests()<CR>
 " Send ctrl-c
 nnoremap <Leader>x :MuxSend C-c<CR>
 
-" SplitJoin
-nnoremap + :SplitjoinSplit<CR>
-nnoremap _ :SplitjoinJoin<CR>
-
-" Switch
-nnoremap - :Switch<CR>
-
 " Previous buffer
 nnoremap <silent> [b :BufSurfBack<CR>
 
