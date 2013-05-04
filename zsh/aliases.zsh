@@ -9,6 +9,7 @@ alias gb="git branch"
 alias gbd="git branch -D"
 
 alias gl="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
+alias gll="gl -10"
 alias gla="gl --all"
 alias gpr="git pull --rebase"
 
@@ -62,3 +63,6 @@ alias gen='ngen -d ~/.dotfiles/ngen'
 
 # Vim
 alias vi="vim"
+
+# Titanium
+alias tios='titanium build --platform ios'

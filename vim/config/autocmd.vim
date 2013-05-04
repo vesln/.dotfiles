@@ -25,5 +25,8 @@ au BufEnter *.ctp set filetype=php
 " JSON -> JavaScript
 au BufEnter *.json set filetype=javascript
 
+" TSS -> CSS
+au BufEnter *.tss set filetype=css
+
 " Spell checking
 au FileType cucumber,markdown,gitcommit set spell
