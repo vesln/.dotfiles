@@ -7,3 +7,10 @@ gci() {
 git-push-with-tracking() {
   git push -u origin $(git branch | grep "*" | sed "s/* //")
 }
+
+# Build & publish a private gem
+fpush() {
+  gem build `ls *.gemspec`
+  fury push `ls *.gem`
+  rm `ls *.gem`
+}
