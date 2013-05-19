@@ -8,5 +8,8 @@ PATH=$PATH:$HOME/.rvm/bin
 # tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
+# pythonbrew
+[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
+
 # Load nvm
 . ~/.nvm/nvm.sh
