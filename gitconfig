@@ -1,31 +1,32 @@
 [user]
-  name = Veselin Todorov
-  email = veselin@veselin.bg
+name = Veselin Todorov
+email = veselin@veselin.bg
 [github]
-  user = vesln
+user = vesln
 [alias]
-  current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
-  pretty-log = !bash -c 'source ~/.githelpers && git-log-pretty --all'
+current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
+pretty-log = !bash -c 'source ~/.githelpers && git-log-pretty --all'
+pr = "!f() { git fetch origin refs/pull/$1/head:pr/$1; } ; f"
 [apply]
-  whitespace = warn
+whitespace = warn
 [color]
-  diff = auto
-  status = auto
-  branch = auto
-  ui = true
+diff = auto
+status = auto
+branch = auto
+ui = true
 [help]
-  autocorrect = 1
+autocorrect = 1
 [status]
-  submodule = 1
+submodule = 1
 [merge]
-  tool = vimdiff
-  log = true
-  prompt = false
+tool = vimdiff
+log = true
+prompt = false
 [difftool]
-  prompt = false
+prompt = false
 [push]
-  default = tracking
+default = tracking
 [core]
-  excludesfile = ~/.gitignore_global
+excludesfile = /Users/vesln/.gitignore_global
 [branch]
-  autosetuprebase = always
+autosetuprebase = always
