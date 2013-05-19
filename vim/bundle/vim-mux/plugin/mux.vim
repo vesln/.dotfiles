@@ -28,7 +28,7 @@ function! s:created(session)
     return
   end
 
-  let windows = split(system("tmux list-windows -t " . a:session . " | cut -f 2 -d ' '"))
+  let windows = split(system("tmux list-windows -t " . a:session . " | cut -f 2 -d ' ' | sed 's/.$//'"))
 
   return index(windows, s:name) >= 0
 endfunction
