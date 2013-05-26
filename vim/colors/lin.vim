@@ -92,6 +92,16 @@ hi htmlSpecialChar  guifg=#cf6a4c guibg=NONE gui=NONE
 hi javaScriptFunction  guifg=#f9ee98 guibg=NONE gui=NONE
 hi javaScriptRailsFunction  guifg=#dad085 guibg=NONE gui=NONE
 hi javaScriptBraces  guifg=NONE guibg=NONE gui=NONE
+hi javaScriptBoolean  guifg=#cf6a4c guibg=NONE gui=NONE
+hi javaScriptPrototype  guifg=#ffffff guibg=NONE gui=NONE
+hi javaScriptLabel  guifg=#ffffff guibg=NONE gui=NONE
+hi javaScriptType  guifg=#7587a6 guibg=NONE gui=NONE
+hi javaScriptNull  guifg=#cf6a4c guibg=NONE gui=NONE
+hi javaScriptDocTags  guifg=#5f5a60 guibg=NONE gui=italic
+hi javaScriptDocSeeTag  guifg=#5f5a60 guibg=NONE gui=italic
+hi javaScriptVar  guifg=#f9ee98 guibg=NONE gui=NONE
+hi javaScriptThis  guifg=#7587a6 guibg=NONE gui=NONE
+hi javaScriptFunc  guifg=red guibg=NONE gui=NONE
 
 hi yamlKey  guifg=#9b703f guibg=NONE gui=NONE
 hi yamlAnchor  guifg=#7587a6 guibg=NONE gui=NONE
