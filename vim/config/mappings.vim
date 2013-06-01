@@ -16,9 +16,6 @@ nnoremap gl <C-w>l
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
-" Remap command key
-nnoremap ; :
-
 " Rename the current file
 nnoremap <Leader>r :call RenameFile()<cr>
 
