@@ -7,6 +7,7 @@ user = vesln
 current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
 pretty-log = !bash -c 'source ~/.githelpers && git-log-pretty --all'
 pr = "!f() { git fetch origin refs/pull/$1/head:pr/$1; } ; f"
+unstage = reset HEAD
 [apply]
 whitespace = warn
 [color]
