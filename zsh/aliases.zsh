@@ -51,6 +51,10 @@ alias gmf='git merge --ff-only'
 
 # Ruby / Rails
 alias be="bundle exec"
+alias rdm="bundle exec rake db:migrate"
+alias rg="bundle exec rails generate"
+alias rdmr="bundle exec rake db:migrate:reset"
+alias rdtp="bundle exec rake db:test:prepare"
 
 alias cuke="be cucumber --drb"
 alias spec="be rspec spec/ --drb"
@@ -62,7 +66,9 @@ alias spc="be spork cucumber"
 alias gen='ngen -d ~/.dotfiles/ngen'
 
 # Vim
+alias vim="mvim -v"
 alias vi="vim"
+alias iv="vim"
 
 # Titanium
 alias tios='titanium build --platform ios'

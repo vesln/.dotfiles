@@ -14,3 +14,8 @@ fpush() {
   fury push `ls *.gem`
   rm `ls *.gem`
 }
+
+# Kill spork
+ss() {
+  pgrep -f spork | xargs kill -9
+}
