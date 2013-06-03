@@ -62,6 +62,10 @@ function! s:send(command)
   call system("tmux send-keys -t " . s:session . ":mux.1 C-l C-u " . a:command)
 endfunction
 
+function! s:runCommand(command)
+  call s:send(shellescape(a:command) . " C-m")
+endfunction
+
 let s:modes = {}
 
 let s:modes.cucumber = {}
@@ -119,6 +123,7 @@ endfunction
 
 command! -bang -nargs=1 Mux call s:initialize(<q-args>)
 command! -bang -nargs=1 MuxSend call s:send(<q-args>)
+command! -bang -nargs=1 MuxRun call s:runCommand(<q-args>)
 
 noremap <expr> <Plug>MuxRunFile <SID>run('file')
 noremap <expr> <Plug>MuxRunLine <SID>run('line')
