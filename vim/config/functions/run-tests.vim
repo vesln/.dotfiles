@@ -1,9 +1,9 @@
 function! RunTests()
   if filereadable("Rakefile")
-    MuxSend rake test
-  elseif filereadable("Makefile")
-    MuxSend make test
+    MuxRun rake test
+  elseif filereadable("package.json")
+    MuxRun npm test
   else
-    echohl WarningMsg | echo 'Could not locate Makefile or Rakefile.' | echohl None
+    echohl WarningMsg | echo 'Could not locate package.json or Rakefile.' | echohl None
   end
 endfunction
