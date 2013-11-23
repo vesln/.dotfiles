@@ -27,7 +27,6 @@ alias gr="git rebase"
 alias gra="git rebase --abort"
 alias grc="git rebase --continue"
 
-alias grh="git reset HEAD --hard"
 alias grs="git reset HEAD\^ --soft"
 
 alias gcf="git clean -f"
@@ -65,10 +64,19 @@ alias spc="be spork cucumber"
 # Ngen
 alias gen='ngen -d ~/.dotfiles/ngen'
 
+# Node
+alias t="npm test"
+alias cov="npm run-script coverage"
+alias nrs="npm run-script"
+
 # Vim
 alias vim="mvim -v"
 alias vi="vim"
 alias iv="vim"
 
 # Titanium
-alias tios='titanium build --platform ios'
+alias tios='titanium build --platform ios --device-family iphone'
+alias tipad='titanium build --platform ios --device-family ipad'
+alias tic='titanium clean'
+
+alias corona="/Applications/CoronaSDK/Corona\ Terminal; exit;"
