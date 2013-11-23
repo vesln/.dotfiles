@@ -1,8 +1,13 @@
+[![NPM version](https://badge.fury.io/js/{{project}}.png)](http://badge.fury.io/js/{{project}})
 [![Build Status](https://secure.travis-ci.org/vesln/{{project}}.png)](http://travis-ci.org/vesln/{{project}})
+[![Coverage Status](https://coveralls.io/repos/vesln/{{project}}/badge.png?branch=master)](https://coveralls.io/r/vesln/{{project}}?branch=master)
+[![Code Climate](https://codeclimate.com/github/vesln/{{project}}.png)](https://codeclimate.com/github/vesln/{{project}})
 
 # {{project}}
 
 ## Synopsis
+
+## Description
 
 ## Installation
 
@@ -10,22 +15,25 @@
 npm install {{project}}
 ```
 
-## Requirements
-
-- Node.js >= 0.6.0
-
 ## Tests
 
+### Running the tests
+
+```bash
+$ npm test
 ```
-$ npm install
-$ make test
+
+### Test coverage
+
+```bash
+$ npm run-script coverage
 ```
 
 ## License
 
 (The MIT License)
 
-Copyright (c) 2012 Veselin Todorov <hi@vesln.com>
+Copyright (c) 2013 Veselin Todorov <hi@vesln.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
