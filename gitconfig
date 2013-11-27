@@ -29,5 +29,6 @@ prompt = false
 default = tracking
 [core]
 excludesfile = /Users/vesln/.gitignore_global
+trustctime = false
 [branch]
 autosetuprebase = always
