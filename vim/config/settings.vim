@@ -137,5 +137,8 @@ set visualbell t_vb=
 " Disable folding
 set nofoldenable
 
+" Enable spell checking
+set spell
+
 " Colors
 colors ir_black
