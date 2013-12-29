@@ -5,4 +5,6 @@
 . ~/.zsh/paths.zsh
 . ~/.zsh/env.zsh
 . ~/.zsh/tmux/completion.zsh
-[[ -f ~/.zshrc.local ]] && . ~/.zshrc.local
+
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
+[ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
