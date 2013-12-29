@@ -63,6 +63,7 @@ alias spc="be spork cucumber"
 
 # Ngen
 alias gen='ngen -d ~/.dotfiles/ngen'
+alias hgen='ngen -d ~/.dotfiles/ngen -t hybrid'
 
 # Node
 alias t="npm test"
@@ -79,4 +80,8 @@ alias tios='titanium build --platform ios --device-family iphone'
 alias tipad='titanium build --platform ios --device-family ipad'
 alias tic='titanium clean'
 
+# Corona SDK
 alias corona="/Applications/CoronaSDK/Corona\ Terminal; exit;"
+
+# tmux
+alias cmux="tmux new -n mux -s "
