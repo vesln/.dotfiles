@@ -89,9 +89,9 @@ let s:modes.rspec.all = '"bundle exec rspec . --drb"'
 
 let s:modes.hydro = {}
 let s:modes.hydro.matcher = '\.js$'
-let s:modes.hydro.file = '"./node_modules/.bin/hydro " . expand("%") . ""'
-let s:modes.hydro.line = '"./node_modules/.bin/hydro " . expand("%") . ""'
-let s:modes.hydro.all = '"./node_modules/.bin/hydro"'
+let s:modes.hydro.file = '"NODE_ENV=test ./node_modules/.bin/hydro " . expand("%") . ""'
+let s:modes.hydro.line = '"NODE_ENV=test ./node_modules/.bin/hydro " . expand("%") . ""'
+let s:modes.hydro.all = '"NODE_ENV=test ./node_modules/.bin/hydro"'
 
 let s:modes.python = {}
 let s:modes.python.matcher = 'test_.*\.py$'
