@@ -69,6 +69,7 @@ alias hgen='ngen -d ~/.dotfiles/ngen -t hybrid'
 alias t="npm test"
 alias cov="npm run-script coverage"
 alias nrs="npm run-script"
+alias node='node --harmony'
 
 # Vim
 alias vim="mvim -v"
