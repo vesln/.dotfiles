@@ -140,5 +140,8 @@ set nofoldenable
 " Enable spell checking
 set spell
 
+" Terminal options
+set t_Co=256
+
 " Colors
-colors ir_black
+colors jellybeans
