@@ -110,7 +110,7 @@ set nobackup nowritebackup noswapfile
 set completeopt=menu
 
 " Complete options. See complete-items.
-set complete=.,w,b,k
+set complete=.,w
 
 " Disable inserting two spaces
 set nojoinspaces
