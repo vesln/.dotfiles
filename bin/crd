@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+echo "First commit:   $(git log --reverse --format=%cd | head -1)"
+echo "Last commit:    $(git log --format=%cd | head -1)"
+echo "Total commits:  $(git rev-list HEAD --count)"
+
+STATS=$(cloc . --yaml --quiet --progress-rate=0)
+
+echo "$STATS" | ruby -ryaml -e 'data = YAML::load(STDIN.read); puts "Lines of code:  " + data["SUM"]["code"].to_s'
