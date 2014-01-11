@@ -8,8 +8,9 @@ alias g="git"
 alias gb="git branch"
 alias gbd="git branch -D"
 
-alias gl="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
+alias gl="git log-pretty"
 alias gll="gl -10"
+alias glg="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
 alias gla="gl --all"
 alias gpr="git pull --rebase"
 
@@ -68,7 +69,6 @@ alias hgen='ngen -d ~/.dotfiles/ngen -t hybrid'
 # Node
 alias t="npm test"
 alias cov="npm run-script coverage"
-alias nrs="npm run-script"
 alias node='node --harmony'
 
 # Vim
