@@ -33,7 +33,6 @@ setopt complete_in_word
 setopt always_to_end
 
 zstyle ':completion:*' list-colors ''
-zstyle ':completion:*:*:*:*:*' menu select
 
 # Command history
 HISTFILE=$HOME/.zsh_history
