@@ -143,5 +143,8 @@ set spell
 " Terminal options
 set t_Co=256
 
+" Jellybeans background: black
+let g:jellybeans_background_color_256=16
+
 " Colors
 colors jellybeans
