@@ -24,3 +24,6 @@ au BufEnter *.json set filetype=javascript
 
 " TSS -> CSS
 au BufEnter *.tss set filetype=css
+
+" Enable spell checking when writing a commit message
+au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
