@@ -1,7 +1,7 @@
 " Make "," the leader key
 let mapleader = ","
 
-" Easy ESC in insert mode
+" Convenient ESC in insert mode
 inoremap jk <esc>
 
 " Remove "Q"
@@ -22,7 +22,7 @@ nnoremap <Leader>r :call RenameFile()<cr>
 " Promote to let
 nnoremap <Leader>p :call PromoteToLet()<cr>
 
-" Powerful arrow keys
+" Meaningful arrow keys
 call SetArrowKeysAsTextShifters()
 
 " Fast movement
@@ -34,9 +34,6 @@ nmap <Leader>f <Plug>MuxRunFile
 
 " Run the current test line
 nmap <Leader>d <Plug>MuxRunLine
-
-" Run everything from the current test type
-nmap <Leader>s <Plug>MuxRunAll
 
 " Run the whole test case
 nnoremap <Leader>w :call RunTests()<CR>
