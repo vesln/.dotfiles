@@ -140,9 +140,6 @@ set visualbell t_vb=
 " Disable folding
 set nofoldenable
 
-" Enable spell checking
-set spell
-
 " Terminal options
 set t_Co=256
 
