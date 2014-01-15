@@ -69,13 +69,6 @@ let s:modes.cucumber.file = '"bundle exec cucumber " . expand("%") . " --drb"'
 let s:modes.cucumber.line = '"bundle exec cucumber " . expand("%") . ":" . line(".") . " --drb"'
 let s:modes.cucumber.all = '"bundle exec cucumber --drb"'
 
-" Turnip does not support to run a test line
-let s:modes.turnip = {}
-let s:modes.turnip.matcher = '^spec/.*\.feature$'
-let s:modes.turnip.file = '"bundle exec rspec " . expand("%") . " --drb"'
-let s:modes.turnip.line = s:modes.turnip.file
-let s:modes.turnip.all = '"bundle exec rspec"'
-
 let s:modes.rspec = {}
 let s:modes.rspec.matcher = '_spec\.rb$'
 let s:modes.rspec.file = '"bundle exec rspec --format nested " . expand("%") . " --drb"'
