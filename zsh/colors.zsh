@@ -6,11 +6,7 @@ YB=$fg_bold[yellow]
 BB=$fg_bold[blue]
 RESET=$reset_color
 
-if [ "$(whoami)" = "root" ]; then
-  PROMPTCOLOR="%{$RB%}" PREFIX="-!-";
-else
-  PROMPTCOLOR="" PREFIX="---";
-fi
+PROMPTCOLOR="" PREFIX="---";
 
 local return_code="%(?..%{$R%}%? ↵%{$RESET%})"
 
