@@ -52,18 +52,13 @@ function! s:initialize(session)
 endfunction
 
 function! s:send(command)
-  if !s:initialized
-    echohl WarningMsg | echo 'Mux: Not initialized yet. Run `:Mux session-name` to initialize.' | echohl None
-    return
-  end
-
   echo a:command
 
-  call system("tmux send-keys -t " . s:session . ":mux.1 C-l C-u " . a:command)
-endfunction
-
-function! s:runCommand(command)
-  call s:send(shellescape(a:command) . " C-m")
+  if !s:initialized
+    exec ':!clear && ' . a:command
+  else
+    call system("tmux send-keys -t " . s:session . ":mux.1 C-l C-u " . shellescape(a:command) . " C-m")
+  end
 endfunction
 
 let s:modes = {}
@@ -110,20 +105,19 @@ function! s:run(type)
   endfor
 
   if has_key(commands, a:type)
-    let command = shellescape(eval(commands[a:type])) . " C-m"
+    let command = eval(commands[a:type])
     let g:lastCommand = command
     call s:send(command)
   elseif exists("g:lastCommand")
     call s:send(g:lastCommand)
   else
     echohl ErrorMsg | echo "Mux: I have not idea how to handle that." | echohl None
-    return
   end
 endfunction
 
 command! -bang -nargs=1 Mux call s:initialize(<q-args>)
 command! -bang -nargs=1 MuxSend call s:send(<q-args>)
-command! -bang -nargs=1 MuxRun call s:runCommand(<q-args>)
+command! -bang -nargs=1 MuxRun call s:send(<q-args>)
 
 noremap <expr> <Plug>MuxRunFile <SID>run('file')
 noremap <expr> <Plug>MuxRunLine <SID>run('line')
