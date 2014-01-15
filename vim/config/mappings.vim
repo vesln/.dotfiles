@@ -1,6 +1,9 @@
 " Make "," the leader key
 let mapleader = ","
 
+" Current directory
+cabbr <expr> %% expand('%:p:h')
+
 " Convenient ESC in insert mode
 inoremap jk <esc>
 
@@ -12,6 +15,9 @@ nnoremap gh <C-w>h
 nnoremap gj <C-w>j
 nnoremap gk <C-w>k
 nnoremap gl <C-w>l
+
+" Open file in the directory of the current file
+map <leader>e :CommandT %%<cr>
 
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
