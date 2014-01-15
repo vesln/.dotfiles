@@ -22,6 +22,7 @@ alias gap="git add -p"
 alias gaa="git add -A"
 
 alias gc="git commit -v"
+alias gcam="git commit -v --amend"
 alias gcm="git commit -m"
 
 alias gr="git rebase"

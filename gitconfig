@@ -6,7 +6,6 @@ user = vesln
 [alias]
 current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
 pr = "!f() { git fetch origin refs/pull/$1/head:pr/$1; } ; f"
-ammend = commit --ammend
 unstage = reset HEAD
 [apply]
 whitespace = warn
