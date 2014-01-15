@@ -39,5 +39,5 @@ GIT_PROMPT_DIRTY="%{$R%}*"
 GIT_PROMPT_STAGED="%{$G%}+"
 GIT_PROMPT_UNTRACKED="%{$R%}?"
 
-PROMPT='$PREFIX ~ $(git_prompt)'
+PROMPT='$PREFIX %2~ $(git_prompt)'
 RPS1="${return_code}"
