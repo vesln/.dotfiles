@@ -139,6 +139,9 @@ set visualbell t_vb=
 " Disable folding
 set nofoldenable
 
+" Allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
 " Terminal options
 set t_Co=256
 
