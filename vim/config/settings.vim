@@ -130,9 +130,8 @@ set wildmenu
 " Extra extensions for "gf"
 set suffixesadd+=.js
 
-" List all matches, complete till longest common string, complete the next
-" full match
-set wildmode=list:full
+" List all matches, complete till longest common string
+set wildmode=longest,list
 
 " Disable visual error flash and error beeps
 set visualbell t_vb=
