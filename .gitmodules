@@ -22,9 +22,6 @@
 [submodule "vim/bundle/vim-indent-object"]
 	path = vim/bundle/vim-indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object
-[submodule "vim/bundle/vim-powerline"]
-	path = vim/bundle/vim-powerline
-	url = https://github.com/Lokaltog/vim-powerline
 [submodule "vim/bundle/surround"]
 	path = vim/bundle/surround
 	url = https://github.com/tpope/vim-surround.git

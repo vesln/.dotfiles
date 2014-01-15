@@ -145,6 +145,9 @@ set backspace=indent,eol,start
 " Terminal options
 set t_Co=256
 
+" Status line
+set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+
 " Jellybeans background: black
 let g:jellybeans_background_color_256=16
 
