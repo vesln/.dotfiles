@@ -70,3 +70,9 @@
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/vim-notes"]
+	path = vim/bundle/vim-notes
+	url = git@github.com:xolox/vim-notes.git
+[submodule "vim/bundle/vim-misc"]
+	path = vim/bundle/vim-misc
+	url = git@github.com:xolox/vim-misc.git

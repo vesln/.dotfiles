@@ -20,10 +20,13 @@ au FileType python setlocal sw=4 sts=4 et
 au FileType make setlocal noexpandtab
 
 " JSON -> JavaScript
-au BufEnter *.json set filetype=javascript
+au BufEnter *.json setlocal filetype=javascript
 
 " TSS -> CSS
-au BufEnter *.tss set filetype=css
+au BufEnter *.tss setlocal filetype=css
 
 " Enable spell checking when writing a commit message
 au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
+
+" Enable spell checking when writing a note
+au FileType notes setlocal spell

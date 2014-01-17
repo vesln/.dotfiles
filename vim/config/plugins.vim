@@ -23,3 +23,6 @@ endif
 
 " Command-T min height
 let g:CommandTMinHeight = 7
+
+" vim-notes directory
+:let g:notes_directories = ['~/Dropbox/Notes']
