@@ -9,7 +9,7 @@ alias gb="git branch"
 alias gbd="git branch -D"
 
 alias gl="git log-pretty"
-alias gll="gl -10"
+alias gll="gl -15"
 alias glg="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
 alias gla="gl --all"
 alias gpr="git pull --rebase"
@@ -73,7 +73,6 @@ alias cov="npm run-script coverage"
 alias node='node --harmony'
 
 # Vim
-alias vim="mvim -v"
 alias vi="vim"
 alias iv="vim"
 
