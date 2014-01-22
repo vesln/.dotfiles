@@ -57,10 +57,6 @@ nnoremap <silent> ]b :BufSurfForward<CR>
 nnoremap <Leader>ae :Tabularize /=<CR>
 vnoremap <Leader>ae :Tabularize /=<CR>
 
-" Tabularize |
-nnoremap <Leader>at :Tabularize /\|<CR>
-vnoremap <Leader>at :Tabularize /\|<CR>
-
 " Command-T clear cache
 nnoremap <Leader>q :CommandTFlush<CR>
 
