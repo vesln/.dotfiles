@@ -76,11 +76,10 @@ let s:modes.rspec.line = '"bundle exec rspec --format nested " . expand("%") . "
 let s:modes.rspec.all = '"bundle exec rspec . --drb"'
 
 let s:modes.hydro = {}
-let s:modes.hydro.matcher = '\.js$'
-let s:modes.hydro.file = '"NODE_ENV=test ./node_modules/.bin/hydro " . expand("%") . ""'
-let s:modes.hydro.line = '"NODE_ENV=test ./node_modules/.bin/hydro " . expand("%") . ""'
-let s:modes.hydro.all = '"NODE_ENV=test ./node_modules/.bin/hydro"'
 let s:modes.hydro.matcher = '^test\/.*\.js$'
+let s:modes.hydro.file = '"NODE_ENV=test ./node_modules/.bin/hydro --harmony " . expand("%") . ""'
+let s:modes.hydro.line = '"NODE_ENV=test ./node_modules/.bin/hydro --harmony " . expand("%") . ""'
+let s:modes.hydro.all = '"NODE_ENV=test ./node_modules/.bin/hydro --harmony"'
 
 let s:modes.python = {}
 let s:modes.python.matcher = 'test_.*\.py$'
