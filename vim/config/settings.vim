@@ -71,9 +71,6 @@ set shell=bash
 " lines from the bottom
 set scrolloff=8
 
-" A tab should display as " \"
-set listchars=tab:\ \
-
 " Show trailing spaces as dots
 set listchars+=trail:.
 
