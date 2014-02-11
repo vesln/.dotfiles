@@ -22,6 +22,9 @@ au FileType make setlocal noexpandtab
 " JSON -> JavaScript
 au BufEnter *.json setlocal filetype=javascript
 
+" ejs -> HTML
+au BufEnter *.ejs setlocal filetype=html
+
 " TSS -> CSS
 au BufEnter *.tss setlocal filetype=css
 
