@@ -73,3 +73,6 @@
 [submodule "vim/bundle/vim-misc"]
 	path = vim/bundle/vim-misc
 	url = git@github.com:xolox/vim-misc.git
+[submodule "vim/bundle/simple-bookmarks"]
+	path = vim/bundle/simple-bookmarks
+	url = git@github.com:AndrewRadev/simple_bookmarks.vim.git
