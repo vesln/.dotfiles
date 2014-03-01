@@ -65,3 +65,7 @@ map <Leader><Leader> <plug>NERDCommenterToggle<CR>
 
 " Copy, termianl Vim
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
+
+" Prev/next tab
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
