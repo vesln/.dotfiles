@@ -87,3 +87,5 @@ alias corona="/Applications/CoronaSDK/Corona\ Terminal; exit;"
 # tmux
 alias cmux="tmux new -n mux -s "
 alias kmux="tmux kill-session"
+
+alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
