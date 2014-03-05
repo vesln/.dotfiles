@@ -51,6 +51,8 @@ alias gm='git merge --no-ff'
 alias gmf='git merge --ff-only'
 
 # Ruby / Rails
+alias rails="bundle exec rails"
+alias rake="bundle exec rake"
 alias be="bundle exec"
 alias rdm="bundle exec rake db:migrate"
 alias rg="bundle exec rails generate"
@@ -88,4 +90,5 @@ alias corona="/Applications/CoronaSDK/Corona\ Terminal; exit;"
 alias cmux="tmux new -n mux -s "
 alias kmux="tmux kill-session"
 
+# node-webkit
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
