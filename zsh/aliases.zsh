@@ -9,9 +9,6 @@ alias gb="git branch"
 alias gbd="git branch -D"
 
 alias gl="git log-pretty"
-alias gll="gl -15"
-alias glg="git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
-alias gla="gl --all"
 alias gpr="git pull --rebase"
 
 alias gp="git push"
@@ -55,7 +52,6 @@ alias rails="bundle exec rails"
 alias rake="bundle exec rake"
 alias be="bundle exec"
 alias rdm="bundle exec rake db:migrate"
-alias rg="bundle exec rails generate"
 alias rdmr="bundle exec rake db:migrate:reset"
 alias rdtp="bundle exec rake db:test:prepare"
 
@@ -71,20 +67,14 @@ alias hgen='ngen -d ~/.dotfiles/ngen -t hybrid'
 
 # Node
 alias t="npm test"
-alias cov="npm run-script coverage"
 alias node='node --harmony'
 
 # Vim
 alias vi="vim"
-alias iv="vim"
 
 # Titanium
 alias tios='titanium build --platform ios --device-family iphone'
 alias tipad='titanium build --platform ios --device-family ipad'
-alias tic='titanium clean'
-
-# Corona SDK
-alias corona="/Applications/CoronaSDK/Corona\ Terminal; exit;"
 
 # tmux
 alias cmux="tmux new -n mux -s "
