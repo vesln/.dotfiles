@@ -1,11 +1,10 @@
 # ls
+
 alias ls="ls -G"
 alias l="ls -lahF"
 
 # Git
-alias g="git"
 
-alias gb="git branch"
 alias gbd="git branch -D"
 
 alias gl="git log-pretty"
@@ -28,9 +27,6 @@ alias grc="git rebase --continue"
 
 alias grs="git reset HEAD\^ --soft"
 
-alias gcf="git clean -f"
-alias gcd="git clean -d"
-
 alias gsh="git stash"
 alias gshp="git stash pop"
 
@@ -48,6 +44,7 @@ alias gm='git merge --no-ff'
 alias gmf='git merge --ff-only'
 
 # Ruby / Rails
+
 alias rails="bundle exec rails"
 alias rake="bundle exec rake"
 alias be="bundle exec"
@@ -61,24 +58,24 @@ alias spec="be rspec spec/ --drb"
 alias spr="be spork rspec"
 alias spc="be spork cucumber"
 
-# Ngen
-alias gen='ngen -d ~/.dotfiles/ngen'
-alias hgen='ngen -d ~/.dotfiles/ngen -t hybrid'
-
 # Node
-alias t="npm test"
+
 alias node='node --harmony'
 
 # Vim
+
 alias vi="vim"
 
 # Titanium
+
 alias tios='titanium build --platform ios --device-family iphone'
 alias tipad='titanium build --platform ios --device-family ipad'
 
 # tmux
+
 alias cmux="tmux new -n mux -s "
 alias kmux="tmux kill-session"
 
 # node-webkit
+
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
