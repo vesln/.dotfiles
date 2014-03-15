@@ -1,5 +1,9 @@
-" OS
-let os = substitute(system('uname'), "\n", "", "")
+" Disabled plugins
+let g:pathogen_disabled = []
+
+if $IGNORECMDT == '1'
+  call add(g:pathogen_disabled, 'command-t')
+endif
 
 " Pathogen
 filetype off
