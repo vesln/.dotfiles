@@ -8,5 +8,3 @@
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
