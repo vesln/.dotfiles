@@ -1,5 +1,5 @@
 # Editor
-export EDITOR="mvim -v"
+export EDITOR="/usr/local/bin/vim"
 
 # Cucumber format
 export CUCUMBER_FORMAT="progress"
