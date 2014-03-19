@@ -45,8 +45,6 @@ alias gmf='git merge --ff-only'
 
 # Ruby / Rails
 
-alias rails="bundle exec rails"
-alias rake="bundle exec rake"
 alias be="bundle exec"
 alias rdm="bundle exec rake db:migrate"
 alias rdmr="bundle exec rake db:migrate:reset"
