@@ -40,8 +40,9 @@ alias gmf='git merge --ff-only'
 # Ruby / Rails
 
 alias be="bundle exec"
-alias rdm="bin/rake db:migrate"
-alias rdtp="bin/rake db:test:prepare"
+alias rdm="rake db:migrate"
+alias rdmr="rake db:migrate:reset"
+alias rdtp="rake db:test:prepare"
 
 alias cuke="be cucumber --drb"
 alias spec="be rspec spec/ --drb"
