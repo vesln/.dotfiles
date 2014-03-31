@@ -71,8 +71,8 @@ let s:modes.cucumber.all = '"bundle exec cucumber --drb"'
 
 let s:modes.rspec = {}
 let s:modes.rspec.matcher = '_spec\.rb$'
-let s:modes.rspec.file = '"bundle exec rspec --format nested " . expand("%") . " --drb"'
-let s:modes.rspec.line = '"bundle exec rspec --format nested " . expand("%") . " --line " . line(".") . " --drb"'
+let s:modes.rspec.file = '"bundle exec rspec --format documentation " . expand("%") . " --drb"'
+let s:modes.rspec.line = '"bundle exec rspec --format documentation " . expand("%") . " --line " . line(".") . " --drb"'
 let s:modes.rspec.all = '"bundle exec rspec . --drb"'
 
 let s:modes.hydro = {}
