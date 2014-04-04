@@ -1,8 +1,0 @@
-test
-examples
-coverage
-*.sock
-.jshintignore
-.jshintrc
-.travis.yml
-CHANGELOG.md
