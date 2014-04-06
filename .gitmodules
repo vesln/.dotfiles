@@ -76,3 +76,6 @@
 [submodule "vim/bundle/simple-bookmarks"]
 	path = vim/bundle/simple-bookmarks
 	url = git@github.com:AndrewRadev/simple_bookmarks.vim.git
+[submodule "vim/bundle/splitjoin"]
+	path = vim/bundle/splitjoin
+	url = git@github.com:AndrewRadev/splitjoin.vim.git

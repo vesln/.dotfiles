@@ -69,3 +69,7 @@ vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 " Prev/next tab
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
+
+" SplitJoin
+nmap + :SplitjoinSplit<CR>
+nmap - :SplitjoinJoin<CR>
