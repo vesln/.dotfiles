@@ -1,32 +1,32 @@
 [user]
-name = Veselin Todorov
-email = veselin@veselin.bg
+    name = Veselin Todorov
+    email = veselin@veselin.bg
 [github]
-user = vesln
+    user = vesln
 [alias]
-pr = "!f() { git fetch origin refs/pull/$1/head:pr/$1; } ; f"
-unstage = reset HEAD
+    pr = "!f() { git fetch origin refs/pull/$1/head:pr/$1; } ; f"
+    unstage = reset HEAD
 [apply]
-whitespace = warn
+    whitespace = warn
 [color]
-diff = auto
-status = auto
-branch = auto
-ui = true
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
 [help]
-autocorrect = 1
+    autocorrect = 1
 [status]
-submodule = 1
+    submodule = 1
 [merge]
-tool = vimdiff
-log = true
-prompt = false
+    tool = vimdiff
+    log = true
+    prompt = false
 [difftool]
-prompt = false
+    prompt = false
 [push]
-default = tracking
+    default = tracking
 [core]
-excludesfile = /Users/vesln/.gitignore_global
-trustctime = false
+    excludesfile = /Users/vesln/.gitignore_global
+    trustctime = false
 [branch]
-autosetuprebase = always
+    autosetuprebase = always
