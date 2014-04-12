@@ -63,3 +63,6 @@ alias kmux="tmux kill-session"
 
 # node-webkit
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
+
+# Python
+alias pyclean="find . -name '*.pyc' -delete"
