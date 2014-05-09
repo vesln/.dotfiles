@@ -83,9 +83,9 @@ let s:modes.hydro.all = '"NODE_ENV=test ./node_modules/.bin/hydro --harmony"'
 
 let s:modes.python = {}
 let s:modes.python.matcher = 'test_.*\.py$'
-let s:modes.python.file = '"nosetests -s " . expand("%") . ""'
+let s:modes.python.file = '"nosetests --rednose -s " . expand("%") . ""'
 let s:modes.python.line = s:modes.python.file
-let s:modes.python.all = '"nosetests -s tests/"'
+let s:modes.python.all = '"nosetests --rednose -s tests/"'
 
 function! s:run(type)
   let commands = {}
