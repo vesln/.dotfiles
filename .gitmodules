@@ -49,9 +49,6 @@
 [submodule "vim/bundle/vim-gitignore"]
 	path = vim/bundle/vim-gitignore
 	url = https://github.com/vitaly/vim-gitignore.git
-[submodule "vim/bundle/matchit"]
-	path = vim/bundle/matchit
-	url = https://github.com/tsaleh/vim-matchit
 [submodule "vim/bundle/supertab"]
 	path = vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
