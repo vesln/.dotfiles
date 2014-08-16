@@ -8,3 +8,4 @@
 . ~/.zsh/tmux/completion.zsh
 
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+eval "$(rbenv init -)"
