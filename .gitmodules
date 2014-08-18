@@ -79,3 +79,6 @@
 [submodule "vim/bundle/matchit"]
 	path = vim/bundle/matchit
 	url = git@github.com:tmhedberg/matchit.git
+[submodule "vim/bundle/zoomwin"]
+	path = vim/bundle/zoomwin
+	url = git@github.com:taylor/vim-zoomwin.git
