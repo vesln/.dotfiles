@@ -82,3 +82,6 @@
 [submodule "vim/bundle/zoomwin"]
 	path = vim/bundle/zoomwin
 	url = git@github.com:taylor/vim-zoomwin.git
+[submodule "vim/bundle/dockerfile"]
+	path = vim/bundle/dockerfile
+	url = git@github.com:ekalinin/Dockerfile.vim.git
