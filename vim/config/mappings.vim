@@ -60,6 +60,9 @@ vnoremap <Leader>ae :Tabularize /=<CR>
 " Command-T clear cache
 nnoremap <Leader>q :CommandTFlush<CR>
 
+" Toggle NERDTree
+nnoremap <Leader>n :NERDTreeToggle<CR>
+
 " Toggle comment
 map <Leader><Leader> <plug>NERDCommenterToggle<CR>
 
