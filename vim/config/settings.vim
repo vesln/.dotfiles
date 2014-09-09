@@ -153,3 +153,9 @@ let g:jellybeans_background_color_256=16
 
 " Colors
 colors jellybeans
+
+" Active window size
+set winwidth=79
+
+" Min window size
+set winminwidth=24
