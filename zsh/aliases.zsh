@@ -66,3 +66,6 @@ alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 # Python
 alias pyclean="find . -name '*.pyc' -delete"
+
+# What is my IP address
+alias myip="curl ipecho.net/plain ; echo"
