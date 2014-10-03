@@ -69,3 +69,6 @@ alias pyclean="find . -name '*.pyc' -delete"
 
 # What is my IP address
 alias myip="curl ipecho.net/plain ; echo"
+
+# Generate a random password
+alias randpass="ruby -e \"require 'securerandom'; puts SecureRandom.base64(rand(30..50))\""
