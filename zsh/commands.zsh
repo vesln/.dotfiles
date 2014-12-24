@@ -20,7 +20,9 @@ t() {
     rake
   elif [ -f package.json ]; then
     npm test
+  elif [ -f Makefile ]; then
+    make test
   else
-    echo "\e[01;31mMissing package.json and Gemfile\e[0m" 1>&2;
+    echo "\e[01;31mMissing package.json, Gemfile and Makfile\e[0m" 1>&2;
   fi
 }
