@@ -17,6 +17,7 @@ alias gaa="git add -A"
 
 alias gc="git commit -v"
 alias gcm="git commit -m"
+alias gca="git commit -v --amend"
 
 alias gr="git rebase"
 alias gra="git rebase --abort"
