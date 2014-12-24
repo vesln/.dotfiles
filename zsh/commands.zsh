@@ -16,9 +16,8 @@ pyenv-enable() {
 
 # Run tests
 t() {
-  # Gemfile is with higher priority
   if [ -f Gemfile ]; then
-    spec
+    rake
   elif [ -f package.json ]; then
     npm test
   else
