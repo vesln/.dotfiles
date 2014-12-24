@@ -10,5 +10,7 @@
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 eval "$(rbenv init -)"
 
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
