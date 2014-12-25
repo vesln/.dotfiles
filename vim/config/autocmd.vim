@@ -33,3 +33,6 @@ au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
 
 " Enable spell checking when writing a note
 au FileType notes setlocal spell
+
+" RSpec syntax
+autocmd BufNewFile,BufRead *_spec.rb set syntax=rspec
