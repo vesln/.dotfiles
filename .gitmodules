@@ -85,3 +85,6 @@
 [submodule "vim/bundle/dockerfile"]
 	path = vim/bundle/dockerfile
 	url = git@github.com:ekalinin/Dockerfile.vim.git
+[submodule "vim/bundle/rspec.vim"]
+	path = vim/bundle/rspec.vim
+	url = git@github.com:Keithbsmiley/rspec.vim.git
