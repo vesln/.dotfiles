@@ -19,11 +19,6 @@ runtime config/commands.vim
 runtime config/autocmd.vim
 runtime config/mappings.vim
 
-" GUI stuff
-if has('gui_running')
-  runtime config/gui.vim
-endif
-
 " Load local vimrc if any
 if filereadable(fnamemodify('~/.vimrc.local', ':p'))
   source ~/.vimrc.local
