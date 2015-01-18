@@ -1,7 +1,5 @@
 " Promote to RSpec let
 function! PromoteToLet()
-  :normal! dd
-  :normal! P
-  :.s/\(\w\+\) = \(.*\)$/let(:\1) { \2 }/
-  :normal ==
+  s/\v(\w+)\s+\=\s+(.*)$/let(:\1) { \2 }/
+  normal ==
 endfunction
