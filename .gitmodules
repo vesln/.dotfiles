@@ -88,3 +88,6 @@
 [submodule "vim/bundle/rspec.vim"]
 	path = vim/bundle/rspec.vim
 	url = git@github.com:Keithbsmiley/rspec.vim.git
+[submodule "vim/bundle/switch.vim"]
+	path = vim/bundle/switch.vim
+	url = git@github.com:AndrewRadev/switch.vim.git

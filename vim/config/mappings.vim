@@ -74,5 +74,5 @@ nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 
 " SplitJoin
-nmap + :SplitjoinSplit<CR>
-nmap - :SplitjoinJoin<CR>
+nmap <Leader>+ :SplitjoinSplit<CR>
+nmap <Leader>- :SplitjoinJoin<CR>
