@@ -39,6 +39,7 @@ alias gmf='git merge --ff-only'
 alias be="bundle exec"
 alias rdm="rake db:migrate"
 alias rdmr="rake db:migrate:reset"
+alias rdmrs="rake db:migrate:reset db:seed"
 alias rdtp="rake db:test:prepare"
 
 alias cuke="be cucumber --drb"
