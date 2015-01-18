@@ -17,7 +17,7 @@ pyenv-enable() {
 # Run tests
 t() {
   if [ -f Gemfile ]; then
-    rake
+    bundle exec rake
   elif [ -f package.json ]; then
     npm test
   elif [ -f Makefile ]; then
