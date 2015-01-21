@@ -70,18 +70,12 @@
 [submodule "vim/bundle/vim-misc"]
 	path = vim/bundle/vim-misc
 	url = git@github.com:xolox/vim-misc.git
-[submodule "vim/bundle/simple-bookmarks"]
-	path = vim/bundle/simple-bookmarks
-	url = git@github.com:AndrewRadev/simple_bookmarks.vim.git
 [submodule "vim/bundle/splitjoin"]
 	path = vim/bundle/splitjoin
 	url = git@github.com:AndrewRadev/splitjoin.vim.git
 [submodule "vim/bundle/matchit"]
 	path = vim/bundle/matchit
 	url = git@github.com:tmhedberg/matchit.git
-[submodule "vim/bundle/zoomwin"]
-	path = vim/bundle/zoomwin
-	url = git@github.com:taylor/vim-zoomwin.git
 [submodule "vim/bundle/dockerfile"]
 	path = vim/bundle/dockerfile
 	url = git@github.com:ekalinin/Dockerfile.vim.git
