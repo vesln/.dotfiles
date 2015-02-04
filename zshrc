@@ -7,8 +7,8 @@
 . ~/.zsh/vendor.zsh
 . ~/.zsh/tmux/completion.zsh
 
+# Local .zshrc
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
-eval "$(rbenv init -)"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# rbenv
+eval "$(rbenv init -)"

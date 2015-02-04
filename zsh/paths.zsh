@@ -1,1 +1,17 @@
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/.bin:/usr/local/go/bin:~/.eb/api/bin:~/.eb/eb/macosx/python2.7
+# Core
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+
+# Local bin
+export PATH=$HOME/.bin/:$PATH
+
+# Go
+export PATH=/usr/local/go/bin:$PATH
+
+# ElasticBeanstalk
+export PATH=$HOME/.eb/eb/macosx/python2.7:$HOME/.eb/api/bin:$PATH
+
+# Cabal
+export PATH=$HOME/.cabal/bin:$PATH
+
+# Heroku
+export PATH=/usr/local/heroku/bin:$PATH
