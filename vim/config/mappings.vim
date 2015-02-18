@@ -76,3 +76,6 @@ nnoremap <C-l> :tabnext<CR>
 " SplitJoin
 nmap <Leader>+ :SplitjoinSplit<CR>
 nmap <Leader>- :SplitjoinJoin<CR>
+
+" To Underscore
+noremap <C-_> :call ToUnderscore()<CR>
