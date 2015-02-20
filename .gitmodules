@@ -82,3 +82,6 @@
 [submodule "vim/bundle/switch.vim"]
 	path = vim/bundle/switch.vim
 	url = git@github.com:AndrewRadev/switch.vim.git
+[submodule "vim/bundle/gitignore"]
+	path = vim/bundle/gitignore
+	url = git@github.com:vim-scripts/gitignore.git
