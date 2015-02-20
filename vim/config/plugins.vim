@@ -11,8 +11,8 @@ let g:AutoPairs = {}
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
-" Command-T show dot files
-let g:CommandTAlwaysShowDotFiles = 1
+ let g:CommandTWildIgnore=&wildignore . ",**/node_modules/*,**/vendor/*"
+ let g:CommandTFileScanner="find"
 
 " Command-T settings for iTerm
 if &term =~ "xterm" || &term =~ "screen"
