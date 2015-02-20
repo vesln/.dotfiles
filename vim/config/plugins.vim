@@ -11,7 +11,7 @@ let g:AutoPairs = {}
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
- let g:CommandTWildIgnore=&wildignore . ",**/node_modules/*,**/vendor/*"
+ let g:CommandTWildIgnore=&wildignore . ",**/node_modules/*,**/vendor/*,**/tmp/*"
  let g:CommandTFileScanner="find"
 
 " Command-T settings for iTerm
