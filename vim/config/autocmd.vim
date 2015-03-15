@@ -36,3 +36,6 @@ au FileType notes setlocal spell
 
 " RSpec syntax
 autocmd BufNewFile,BufRead *_spec.rb set syntax=rspec
+
+" HAMLc
+autocmd BufRead,BufNewFile *.hamlc set ft=haml
