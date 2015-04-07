@@ -75,6 +75,12 @@ let s:modes.rspec.file = '"bundle exec rspec --format documentation " . expand("
 let s:modes.rspec.line = '"bundle exec rspec --format documentation " . expand("%") . ":" . line(".") . " --drb"'
 let s:modes.rspec.all = '"bundle exec rspec . --drb"'
 
+let s:modes.jest = {}
+let s:modes.jest.matcher = '-test\.js$'
+let s:modes.jest.file = '"NODE_ENV=test ./node_modules/.bin/jest " . expand("%") . ""'
+let s:modes.jest.line = '"NODE_ENV=test ./node_modules/.bin/jest " . expand("%") . ""'
+let s:modes.jest.all = '"NODE_ENV=test ./node_modules/.bin/jest"'
+
 let s:modes.hydro = {}
 let s:modes.hydro.matcher = '^test\/.*\.js$'
 let s:modes.hydro.file = '"NODE_ENV=test ./node_modules/.bin/hydro --harmony " . expand("%") . ""'
