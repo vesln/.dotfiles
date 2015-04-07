@@ -14,6 +14,11 @@ pyenv-enable() {
   eval "$(pyenv virtualenv-init -)"
 }
 
+# Open a document with Marked
+marked() {
+  open -a Marked\ 2.app $*
+}
+
 # Run tests
 t() {
   if [ -f Gemfile ]; then
