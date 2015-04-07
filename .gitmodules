@@ -94,3 +94,6 @@
 [submodule "vim/bundle/jsx"]
 	path = vim/bundle/jsx
 	url = git@github.com:mxw/vim-jsx.git
+[submodule "vim/bundle/abolish"]
+	path = vim/bundle/abolish
+	url = git@github.com:tpope/vim-abolish.git
