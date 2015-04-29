@@ -37,16 +37,16 @@ alias gmf='git merge --ff-only'
 
 # Ruby / Rails
 alias be="bundle exec"
-alias rdm="rake db:migrate"
-alias rdmr="rake db:migrate:reset"
-alias rdmrs="rake db:migrate:reset db:seed"
-alias rdtp="rake db:test:prepare"
+alias rdm="bundle exec rake db:migrate"
+alias rdmr="bundle exec rake db:migrate:reset"
+alias rdmrs="bundle exec rake db:migrate:reset db:seed"
+alias rdtp="bundle exec rake db:test:prepare"
 
-alias cuke="be cucumber --drb"
-alias spec="be rspec spec/ --drb"
+alias cuke="bundle exec cucumber --drb"
+alias spec="bundle exec rspec spec/ --drb"
 
-alias spr="be spork rspec"
-alias spc="be spork cucumber"
+alias spr="bundle exec spork rspec"
+alias spc="bundle exec spork cucumber"
 
 # Node
 alias node='node --harmony'
