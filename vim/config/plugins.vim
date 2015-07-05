@@ -26,3 +26,6 @@ let g:CommandTMinHeight = 7
 
 " Switch vim default mapping
 let g:switch_mapping = "-"
+
+" Use ag instead of ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
