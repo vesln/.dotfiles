@@ -12,7 +12,7 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
  let g:CommandTWildIgnore=&wildignore . ",**/node_modules/*,**/vendor/*,**/tmp/*"
- let g:CommandTFileScanner="find"
+ let g:CommandTFileScanner="git"
 
 " Command-T settings for iTerm
 if &term =~ "xterm" || &term =~ "screen"
