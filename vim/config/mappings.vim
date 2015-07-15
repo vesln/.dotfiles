@@ -79,3 +79,6 @@ nmap <Leader>- :SplitjoinJoin<CR>
 
 " To Underscore
 noremap <C-_> :call ToUnderscore()<CR>
+
+" Insert React display name
+inoremap <C-d> <C-R>=ReactDisplayName()<CR>
