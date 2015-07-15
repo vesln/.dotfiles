@@ -81,11 +81,17 @@ let s:modes.jest.file = '"NODE_ENV=test ./node_modules/.bin/jest " . expand("%")
 let s:modes.jest.line = '"NODE_ENV=test ./node_modules/.bin/jest " . expand("%") . ""'
 let s:modes.jest.all = '"NODE_ENV=test ./node_modules/.bin/jest"'
 
-let s:modes.hydro = {}
-let s:modes.hydro.matcher = '^test\/.*\.js$'
-let s:modes.hydro.file = '"NODE_ENV=test ./node_modules/.bin/hydro --harmony " . expand("%") . ""'
-let s:modes.hydro.line = '"NODE_ENV=test ./node_modules/.bin/hydro --harmony " . expand("%") . ""'
-let s:modes.hydro.all = '"NODE_ENV=test ./node_modules/.bin/hydro --harmony"'
+let s:modes.mochaRails = {}
+let s:modes.mochaRails.matcher = '^spec\/javascripts\/.*\.js$'
+let s:modes.mochaRails.file = '"./node_modules/.bin/mocha --opts ./spec/javascripts/mocha.opts " . expand("%") . ""'
+let s:modes.mochaRails.line = '"./node_modules/.bin/mocha --opts ./spec/javascripts/mocha.opts " . expand("%") . ""'
+let s:modes.mochaRails.all = '"npm test"'
+
+let s:modes.mocha = {}
+let s:modes.mocha.matcher = '^test\/.*\.js$'
+let s:modes.mocha.file = '"NODE_ENV=test ./node_modules/.bin/mocha " . expand("%") . ""'
+let s:modes.mocha.line = '"NODE_ENV=test ./node_modules/.bin/mocha " . expand("%") . ""'
+let s:modes.mocha.all = '"NODE_ENV=test ./node_modules/.bin/mocha "'
 
 let s:modes.python = {}
 let s:modes.python.matcher = 'test_.*\.py$'
