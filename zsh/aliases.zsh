@@ -27,6 +27,7 @@ alias gdc="git diff --cached"
 
 alias gst="git status --short"
 alias gco="git checkout"
+alias gcot="git checkout -t"
 
 alias gsf="git submodule foreach git pull origin master"
 
@@ -40,13 +41,6 @@ alias be="bundle exec"
 alias rdm="bundle exec rake db:migrate"
 alias rdmr="bundle exec rake db:migrate:reset"
 alias rdmrs="bundle exec rake db:migrate:reset db:seed"
-alias rdtp="bundle exec rake db:test:prepare"
-
-alias cuke="bundle exec cucumber --drb"
-alias spec="bundle exec rspec spec/ --drb"
-
-alias spr="bundle exec spork rspec"
-alias spc="bundle exec spork cucumber"
 
 # Node
 alias node='node --harmony'
