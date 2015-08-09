@@ -5,7 +5,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X1
 export PATH=$HOME/.bin/:$PATH
 
 # Go
-export PATH=/usr/local/go/bin:$PATH
+export PATH=$HOME/.go/bin:$PATH
 
 # ElasticBeanstalk
 export PATH=$HOME/.eb/eb/macosx/python2.7:$HOME/.eb/api/bin:$PATH
