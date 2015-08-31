@@ -97,3 +97,6 @@
 [submodule "vim/bundle/github-colorscheme"]
 	path = vim/bundle/github-colorscheme
 	url = git@github.com:endel/vim-github-colorscheme.git
+[submodule "vim/bundle/taboo"]
+	path = vim/bundle/taboo
+	url = git@github.com:gcmt/taboo.vim.git
