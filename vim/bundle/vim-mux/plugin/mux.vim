@@ -65,15 +65,15 @@ let s:modes = {}
 
 let s:modes.cucumber = {}
 let s:modes.cucumber.matcher = '^features\/.*\.feature$'
-let s:modes.cucumber.file = '"bundle exec cucumber " . expand("%") . " --drb"'
-let s:modes.cucumber.line = '"bundle exec cucumber " . expand("%") . ":" . line(".") . " --drb"'
-let s:modes.cucumber.all = '"bundle exec cucumber --drb"'
+let s:modes.cucumber.file = '"bundle exec cucumber " . expand("%")'
+let s:modes.cucumber.line = '"bundle exec cucumber " . expand("%") . ":" . line(".")'
+let s:modes.cucumber.all = '"bundle exec cucumber"'
 
 let s:modes.rspec = {}
 let s:modes.rspec.matcher = '_spec\.rb$'
-let s:modes.rspec.file = '"bundle exec rspec --format documentation " . expand("%") . " --drb"'
-let s:modes.rspec.line = '"bundle exec rspec --format documentation " . expand("%") . ":" . line(".") . " --drb"'
-let s:modes.rspec.all = '"bundle exec rspec . --drb"'
+let s:modes.rspec.file = '"bundle exec rspec --format documentation " . expand("%")'
+let s:modes.rspec.line = '"bundle exec rspec --format documentation " . expand("%") . ":" . line(".")'
+let s:modes.rspec.all = '"bundle exec rspec ."'
 
 let s:modes.jest = {}
 let s:modes.jest.matcher = '-test\.js$'
