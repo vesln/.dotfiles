@@ -1,5 +1,5 @@
 " Strip whitespace on save
-au FileType * autocmd BufWritePre <buffer> :%s/\s\+$//e
+au FileType * autocmd BufWritePre <buffer> if index(['sql'], &ft) < 0 | :%s/\s\+$//e
 
 " Jump to last cursor position unless it's invalid or in an event handler
 au BufReadPost *
