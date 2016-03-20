@@ -1,5 +1,6 @@
 vim/spell/
 vim/bundle/private/
+tmux/plugins/
 
 doc/tags
 doc/tags-ja
