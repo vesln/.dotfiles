@@ -15,3 +15,5 @@ export PATH=$HOME/.cabal/bin:$PATH
 
 # Heroku
 export PATH=/usr/local/heroku/bin:$PATH
+
+export PATH="$PATH:./node_modules/.bin"

@@ -31,11 +31,3 @@ t() {
     echo "\e[01;31mMissing package.json, Gemfile and Makfile\e[0m" 1>&2;
   fi
 }
-
-# Update a rails project
-rails-update() {
-  git checkout master
-  git fetch
-  bundle install
-  bundle exec rake db:migrate
-}

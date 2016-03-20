@@ -1,5 +1,5 @@
 # Editor
-export EDITOR="vim"
+export EDITOR="nvim"
 
 # Beanstalk
 export AWS_CREDENTIAL_FILE=~/.eb_aws_cred

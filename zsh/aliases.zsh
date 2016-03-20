@@ -42,11 +42,9 @@ alias rdm="bundle exec rake db:migrate"
 alias rdmr="bundle exec rake db:migrate:reset"
 alias rdmrs="bundle exec rake db:migrate:reset db:seed"
 
-# Node
-alias node='node --harmony'
-
 # Vim
-alias vi="vim"
+alias vi="nvim"
+alias vim="nvim"
 
 # Titanium
 alias tios='titanium build --platform ios --device-family iphone'
@@ -54,10 +52,6 @@ alias tipad='titanium build --platform ios --device-family ipad'
 
 # tmux
 alias cmux="tmux new -n mux -s "
-alias kmux="tmux kill-session"
-
-# node-webkit
-alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 # Python
 alias pyclean="find . -name '*.pyc' -delete"
@@ -67,3 +61,9 @@ alias myip="curl ipecho.net/plain ; echo"
 
 # Generate a random password
 alias randpass="ruby -e \"require 'securerandom'; puts SecureRandom.base64(rand(30..50))\""
+
+# Desk
+alias d.="desk ."
+
+# Docker
+alias compose='eval $(docker-machine env); docker-compose'

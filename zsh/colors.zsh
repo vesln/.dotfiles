@@ -2,11 +2,12 @@ R=$fg[red]
 G=$fg[green]
 M=$fg[magenta]
 RB=$fg_bold[red]
+GB=$fg_bold[green]
 YB=$fg_bold[yellow]
 BB=$fg_bold[blue]
 RESET=$reset_color
 
-PROMPTCOLOR="" PREFIX="---";
+PROMPTCOLOR="" PREFIX="--- ";
 
 local return_code="%(?..%{$R%}%? ↵%{$RESET%})"
 
@@ -22,22 +23,17 @@ function git_prompt() {
     STATUS="#$STATUS"
   fi
 
-  if [ -n "$(git ls-files --others --exclude-standard)" ]; then
-    STATUS="$GIT_PROMPT_UNTRACKED$STATUS"
-  fi
-
-  if $(echo -n "$STATUS" | grep '.*' &> /dev/null); then
+  if $(echo -n "$STATUS" | ag '.*' &> /dev/null); then
     STATUS=" $STATUS"
   fi
 
   echo "$GIT_PROMPT_PREFIX${ref#refs/heads/}$STATUS$GIT_PROMPT_SUFFIX"
 }
 
-GIT_PROMPT_PREFIX="%{$YB%}‹"
-GIT_PROMPT_SUFFIX="%{$YB%}›%{$RESET%} "
+GIT_PROMPT_PREFIX="%{$YB%}<"
+GIT_PROMPT_SUFFIX="%{$RESET%}%{$YB%}>%{$RESET%} "
 GIT_PROMPT_DIRTY="%{$R%}*"
 GIT_PROMPT_STAGED="%{$G%}+"
-GIT_PROMPT_UNTRACKED="%{$R%}?"
 
 PROMPT='$PREFIX %2~ $(git_prompt)'
 RPS1="${return_code}"
