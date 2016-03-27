@@ -7,7 +7,7 @@ YB=$fg_bold[yellow]
 BB=$fg_bold[blue]
 RESET=$reset_color
 
-PROMPTCOLOR="" PREFIX="--- ";
+PROMPTCOLOR="" PREFIX="    %{$BB%}λ%{$RESET%}";
 
 local return_code="%(?..%{$R%}%? ↵%{$RESET%})"
 
@@ -30,8 +30,8 @@ function git_prompt() {
   echo "$GIT_PROMPT_PREFIX${ref#refs/heads/}$STATUS$GIT_PROMPT_SUFFIX"
 }
 
-GIT_PROMPT_PREFIX="%{$YB%}<"
-GIT_PROMPT_SUFFIX="%{$RESET%}%{$YB%}>%{$RESET%} "
+GIT_PROMPT_PREFIX="%{$BB%}<"
+GIT_PROMPT_SUFFIX="%{$RESET%}%{$BB%}>%{$RESET%} "
 GIT_PROMPT_DIRTY="%{$R%}*"
 GIT_PROMPT_STAGED="%{$G%}+"
 
