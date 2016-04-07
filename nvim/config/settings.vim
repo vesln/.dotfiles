@@ -97,7 +97,7 @@ set wildignore+=*.swp,*~,._*
 set wildignore+=*.jpg,*.jpeg,*.png,*.gif,*.bmp
 
 " Set ignorecase in searches
-"set ignorecase
+set ignorecase
 
 " Set smartcase
 set smartcase
@@ -106,7 +106,7 @@ set smartcase
 set nobackup nowritebackup noswapfile
 
 " Complete options
-set complete=.,w,b,k
+set complete=.,w,b
 set completeopt=menuone,longest
 set formatoptions=croqn
 
@@ -145,7 +145,7 @@ set undodir=~/.vimundo
 set undofile
 
 " Colors
-if !empty($VIM_LIGHT)
+if !empty($LIGHT_THEME)
   set background=light
   colorscheme solarized
 else
