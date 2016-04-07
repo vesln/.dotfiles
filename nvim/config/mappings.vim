@@ -98,3 +98,5 @@ xmap b  <Plug>(smartword-b)
 xmap e  <Plug>(smartword-e)
 " Toggle spell
 nnoremap <Leader>p :set spell!<CR>
+" Dash
+nmap <silent> <leader>q <Plug>DashSearch
