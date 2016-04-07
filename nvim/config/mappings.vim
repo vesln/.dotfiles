@@ -96,7 +96,10 @@ nmap ge  <Plug>(smartword-ge)
 xmap w  <Plug>(smartword-w)
 xmap b  <Plug>(smartword-b)
 xmap e  <Plug>(smartword-e)
+" Rename tab
+nnoremap <f1> :TabooRename<space>
 " Toggle spell
 nnoremap <Leader>p :set spell!<CR>
+
 " Dash
 nmap <silent> <leader>q <Plug>DashSearch
