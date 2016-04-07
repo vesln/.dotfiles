@@ -64,7 +64,7 @@ tnoremap <Esc> <C-\><C-n>
 nnoremap <C-W>l :vertical resize 120<CR>
 
 " Easy visual selection
-nnoremap vv _vg_
+nnoremap vv <S-v>
 
 " Open Google
 nmap gx <Plug>(openbrowser-smart-search)
