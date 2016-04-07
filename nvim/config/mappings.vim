@@ -75,12 +75,6 @@ nnoremap <leader>g :GitGutterToggle<CR>
 inoremap <C-p> <Esc>pa
 cnoremap <C-p> <C-r>"
 
-" Enable anzu
-nmap n <Plug>(anzu-n-with-echo)
-nmap N <Plug>(anzu-N-with-echo)
-nmap * <Plug>(anzu-star-with-echo)
-nmap # <Plug>(anzu-sharp-with-echo)
-
 " Open Ag search
 nnoremap <Leader>a :Ag<space>
 
