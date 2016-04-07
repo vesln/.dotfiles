@@ -89,17 +89,20 @@ nnoremap <Leader>s :OpenBrowserSmartSearch<space>
 
 " Open GitX
 nnoremap <Leader>e :Gitx<CR>
-" Smartword
-nmap w  <Plug>(smartword-w)
-nmap b  <Plug>(smartword-b)
-nmap e  <Plug>(smartword-e)
-nmap ge  <Plug>(smartword-ge)
 
-xmap w  <Plug>(smartword-w)
-xmap b  <Plug>(smartword-b)
-xmap e  <Plug>(smartword-e)
+" Smartword
+nmap w <Plug>(smartword-w)
+nmap b <Plug>(smartword-b)
+nmap e <Plug>(smartword-e)
+nmap ge <Plug>(smartword-ge)
+
+xmap w <Plug>(smartword-w)
+xmap b <Plug>(smartword-b)
+xmap e <Plug>(smartword-e)
+
 " Rename tab
 nnoremap <f1> :TabooRename<space>
+
 " Toggle spell
 nnoremap <Leader>p :set spell!<CR>
 
