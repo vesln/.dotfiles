@@ -16,3 +16,6 @@ eval "$(rbenv init --no-rehash -)"
 
 ## Hook for desk activation
 [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
+
+## zplug
+source ~/.zplug/zplug
