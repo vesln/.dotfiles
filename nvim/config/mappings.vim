@@ -23,9 +23,9 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " Rename the current file
 nnoremap <Leader>r :call RenameFile()<cr>
 
-" Faster movement
-noremap <C-j> 8j
-noremap <C-k> 8k
+" Scrolling half a page is a little bit too much for me
+noremap <C-j> 11j
+noremap <C-k> 11k
 
 " Run the current test
 nnoremap <Leader>f :TestFile<CR>
