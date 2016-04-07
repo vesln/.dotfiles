@@ -87,6 +87,8 @@ nnoremap <Leader>a :Ag<space>
 " Open Google Search
 nnoremap <Leader>s :OpenBrowserSmartSearch<space>
 
+" Open GitX
+nnoremap <Leader>e :Gitx<CR>
 " Smartword
 nmap w  <Plug>(smartword-w)
 nmap b  <Plug>(smartword-b)
