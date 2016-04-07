@@ -41,6 +41,10 @@ alias be="bundle exec"
 alias rdm="bundle exec rake db:migrate"
 alias rdmr="bundle exec rake db:migrate:reset"
 alias rdmrs="bundle exec rake db:migrate:reset db:seed"
+alias rc="bundle exec rails console"
+
+# Node.js
+alias nr="npm run"
 
 # Vim
 alias vi="nvim"
@@ -63,6 +67,7 @@ alias myip="curl ipecho.net/plain ; echo"
 alias randpass="ruby -e \"require 'securerandom'; puts SecureRandom.base64(rand(30..50))\""
 
 # Desk
+alias d="desk"
 alias d.="desk ."
 
 # Docker
