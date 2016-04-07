@@ -21,7 +21,6 @@ Plug('AndrewRadev/switch.vim')
 Plug('Chun-Yang/vim-action-ag')
 Plug('airblade/vim-gitgutter')
 Plug('benekastah/neomake')
-Plug('ctrlpvim/ctrlp.vim')
 Plug('ervandew/supertab')
 Plug('gcmt/taboo.vim')
 Plug('int3/vim-extradite')
@@ -46,5 +45,8 @@ Plug('tyru/open-browser.vim')
 Plug('vim-scripts/YankRing.vim')
 Plug('xolox/vim-misc')
 Plug('xolox/vim-notes')
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()

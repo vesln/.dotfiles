@@ -107,7 +107,8 @@ set nobackup nowritebackup noswapfile
 
 " Complete options
 set complete=.,w,b
-set completeopt=menuone,longest
+set completeopt=longest,menuone
+
 set formatoptions=croqn
 
 " Disable inserting two spaces

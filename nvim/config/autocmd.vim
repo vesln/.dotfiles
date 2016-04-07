@@ -7,6 +7,9 @@ au VimResized * :wincmd =
 " Display line numbers in the terminal window
 au TermOpen * :set number
 
+" Close fzf
+au! FileType fzf tnoremap <buffer> <ESC> <c-c>
+
 " Jump to last cursor position unless it's invalid or in an event handler
 au BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") |

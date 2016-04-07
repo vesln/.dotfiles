@@ -19,3 +19,6 @@ eval "$(rbenv init --no-rehash -)"
 
 ## zplug
 source ~/.zplug/zplug
+
+## fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -52,10 +52,9 @@ vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 
-" CtrlP
-nnoremap <silent> <Leader>y :CtrlPMRU<CR>
-nnoremap <silent> <Leader>t :CtrlP<CR>
-nnoremap <silent> <Leader>b :CtrlPBuffer<CR>
+" FZF
+nnoremap <silent> <Leader>t :FZF<CR>
+nnoremap <silent> <Leader>b :FzfBuffers<CR>
 
 " Exit terminal mode
 tnoremap <Esc> <C-\><C-n>
