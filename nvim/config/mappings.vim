@@ -96,3 +96,5 @@ nmap ge  <Plug>(smartword-ge)
 xmap w  <Plug>(smartword-w)
 xmap b  <Plug>(smartword-b)
 xmap e  <Plug>(smartword-e)
+" Toggle spell
+nnoremap <Leader>p :set spell!<CR>
