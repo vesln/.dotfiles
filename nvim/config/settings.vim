@@ -123,6 +123,9 @@ set splitright
 " Use wild menu
 set wildmenu
 
+" Add a bit extra margin to the left
+set foldcolumn=1
+
 " Extra extensions for "gf"
 set suffixesadd+=.js
 
