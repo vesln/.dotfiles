@@ -145,6 +145,9 @@ set t_Co=256
 set undodir=~/.vimundo
 set undofile
 
+" Highlight current line
+set cursorline
+
 " Colors
 if !empty($LIGHT_THEME)
   set background=light

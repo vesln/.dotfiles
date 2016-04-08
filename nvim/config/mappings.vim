@@ -33,6 +33,12 @@ nnoremap <Leader>f :TestFile<CR>
 " Run the current test line
 nnoremap <Leader>d :TestNearest<CR>
 
+" Lint
+nnoremap <Leader>l :Neomake<CR>
+
+" Open the location list
+nnoremap <Leader>o :lopen<CR>
+
 " Previous buffer
 nnoremap <silent> [b :BufSurfBack<CR>
 
@@ -47,10 +53,6 @@ map <Leader><Leader> <plug>NERDCommenterToggle<CR>
 
 " Copy
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
-
-" Prev/next tab
-nnoremap <C-h> :tabprevious<CR>
-nnoremap <C-l> :tabnext<CR>
 
 " FZF
 nnoremap <silent> <Leader>t :FZF<CR>
