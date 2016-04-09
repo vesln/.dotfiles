@@ -52,9 +52,6 @@ Plug('janko-m/vim-test')
 Plug('junegunn/fzf.vim')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-" Smarter motions
-Plug('kana/vim-smartword')
-
 " Marks management
 Plug('kshenoy/vim-signature')
 
