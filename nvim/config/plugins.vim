@@ -21,13 +21,6 @@ endfunction
 let g:test#custom_strategies = {'neovimheight': function('NeoVimHeight')}
 let g:test#strategy = 'neovimheight'
 
-" Switch mapping
-let g:switch_mapping = "<Leader>-"
-
-" GitGutter
-let g:gitgutter_enabled = 0
-let g:gitgutter_grep_command = 'grep -e'
-
 " Gist setup
 let g:gist_clip_command = 'pbcopy'
 let g:gist_open_browser_after_post = 1
@@ -36,15 +29,20 @@ let g:gist_post_private = 1
 " vim notes
 let g:notes_directories = ['~/.vimnotes']
 
-let g:neomake_warning_sign = {
-  \ 'text': 'W',
-  \ 'texthl': 'WarningMsg',
-  \ }
-
-let g:neomake_error_sign = {
-  \ 'text': 'E',
-  \ 'texthl': 'ErrorMsg',
-  \ }
-
+" Fzf prefix
 let g:fzf_command_prefix = 'Fzf'
 
+" Easy motion leader key
+let g:EasyMotion_leader_key = '<Leader>e'
+
+" Do not create default mappings
+let g:NERDCreateDefaultMappings = 0
+
+" Neomake - open the location list or the quickfix list
+let g:neomake_open_list = 1
+
+" Notes: disable smart quotes
+let g:notes_smart_quotes = 0
+
+" Signature: force remove the global marks
+let g:SignatureForceRemoveGlobal = 1
