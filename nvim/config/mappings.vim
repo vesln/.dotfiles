@@ -11,21 +11,15 @@ inoremap jk <esc>
 nnoremap Q <Nop>
 nnoremap S <Nop>
 
-" Split screens
-nnoremap gh <C-w>h
-nnoremap gj <C-w>j
-nnoremap gk <C-w>k
-nnoremap gl <C-w>l
-
 " Clear search results when hitting space
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Rename the current file
 nnoremap <Leader>r :call RenameFile()<cr>
 
-" Scrolling half a page is a little bit too much for me
-noremap <C-j> 11j
-noremap <C-k> 11k
+" The regular scroll half a page behavior does not suit me well
+noremap <C-d> 15j
+noremap <C-u> 15k
 
 " Run the current test
 nnoremap <Leader>f :TestFile<CR>
@@ -34,10 +28,8 @@ nnoremap <Leader>f :TestFile<CR>
 nnoremap <Leader>d :TestNearest<CR>
 
 " Lint
-nnoremap <Leader>l :Neomake<CR>
-
-" Open the location list
-nnoremap <Leader>o :lopen<CR>
+nnoremap <Leader>lf :Neomake<CR>
+nnoremap <Leader>ll :Neomake!<space>
 
 " Previous buffer
 nnoremap <silent> [b :BufSurfBack<CR>
@@ -61,36 +53,68 @@ nnoremap <silent> <Leader>b :FzfBuffers<CR>
 " Exit terminal mode
 tnoremap <Esc> <C-\><C-n>
 
-" Fast vertical window resize window
-nnoremap <C-W>l :vertical resize 120<CR>
-
 " Easy visual selection
 nnoremap vv <S-v>
 
 " Open Google
 nmap gx <Plug>(openbrowser-smart-search)
 vmap gx <Plug>(openbrowser-smart-search)
-nnoremap <leader>g :GitGutterToggle<CR>
 
 " Paste in insert and command modes
 inoremap <C-p> <Esc>pa
 cnoremap <C-p> <C-r>"
 
-" Open Ag search
-nnoremap <Leader>a :Ag<space>
+" Open Fzf Ag search
+nnoremap <Leader>ag :Ag<space>
+
+" Open Fzf ag search
+nnoremap <Leader>af :FzfAg<CR>
 
 " Open Google Search
 nnoremap <Leader>s :OpenBrowserSmartSearch<space>
 
 " Open GitX
-nnoremap <Leader>e :Gitx<CR>
+nnoremap <Leader>g :Gitx<CR>
 
+" Fast save
+nmap <Leader>w :w!<cr>
 
-" Rename tab
-nnoremap <f1> :TabooRename<space>
+" Create the directory containing the file in the buffer
+nmap <silent> <leader>md :!mkdir -p %:p:h<CR>
 
-" Toggle spell
-nnoremap <Leader>p :set spell!<CR>
+" Search for Git conflict
+nmap <silent> <leader>x <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 
-" Dash
-nmap <silent> <leader>q <Plug>DashSearch
+" Adjust viewports to the same size
+map <Leader>= <C-w>=
+
+" Toggle UndoTree
+nmap <Leader>u :UndotreeToggle<CR>
+
+" Paste mode
+nmap <silent> <Leader>p :set invpaste<CR>:set paste?<CR><Paste>
+
+" Tab movement
+nnoremap th :tabprev<CR>
+nnoremap tl :tabnext<CR>
+nnoremap tn :tabnew<CR>
+nnoremap tc :tabclose<CR>
+nnoremap tr :TabooRename <space>
+
+" Split screens movement
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Fix vim-signature by writing the ShaDa file
+nnoremap <silent> m<space> :call signature#mark#Purge("all") <bar> :wshada!<CR>
+nnoremap <silent> dm* :<C-U>call signature#utils#Remove(v:count) <bar> :wshada!<CR>
+nnoremap <silent> m- :<C-U>call signature#mark#Purge("line") <bar> :wshada!<CR>
+nnoremap <silent> m. :<C-U>call signature#mark#ToggleAtLine() <bar> :wshada!<CR>
+
+" Unlearn stuff
+nnoremap gh :echoerr 'Nope! Use <CTRL>-h'<CR>
+nnoremap gj :echoerr 'Nope! Use <CTRL>-j'<CR>
+nnoremap gl :echoerr 'Nope! Use <CTRL>-k'<CR>
+nnoremap gl :echoerr 'Nope! Use <CTRL>-l'<CR>
