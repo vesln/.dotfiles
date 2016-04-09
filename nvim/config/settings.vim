@@ -37,10 +37,8 @@ set autoread
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=2048
 
-" Use vim, no vi defaults
-set nocompatible
-
-" Show line numbers
+" Show relative numbers and then the actual numbers
+set relativenumber
 set number
 
 " Show line and column numbers
@@ -76,6 +74,9 @@ set shell=zsh
 " When the page starts to scroll, keep the cursor 8 lines from the top and 8
 " lines from the bottom
 set scrolloff=8
+
+" Number of lines to scroll with CTRL-U and CTRL-D commands
+set scroll=11
 
 " Show trailing spaces as dots
 set listchars+=trail:.
