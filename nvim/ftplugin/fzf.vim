@@ -1,1 +1,1 @@
-tnoremap <ESC> <c-c>
+tnoremap <buffer> <ESC> <c-c>

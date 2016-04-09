@@ -21,15 +21,13 @@ nnoremap <Leader>r :call RenameFile()<cr>
 noremap <C-d> 15j
 noremap <C-u> 15k
 
-" Run the current test
+" Tests
 nnoremap <Leader>f :TestFile<CR>
-
-" Run the current test line
 nnoremap <Leader>d :TestNearest<CR>
 
 " Lint
-nnoremap <Leader>lf :Neomake<CR>
-nnoremap <Leader>ll :Neomake!<space>
+nnoremap <Leader>e :Neomake <bar> echo 'Linting file...'<CR>
+nnoremap <Leader>q :Neomake! <bar> echo 'Linting the entire project...'<CR>
 
 " Previous buffer
 nnoremap <silent> [b :BufSurfBack<CR>

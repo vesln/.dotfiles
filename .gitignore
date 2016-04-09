@@ -3,7 +3,7 @@ vim/bundle/private/
 tmux/plugins/
 nvim/plugged/
 nvim/spell/
-nvim/local/
+nvim/config/projects/
 
 doc/tags
 doc/tags-ja

@@ -4,7 +4,4 @@ runtime config/plugins.vim
 runtime config/functions.vim
 runtime config/commands.vim
 runtime config/mappings.vim
-
-if filereadable(glob('~/.config/nvim/local/init.vim'))
-  runtime local/init.vim
-endif
+runtime config/projects.vim
