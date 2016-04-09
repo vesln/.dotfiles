@@ -1,0 +1,1 @@
+tnoremap <ESC> <c-c>
