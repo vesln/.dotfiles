@@ -103,6 +103,9 @@ set ignorecase
 " Set smartcase
 set smartcase
 
+" Case is ignored when completing file names and directories
+set wildignorecase
+
 " Disable swap files
 set nobackup nowritebackup noswapfile
 

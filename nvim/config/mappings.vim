@@ -26,8 +26,8 @@ nnoremap <Leader>f :TestFile<CR>
 nnoremap <Leader>d :TestNearest<CR>
 
 " Lint
-nnoremap <Leader>e :Neomake <bar> echo 'Linting file...'<CR>
-nnoremap <Leader>q :Neomake! <bar> echo 'Linting the entire project...'<CR>
+nnoremap <Leader>lf :Neomake <bar> echo 'Linting file...'<CR>
+nnoremap <Leader>ld :Neomake! <bar> echo 'Linting the entire project...'<CR>
 
 " Previous buffer
 nnoremap <silent> [b :BufSurfBack<CR>
@@ -77,6 +77,9 @@ nnoremap <Leader>g :Gitx<CR>
 " Fast save
 nmap <Leader>w :w!<cr>
 
+" Fast quit
+nmap <Leader>q :q<cr>
+
 " Create the directory containing the file in the buffer
 nmap <silent> <leader>md :!mkdir -p %:p:h<CR>
 
@@ -90,7 +93,7 @@ map <Leader>= <C-w>=
 nmap <Leader>u :UndotreeToggle<CR>
 
 " Paste mode
-nmap <silent> <Leader>p :set invpaste<CR>:set paste?<CR><Paste>
+nmap <silent> <Leader>p :set paste!<CR>
 
 " Tab movement
 nnoremap th :tabprev<CR>

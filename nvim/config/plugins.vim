@@ -39,7 +39,10 @@ let g:EasyMotion_leader_key = '<Leader>e'
 let g:NERDCreateDefaultMappings = 0
 
 " Neomake - open the location list or the quickfix list
-let g:neomake_open_list = 1
+let g:neomake_open_list = 2
+
+" Neomake - loclist & quickfix height
+let g:neomake_list_height = 5
 
 " Notes: disable smart quotes
 let g:notes_smart_quotes = 0
