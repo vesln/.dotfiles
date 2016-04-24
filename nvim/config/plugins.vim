@@ -33,7 +33,7 @@ let g:notes_directories = ['~/.vimnotes']
 let g:fzf_command_prefix = 'Fzf'
 
 " Easy motion leader key
-let g:EasyMotion_leader_key = '<Leader>e'
+let g:EasyMotion_leader_key = 'm'
 
 " Do not create default mappings
 let g:NERDCreateDefaultMappings = 0
@@ -47,5 +47,6 @@ let g:neomake_list_height = 5
 " Notes: disable smart quotes
 let g:notes_smart_quotes = 0
 
-" Signature: force remove the global marks
-let g:SignatureForceRemoveGlobal = 1
+let g:deoplete#enable_at_startup = 1
+
+let g:SuperTabDefaultCompletionType = "<c-n>"

@@ -44,6 +44,8 @@ map <Leader><Leader> <plug>NERDCommenterToggle<CR>
 " Copy
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 
+vmap <Leader>s :sort<CR>
+
 " FZF
 nnoremap <silent> <Leader>t :FZF<CR>
 nnoremap <silent> <Leader>b :FzfBuffers<CR>
@@ -69,10 +71,10 @@ nnoremap <Leader>ag :Ag<space>
 nnoremap <Leader>af :FzfAg<CR>
 
 " Open Google Search
-nnoremap <Leader>s :OpenBrowserSmartSearch<space>
+nnoremap <Leader>gs :OpenBrowserSmartSearch<space>
 
 " Open GitX
-nnoremap <Leader>g :Gitx<CR>
+nnoremap <Leader>gx :Gitx<CR>
 
 " Fast save
 nmap <Leader>w :w!<cr>
@@ -107,12 +109,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-" Fix vim-signature by writing the ShaDa file
-nnoremap <silent> m<space> :call signature#mark#Purge("all") <bar> :wshada!<CR>
-nnoremap <silent> dm* :<C-U>call signature#utils#Remove(v:count) <bar> :wshada!<CR>
-nnoremap <silent> m- :<C-U>call signature#mark#Purge("line") <bar> :wshada!<CR>
-nnoremap <silent> m. :<C-U>call signature#mark#ToggleAtLine() <bar> :wshada!<CR>
 
 " Unlearn stuff
 nnoremap gh :echoerr 'Nope! Use <CTRL>-h'<CR>

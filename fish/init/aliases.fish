@@ -1,6 +1,7 @@
 # ls
 alias ls="ls -G"
-alias l="ls -lahF"
+alias ll="ls -lahF"
+alias l='ls -1A'
 
 # Git
 alias gb="git branch"
@@ -27,7 +28,6 @@ alias gdc="git diff --cached"
 
 alias gst="git status --short"
 alias gco="git checkout"
-alias gcot="git checkout -t"
 
 alias gsf="git submodule foreach git pull origin master"
 
@@ -43,16 +43,9 @@ alias rdmr="bundle exec rake db:migrate:reset"
 alias rdmrs="bundle exec rake db:migrate:reset db:seed"
 alias rc="bundle exec rails console"
 
-# Node.js
-alias nr="npm run"
-
 # Vim
 alias vi="nvim"
 alias vim="nvim"
-
-# Titanium
-alias tios='titanium build --platform ios --device-family iphone'
-alias tipad='titanium build --platform ios --device-family ipad'
 
 # tmux
 alias cmux="tmux new -n mux -s "
@@ -71,4 +64,4 @@ alias d="desk"
 alias d.="desk ."
 
 # Docker
-alias compose='eval $(docker-machine env); docker-compose'
+alias compose='eval (docker-machine env); docker-compose'

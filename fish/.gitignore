@@ -1,0 +1,8 @@
+/completions/
+/fishd.*
+/fish_history
+
+/functions/bass.fish
+/functions/__bass.py
+/functions/fzf_key_bindings.fish
+/functions/fisher.fish

@@ -68,8 +68,8 @@ set listchars=""
 " Make command line two lines high
 set ch=2
 
-" Use zsh
-set shell=zsh
+" Use fish
+set shell=fish
 
 " When the page starts to scroll, keep the cursor 8 lines from the top and 8
 " lines from the bottom
@@ -146,7 +146,7 @@ set nofoldenable
 set backspace=indent,eol,start
 
 " Terminal options
-set t_Co=256
+"set t_Co=256
 
 " Undo
 set undodir=~/.vimundo
@@ -160,7 +160,8 @@ if !empty($LIGHT_THEME)
   set background=light
   colorscheme solarized
 else
-  let g:jellybeans_background_color_256=16
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  let g:jellybeans_background_color='NONE'
   set background=dark
   colorscheme jellybeans
 endif
@@ -170,3 +171,7 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
 set winwidth=79
 set winminwidth=24
+
+
+set lazyredraw
+set ttyfast

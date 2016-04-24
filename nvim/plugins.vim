@@ -1,5 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
+" Fish syntax
+Plug('dag/vim-fish')
+
 " Dockerfile syntax
 Plug('ekalinin/Dockerfile.vim')
 
@@ -24,11 +27,12 @@ Plug('tpope/vim-rails')
 " Ruby syntax
 Plug('vim-ruby/vim-ruby')
 
-" Colors: Solarized
-Plug('altercation/vim-colors-solarized')
+" jade/pug syntax
+Plug('digitaltoad/vim-pug')
 
-" Colors: jellybeans
-Plug('nanotech/jellybeans.vim')
+" Colors
+Plug('flazz/vim-colorschemes')
+Plug('felixhummel/setcolors.vim')
 
 " This plugin map gag to do Ag search.
 Plug('Chun-Yang/vim-action-ag')
@@ -51,9 +55,6 @@ Plug('janko-m/vim-test')
 " A command-line fuzzy finder
 Plug('junegunn/fzf.vim')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-
-" Marks management
-Plug('kshenoy/vim-signature')
 
 " Utility functions and commands
 Plug('l9')
@@ -93,6 +94,7 @@ Plug('tpope/vim-endwise')
 
 " Git
 Plug('tpope/vim-fugitive')
+Plug('tpope/vim-git')
 
 " Enable repeating supported plugin maps with "."
 Plug('tpope/vim-repeat')
@@ -106,13 +108,16 @@ Plug('tpope/vim-unimpaired')
 " Open URI
 Plug('tyru/open-browser.vim')
 
-" Maintains a history of previous yanks, changes and deletes
-Plug('vim-scripts/YankRing.vim')
-
 " Miscellaneous auto-load Vim scripts
 Plug('xolox/vim-misc')
 
 " Easy note taking in Vim
 Plug('xolox/vim-notes')
+
+" Easy motion
+Plug('easymotion/vim-easymotion')
+
+" Autocomplete
+Plug('Shougo/deoplete.nvim')
 
 call plug#end()
