@@ -152,6 +152,9 @@ set undofile
 " Highlight current line
 set cursorline
 
+" Minimalistic statusline
+set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+
 " Colors
 if !empty($LIGHT_THEME)
   set background=light
@@ -161,10 +164,11 @@ else
   let g:jellybeans_background_color='NONE'
   set background=dark
   colorscheme jellybeans
-endif
 
-" Status line
-set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+  hi statusline guibg=black guifg=white
+  au InsertEnter * hi StatusLine guifg=#ae81ff
+  au InsertLeave * hi StatusLine guifg=white
+endif
 
 set winwidth=79
 set winminwidth=24
