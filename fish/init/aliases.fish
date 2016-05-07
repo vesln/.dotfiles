@@ -4,11 +4,12 @@ alias ll="ls -lahF"
 alias l='ls -1A'
 
 # Git
-alias gb="git branch"
-alias gbd="git branch -D"
+set -U fish_user_abbreviations 'gbd=git branch -D'
+set -U fish_user_abbreviations 'gco=git checkout'
 
-alias gl="git log-pretty"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gpr="git pull --rebase"
+alias gb="git branch"
 
 alias gp="git push"
 alias gpu="git-push-with-tracking"
@@ -27,21 +28,15 @@ alias gd="git diff"
 alias gdc="git diff --cached"
 
 alias gst="git status --short"
-alias gco="git checkout"
-
-alias gsf="git submodule foreach git pull origin master"
-
-alias gdm="git delete-merged"
+alias gdm="git delete-merged-branches"
 
 alias gm='git merge --no-ff'
 alias gmf='git merge --ff-only'
 
 # Ruby / Rails
 alias be="bundle exec"
-alias rdm="bundle exec rake db:migrate"
-alias rdmr="bundle exec rake db:migrate:reset"
-alias rdmrs="bundle exec rake db:migrate:reset db:seed"
 alias rc="bundle exec rails console"
+alias rdm="bundle exec rake db:migrate"
 
 # Vim
 alias vi="nvim"
@@ -49,15 +44,7 @@ alias vim="nvim"
 
 # tmux
 alias cmux="tmux new -n mux -s "
-
-# Python
-alias pyclean="find . -name '*.pyc' -delete"
-
-# What is my IP address
-alias myip="curl ipecho.net/plain ; echo"
-
-# Generate a random password
-alias randpass="ruby -e \"require 'securerandom'; puts SecureRandom.base64(rand(30..50))\""
+alias mux="tmuxinator"
 
 # Desk
 alias d="desk"

@@ -2,6 +2,8 @@
 /fishd.*
 /fish_history
 
+/init/local.fish
+
 /functions/bass.fish
 /functions/__bass.py
 /functions/fzf_key_bindings.fish

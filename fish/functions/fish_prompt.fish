@@ -13,18 +13,17 @@ set __fish_git_prompt_char_stagedstate '✔'
 set __fish_git_prompt_char_untrackedfiles '…'
 
 function fish_prompt
-  set -l red (set_color -o red)
   set -l blue (set_color -o blue)
   set -l normal (set_color normal)
 
-  set -l arrow "$blue λ"
+  set -l prefix "   "
 
-  if [ $USER = 'root' ]
-    set arrow "$red# "
-  end
+  set -l arrow "$blue λ$normal"
 
-  set -l cwd $normal(basename (prompt_pwd))
+  set -l pwd (prompt_pwd)
+  set -l expr "s|/|"$blue"/"$normal"|g"
+
   set -l repo_info (__fish_git_prompt)
 
-  echo -n -s '   ' $arrow ' '$cwd $repo_info $normal ' '
+  echo -n -s $prefix $arrow ' '(echo "$pwd" | sed -e $expr) $repo_info $normal ' '
 end
