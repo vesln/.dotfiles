@@ -110,6 +110,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Supertab with ctrl-f
+inoremap <C-f> <C-n>
+
 " Unlearn stuff
 nnoremap gh :echoerr 'Nope! Use <CTRL>-h'<CR>
 nnoremap gj :echoerr 'Nope! Use <CTRL>-j'<CR>
