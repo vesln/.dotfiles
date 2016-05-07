@@ -4,8 +4,8 @@ alias ll="ls -lahF"
 alias l='ls -1A'
 
 # Git
-set -U fish_user_abbreviations 'gbd=git branch -D'
-set -U fish_user_abbreviations 'gco=git checkout'
+abbr -a gco git checkout
+abbr -a gbd git branch -D
 
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gpr="git pull --rebase"
