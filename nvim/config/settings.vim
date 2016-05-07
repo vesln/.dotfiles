@@ -145,9 +145,6 @@ set nofoldenable
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-" Terminal options
-"set t_Co=256
-
 " Undo
 set undodir=~/.vimundo
 set undofile
@@ -172,6 +169,4 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 set winwidth=79
 set winminwidth=24
 
-
 set lazyredraw
-set ttyfast
