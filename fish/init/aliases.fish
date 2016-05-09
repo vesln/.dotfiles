@@ -13,6 +13,7 @@ alias gb="git branch"
 
 alias gp="git push"
 alias gpu="git-push-with-tracking"
+alias gpf="git push --force-with-lease"
 
 alias ga="git add"
 alias gaa="git add -A"
