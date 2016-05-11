@@ -1,6 +1,8 @@
 " Switch on syntax highlighting
 syntax on
 
+set lazyredraw
+
 " Indent
 filetype indent on
 
@@ -40,9 +42,6 @@ set synmaxcol=2048
 " Show relative numbers and then the actual numbers
 set relativenumber
 set number
-
-" Show line and column numbers
-set ruler
 
 " Set default encoding to UTF-8
 set encoding=utf-8
@@ -149,9 +148,6 @@ set backspace=indent,eol,start
 set undodir=~/.vimundo
 set undofile
 
-" Highlight current line
-set cursorline
-
 " Minimalistic statusline
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
@@ -166,11 +162,7 @@ else
   colorscheme jellybeans
 
   hi statusline guibg=black guifg=white
-  au InsertEnter * hi StatusLine guifg=#ae81ff
-  au InsertLeave * hi StatusLine guifg=white
 endif
 
 set winwidth=79
 set winminwidth=24
-
-set lazyredraw
