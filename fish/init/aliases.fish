@@ -19,7 +19,7 @@ alias ga="git add"
 alias gaa="git add -A"
 
 alias gc="git commit -v"
-alias gca="git commit -v --amend"
+alias gca="git commit --amend --no-edit"
 
 alias gr="git rebase"
 alias gra="git rebase --abort"
