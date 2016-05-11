@@ -6,3 +6,5 @@ vmap <buffer> cll yocll<Esc>p
 
 " Console log from normal mode, inserted on next line with word your on inside parentheses
 nmap <buffer> cll yiwocll<Esc>p
+
+nmap <buffer> gf :OpenJS<CR>

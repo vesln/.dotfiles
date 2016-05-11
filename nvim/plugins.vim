@@ -43,5 +43,6 @@ Plug('xolox/vim-notes')                                           " Easy note ta
 Plug('easymotion/vim-easymotion')                                 " Easy motion
 Plug('Shougo/deoplete.nvim')                                      " Autocomplete
 Plug('godlygeek/tabular')                                         " Text filtering and alignment
+Plug('moll/vim-node')
 
 call plug#end()
