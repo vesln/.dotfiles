@@ -1,6 +1,7 @@
 " Switch on syntax highlighting
 syntax on
 
+" Lazy redraw
 set lazyredraw
 
 " Indent
@@ -37,7 +38,7 @@ set incsearch
 set autoread
 
 " Syntax coloring lines that are too long just slows down the world
-set synmaxcol=2048
+set synmaxcol=128
 
 " Show relative numbers and then the actual numbers
 set relativenumber
