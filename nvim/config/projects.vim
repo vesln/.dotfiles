@@ -1,7 +1,7 @@
 let g:projects = []
 
 " Load all project files
-for file in split(glob(expand('~/.dotpriv/vim') . '/projects/*.vim'), '\n')
+for file in split(glob(expand('~/.projects') . '/*/vim/*.vim'), '\n')
   exe 'source' file
 endfor
 
@@ -14,21 +14,21 @@ function! s:SetupProject() abort
   end
 
   for project in g:projects
-    let project_path = projects#{project}#path()
+    let project_path = {project}#path()
 
     if l:path =~ project_path
       let g:project = project
 
       if !exists('g:projects#'.project.'#initialized')
-        if exists('*projects#'.project.'#initialize')
-          call projects#{project}#initialize()
+        if exists(project.'#initialize')
+          call {project}#initialize()
         endif
 
         let g:projects#{project}#initialized = 1
       endif
 
-      if exists('*projects#'.project.'#setup')
-        call projects#{project}#setup()
+      if exists('*'.project.'#setup')
+        call {project}#setup()
       endif
     endif
   endfor
