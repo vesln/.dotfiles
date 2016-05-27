@@ -2,7 +2,6 @@ function! s:OpenProject(path, name)
   exec ':tablast'
   exec ':tabe'
   exec ':lcd' . a:path
-  exec ':TabooRename ' . a:name
 endfunction
 
 command! Dot :call <SID>OpenProject('~/.dotfiles/', 'dotfiles')

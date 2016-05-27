@@ -21,19 +21,11 @@ endfunction
 let g:test#custom_strategies = {'neovimheight': function('NeoVimHeight')}
 let g:test#strategy = 'neovimheight'
 
-" Gist setup
-let g:gist_clip_command = 'pbcopy'
-let g:gist_open_browser_after_post = 1
-let g:gist_post_private = 1
-
-" vim notes
-let g:notes_directories = ['~/.vimnotes']
-
 " Fzf prefix
 let g:fzf_command_prefix = 'Fzf'
 
 " Easy motion leader key
-let g:EasyMotion_leader_key = 'm'
+let g:EasyMotion_leader_key = ',m'
 
 " Do not create default mappings
 let g:NERDCreateDefaultMappings = 0
@@ -44,11 +36,8 @@ let g:neomake_open_list = 2
 " Neomake - loclist & quickfix height
 let g:neomake_list_height = 5
 
-" Notes: disable smart quotes
-let g:notes_smart_quotes = 0
-
-let g:deoplete#enable_at_startup = 1
-
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
 let g:jsx_ext_required = 0
+
+let g:EasyMotion_smartcase = 1

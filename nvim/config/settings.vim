@@ -28,9 +28,6 @@ set matchtime=1
 " Keep some stuff in the history
 set history=1000
 
-" Enable search highlighting
-set hlsearch
-
 " Incrementally match the search
 set incsearch
 
@@ -40,9 +37,9 @@ set autoread
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=128
 
-" Show relative numbers and then the actual numbers
+" Show relative numbers
 set relativenumber
-set number
+"set number
 
 " Set default encoding to UTF-8
 set encoding=utf-8
@@ -76,7 +73,7 @@ set shell=fish
 set scrolloff=8
 
 " Number of lines to scroll with CTRL-U and CTRL-D commands
-set scroll=11
+set scroll=1
 
 " Show trailing spaces as dots
 set listchars+=trail:.
@@ -110,8 +107,8 @@ set wildignorecase
 set nobackup nowritebackup noswapfile
 
 " Complete options
-set complete=.,w,b
-set completeopt=longest,menuone
+set complete=.,w,b,u
+set completeopt=menu,preview
 
 set formatoptions=croqn
 
@@ -127,8 +124,11 @@ set splitright
 " Use wild menu
 set wildmenu
 
+"set hlsearch
+
 " Add a bit extra margin to the left
 set foldcolumn=1
+set foldmethod=manual
 
 " Extra extensions for "gf"
 set suffixesadd+=.js
@@ -150,7 +150,8 @@ set undodir=~/.vimundo
 set undofile
 
 " Minimalistic statusline
-set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=
+set termguicolors
 
 " Colors
 if !empty($LIGHT_THEME)
@@ -158,7 +159,7 @@ if !empty($LIGHT_THEME)
   colorscheme solarized
 else
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  let g:jellybeans_background_color='NONE'
+  let g:jellybeans_background_color='#000'
   set background=dark
   colorscheme jellybeans
 

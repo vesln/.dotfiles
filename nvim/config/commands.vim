@@ -9,3 +9,6 @@ au BufReadPost * if &filetype !~ '^git\c' && line("'\"") > 0 && line("'\"") <= l
 
 " sudo save
 command W w !sudo tee % > /dev/null
+
+au BufEnter nerdtree unmap /
+au BufLeave nerdtree map  / <Plug>(easymotion-sn)

@@ -25,5 +25,5 @@ function fish_prompt
 
   set -l repo_info (__fish_git_prompt)
 
-  echo -n -s $prefix $arrow ' '(echo "$pwd" | sed -e $expr) $repo_info $normal ' '
+  echo -n -s $prefix $arrow ' '(echo "$pwd" ) $repo_info $normal ' '
 end

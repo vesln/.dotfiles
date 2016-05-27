@@ -1,8 +1,6 @@
-" Make "," the leader key
+" leader key
 let mapleader = ","
-
-" Current directory
-cabbr <expr> %% expand('%:p:h')
+nmap <space> ,
 
 " Convenient ESC in insert mode
 inoremap jk <esc>
@@ -11,15 +9,8 @@ inoremap jk <esc>
 nnoremap Q <Nop>
 nnoremap S <Nop>
 
-" Clear search results when hitting space
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-
-" Rename the current file
-nnoremap <Leader>r :call RenameFile()<cr>
-
-" The regular scroll half a page behavior does not suit me well
-noremap <C-d> 15j
-noremap <C-u> 15k
+" Clear search results
+nnoremap <silent> <leader><cr> :nohlsearch<CR>
 
 " Tests
 nnoremap <Leader>f :TestFile<CR>
@@ -36,19 +27,16 @@ nnoremap <silent> [b :BufSurfBack<CR>
 nnoremap <silent> ]b :BufSurfForward<CR>
 
 " Toggle NERDTree
-nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>nt :NERDTreeToggle<CR>
 
 " Toggle comment
-map <Leader><Leader> <plug>NERDCommenterToggle<CR>
+map <Leader>, <plug>NERDCommenterToggle<CR>
 
 " Copy
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 
+" Sort
 vmap <Leader>s :sort<CR>
-
-" FZF
-nnoremap <silent> <Leader>t :FZF<CR>
-nnoremap <silent> <Leader>b :FzfBuffers<CR>
 
 " Exit terminal mode
 tnoremap <Esc> <C-\><C-n>
@@ -56,34 +44,22 @@ tnoremap <Esc> <C-\><C-n>
 " Easy visual selection
 nnoremap vv <S-v>
 
-" Open Google
-nmap gx <Plug>(openbrowser-smart-search)
-vmap gx <Plug>(openbrowser-smart-search)
-
-" Paste in insert and command modes
-inoremap <C-p> <Esc>pa
-cnoremap <C-p> <C-r>"
-
-" Open Fzf Ag search
+" Search
 nnoremap <Leader>ag :Ag<space>
-
-" Open Fzf ag search
 nnoremap <Leader>af :FzfAg<CR>
-
-" Open Google Search
-nnoremap <Leader>gs :OpenBrowserSmartSearch<space>
+nnoremap <silent> <Leader>t :FZF<CR>
+nnoremap <silent> <Leader>b :FzfBuffers<CR>
 
 " Open GitX
 nnoremap <Leader>gx :Gitx<CR>
 
-" Fast save
+" Fast save & quit
 nmap <Leader>w :w!<cr>
-
-" Fast quit
 nmap <Leader>q :q<cr>
 
-" Create the directory containing the file in the buffer
+" File/dir manupulation
 nmap <silent> <leader>md :!mkdir -p %:p:h<CR>
+nnoremap <Leader>r :call RenameFile()<cr>
 
 " Search for Git conflict
 nmap <silent> <leader>x <ESC>/\v^[<=>]{7}( .*\|$)<CR>
@@ -91,18 +67,11 @@ nmap <silent> <leader>x <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 " Adjust viewports to the same size
 map <Leader>= <C-w>=
 
-" Toggle UndoTree
-nmap <Leader>u :UndotreeToggle<CR>
-
-" Paste mode
-nmap <silent> <Leader>p :set paste!<CR>
-
 " Tab movement
 nnoremap th :tabprev<CR>
 nnoremap tl :tabnext<CR>
 nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>
-nnoremap tr :TabooRename <space>
 
 " Split screens movement
 nnoremap <C-h> <C-w>h
@@ -113,8 +82,5 @@ nnoremap <C-l> <C-w>l
 " Supertab with ctrl-f
 inoremap <C-f> <C-n>
 
-" Unlearn stuff
-nnoremap gh :echoerr 'Nope! Use <CTRL>-h'<CR>
-nnoremap gj :echoerr 'Nope! Use <CTRL>-j'<CR>
-nnoremap gl :echoerr 'Nope! Use <CTRL>-k'<CR>
-nnoremap gl :echoerr 'Nope! Use <CTRL>-l'<CR>
+" Easy motion
+nmap s <Plug>(easymotion-overwin-f2)
