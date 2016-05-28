@@ -27,7 +27,7 @@ nnoremap <silent> [b :BufSurfBack<CR>
 nnoremap <silent> ]b :BufSurfForward<CR>
 
 " Toggle NERDTree
-nnoremap <Leader>nt :NERDTreeToggle<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
 
 " Toggle comment
 map <Leader>, <plug>NERDCommenterToggle<CR>
