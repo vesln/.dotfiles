@@ -5,6 +5,3 @@
 (load-file (concat user-emacs-directory "core/core-load-paths.el"))
 (require 'core-init)
 (mapc 'load (directory-files layers-dir 't "^[^#].*el$"))
-
-(require 'server)
-(unless (server-running-p) (server-start))

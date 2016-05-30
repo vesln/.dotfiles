@@ -76,7 +76,7 @@
 (put 'narrow-to-region 'disabled nil)
 (put 'narrow-to-page 'disabled nil)
 (put 'narrow-to-defun 'disabled nil)
-(toggle-truncate-lines)
+(set-default 'truncate-lines nil)
 
 (require 'windmove)
 (windmove-default-keybindings)

@@ -20,4 +20,6 @@
          ([remap move-beginning-of-line] . crux-move-beginning-of-line)
          ([(shift return)] . crux-smart-open-line)
          ([remap kill-whole-line] . crux-kill-whole-line)
-         ("C-c s" . crux-ispell-word-then-abbrev)))
+         ("C-c s" . crux-ispell-word-then-abbrev))
+  :config
+  (setq crux-term-buffer-name "multi"))

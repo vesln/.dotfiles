@@ -10,6 +10,7 @@
     (backward-kill-word arg)))
 
 (global-set-key (kbd "M-/") #'hippie-expand)
+(global-set-key (kbd "M-o") #'other-window)
 
 ;; left kil
 (global-set-key "\M-k" '(lambda () (interactive) (kill-line 0)))
