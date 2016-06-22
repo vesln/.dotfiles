@@ -1,8 +1,9 @@
-(unless (package-installed-p 'jbeans-theme)
+(unless (package-installed-p 'emacs-color-theme-solarized)
   (package-install 'jbeans-theme))
 
 ;; theme
-(load-theme 'jbeans t)
+(load-theme 'solarized t)
+(set-frame-parameter nil 'background-mode 'light)
 
 ;; font
 (set-frame-font "Operator Mono 16")
