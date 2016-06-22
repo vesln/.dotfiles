@@ -1,6 +1,5 @@
 " leader key
 let mapleader = ","
-nmap <space> ,
 
 " Convenient ESC in insert mode
 inoremap jk <esc>
@@ -10,33 +9,27 @@ nnoremap Q <Nop>
 nnoremap S <Nop>
 
 " Clear search results
-nnoremap <silent> <leader><cr> :nohlsearch<CR>
+nnoremap <silent> <space> :nohlsearch<CR>
 
 " Tests
 nnoremap <Leader>f :TestFile<CR>
 nnoremap <Leader>d :TestNearest<CR>
 
-" Lint
-nnoremap <Leader>lf :Neomake <bar> echo 'Linting file...'<CR>
-nnoremap <Leader>ld :Neomake! <bar> echo 'Linting the entire project...'<CR>
-
-" Previous buffer
-nnoremap <silent> [b :BufSurfBack<CR>
-
-" Next buffer
-nnoremap <silent> ]b :BufSurfForward<CR>
-
-" Toggle NERDTree
-nnoremap <Leader>n :NERDTreeToggle<CR>
-
 " Toggle comment
-map <Leader>, <plug>NERDCommenterToggle<CR>
+map <Leader>; <plug>NERDCommenterToggle<CR>
+
+" Swtich to prev buffer
+nnoremap <leader><leader> <c-^>
 
 " Copy
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 
 " Sort
 vmap <Leader>s :sort<CR>
+
+" More reasonable scroll
+nmap <C-d> 20j
+nmap <C-u> 20k
 
 " Exit terminal mode
 tnoremap <Esc> <C-\><C-n>
@@ -58,14 +51,11 @@ nmap <Leader>w :w!<cr>
 nmap <Leader>q :q<cr>
 
 " File/dir manupulation
-nmap <silent> <leader>md :!mkdir -p %:p:h<CR>
+nmap <silent> <leader>md :silent !mkdir -p %:p:h<CR>
 nnoremap <Leader>r :call RenameFile()<cr>
 
 " Search for Git conflict
 nmap <silent> <leader>x <ESC>/\v^[<=>]{7}( .*\|$)<CR>
-
-" Adjust viewports to the same size
-map <Leader>= <C-w>=
 
 " Tab movement
 nnoremap th :tabprev<CR>
@@ -83,4 +73,11 @@ nnoremap <C-l> <C-w>l
 inoremap <C-f> <C-n>
 
 " Easy motion
-nmap s <Plug>(easymotion-overwin-f2)
+nmap s <Plug>(easymotion-bd-f)
+omap t <Plug>(easymotion-tl)
+
+" Edit file in current files' directory
+map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+
+" Toggle the location list
+nmap <script> <silent> <leader>l :call ToggleLocationList()<CR>

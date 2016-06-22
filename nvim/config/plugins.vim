@@ -1,43 +1,45 @@
-" Disable netrw
-let g:loaded_netrw = 1
-let g:netrw_nogx = 1
-
-" NERDTree setup
-let g:NERDTreeHijackNetrw=0
-let g:NERDTreeMinimalUI=1
-let g:NERDTreeCascadeOpenSingleChildDir=0
-let g:NERDTreeShowHidden=1
-let g:NERDTreeWinSize=40
-
-" Register Flow as a test runner
-let test#runners = {'JavaScript': ['Flow', 'Npmmocha']}
-let g:test#runner_commands = ['Flow']
-
 " Add a new neovim strategy
 function! NeoVimHeight(cmd)
   botright new | resize 40 | call termopen(a:cmd) | startinsert
 endfunction
-
 let g:test#custom_strategies = {'neovimheight': function('NeoVimHeight')}
 let g:test#strategy = 'neovimheight'
 
 " Fzf prefix
 let g:fzf_command_prefix = 'Fzf'
 
-" Easy motion leader key
-let g:EasyMotion_leader_key = ',m'
-
 " Do not create default mappings
 let g:NERDCreateDefaultMappings = 0
 
 " Neomake - open the location list or the quickfix list
-let g:neomake_open_list = 2
+let g:neomake_open_list = 0
 
 " Neomake - loclist & quickfix height
 let g:neomake_list_height = 5
+let g:neomake_verbose = 0
 
+" Default completion settings
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
+" Do not require a .jsx ext
 let g:jsx_ext_required = 0
 
+" Easy motion leader key
+let g:EasyMotion_leader_key = ',m'
+
+" Enable smart case
 let g:EasyMotion_smartcase = 1
+
+" Disable the shade
+let g:EasyMotion_do_shade = 0
+
+" The keys to be used for motion targets (defaults minus ;)
+let g:EasyMotion_keys = 'asdghklqwertyuiopzxcvbnmfj'
+
+" UltiSnips mappings
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+" Do not map any keys, toggle list
+let g:toggle_list_no_mappings = 1

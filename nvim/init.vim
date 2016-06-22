@@ -1,5 +1,6 @@
 runtime plugins.vim
 runtime config/settings.vim
+runtime config/colors.vim
 runtime config/plugins.vim
 runtime config/functions.vim
 runtime config/commands.vim

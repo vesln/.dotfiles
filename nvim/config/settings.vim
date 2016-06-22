@@ -38,7 +38,7 @@ set autoread
 set synmaxcol=128
 
 " Show relative numbers
-set relativenumber
+"set relativenumber
 "set number
 
 " Set default encoding to UTF-8
@@ -109,7 +109,6 @@ set nobackup nowritebackup noswapfile
 " Complete options
 set complete=.,w,b,u
 set completeopt=menu,preview
-
 set formatoptions=croqn
 
 " Disable inserting two spaces
@@ -124,10 +123,8 @@ set splitright
 " Use wild menu
 set wildmenu
 
-"set hlsearch
-
 " Add a bit extra margin to the left
-set foldcolumn=1
+"set foldcolumn=1
 set foldmethod=manual
 
 " Extra extensions for "gf"
@@ -151,20 +148,7 @@ set undofile
 
 " Minimalistic statusline
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=
-set termguicolors
 
-" Colors
-if !empty($LIGHT_THEME)
-  set background=light
-  colorscheme solarized
-else
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  let g:jellybeans_background_color='#000'
-  set background=dark
-  colorscheme jellybeans
-
-  hi statusline guibg=black guifg=white
-endif
-
+" Min width of wins
 set winwidth=79
 set winminwidth=24
