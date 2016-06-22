@@ -26,6 +26,7 @@ set -x GOPATH ~/.go
 # fzf
 set -x FZF_DEFAULT_COMMAND 'ag -g ""'
 set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
+set -x FZF_DEFAULT_OPTS "--color light"
 
 # AWS credentials
 set -x AWS_CREDENTIAL_FILE ~/.eb_aws_cred
