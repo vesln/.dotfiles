@@ -7,3 +7,14 @@ nvim/config/projects/
 
 doc/tags
 doc/tags-ja
+
+/emacs.d/auto-save-list/
+/emacs.d/elpa/
+/emacs.d/eshell/
+/emacs.d/savehist
+/emacs.d/saveplace
+/emacs.d/places
+/emacs.d/recentf
+/emacs.d/projectile-bookmarks.eld
+/emacs.d/todo.org
+/emacs.d/projectile.cache
