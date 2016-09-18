@@ -1,11 +1,7 @@
 (use-package avy
   :ensure t
+  :bind (("s-l" . avy-goto-line)
+         ("s-g" . avy-goto-char-in-line)
+         ("s-." . avy-goto-word-or-subword-1))
   :config
   (setq avy-background t))
-
-;; override fly spell's mappings for now
-(eval-after-load "flyspell"
-  '(define-key flyspell-mode-map (kbd "C-,") 'avy-goto-word-or-subword-1))
-
-(eval-after-load "flyspell"
-  '(define-key flyspell-mode-map (kbd "C-;") 'avy-goto-char-timer))

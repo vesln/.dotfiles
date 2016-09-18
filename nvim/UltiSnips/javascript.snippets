@@ -1,5 +1,5 @@
 snippet cl "console.log" b
-console.log(\`⚠️ ${1:value}\`);
+console.log(${1:value});
 endsnippet
 
 snippet debug "console.log" b
@@ -14,11 +14,35 @@ snippet exd "export default"
 export default
 endsnippet
 
-snippet imp "import a es6 module"
+snippet ed "export default"
+export default
+endsnippet
+
+snippet edf "export default"
+export default function ${1:name}(${2:arg}) {
+	${VISUAL}$0
+}
+endsnippet
+
+snippet ef "export function"
+export function ${1:name}(${2:arg}) {
+	${VISUAL}$0
+}
+endsnippet
+
+snippet im "import a es6 module"
+import ${2:${1/(.+\/)*(\w+)(-|\b|$)(\..+$)?/\l$2/g}} from '${1}';${0}
+endsnippet
+
+snippet Im "import a es6 module"
 import ${2:${1/(.+\/)*(\w+)(-|\b|$)(\..+$)?/\u$2/g}} from '${1}';${0}
 endsnippet
 
-snippet impd "import a es6 module"
+snippet imd "import a es6 module"
+import { ${2:${1/(.+\/)*(\w+)(-|\b|$)(\..+$)?/\l$2/g}} } from '${1}';${0}
+endsnippet
+
+snippet Imd "import a es6 module"
 import { ${2:${1/(.+\/)*(\w+)(-|\b|$)(\..+$)?/\u$2/g}} } from '${1}';${0}
 endsnippet
 
@@ -54,4 +78,20 @@ if (${1:true}) {
 } else {
 	$0
 }
+endsnippet
+
+snippet flow "flow annotation"
+/* @flow */
+endsnippet
+
+snippet des "mocha describe"
+describe('${1:desc}', () => {
+	${VISUAL}$0
+});
+endsnippet
+
+snippet it "mocha describe"
+it('${1:desc}', () => {
+	${VISUAL}$0
+});
 endsnippet

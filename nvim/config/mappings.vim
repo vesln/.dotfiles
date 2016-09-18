@@ -69,8 +69,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Supertab with ctrl-f
-inoremap <C-f> <C-n>
+inoremap <C-f> <C-o>l
+inoremap <C-b> <C-o>h
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>^
+inoremap <C-k> <C-o>C
 
 " Easy motion
 nmap s <Plug>(easymotion-bd-f)

@@ -10,4 +10,6 @@
                                          try-complete-lisp-symbol-partially
                                          try-complete-lisp-symbol))
 
+(global-set-key (kbd "s-/") #'hippie-expand)
+
 (provide 'setup-hippie)

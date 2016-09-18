@@ -36,5 +36,8 @@ Plug 'jiangmiao/auto-pairs'                                       " Auto Pairs
 Plug 'SirVer/ultisnips'                                           " Snippets
 Plug 'tpope/vim-vinegar'                                          " netrw improvements
 Plug 'milkypostman/vim-togglelist'                                " toggle the location list
+Plug 'tpope/vim-fugitive'                                         " toggle the location list
+Plug 'nanotech/jellybeans.vim'                                    " colors
+Plug 'AndrewRadev/switch.vim'                                     " switch
 
 call plug#end()

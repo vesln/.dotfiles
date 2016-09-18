@@ -6,8 +6,10 @@
 (setq initial-scratch-message nil)
 
 ;; disable the blinking cursor
-(blink-cursor-mode -1)
-(setq ring-bell-function 'ignore)
+;; (blink-cursor-mode -1)
+(setq ring-bell-functioon 'ignore)
+(setq-default cursor-in-non-selected-windows nil)
+(setq-default cursor-type 'bar)
 
 (line-number-mode t)
 (column-number-mode t)
@@ -25,9 +27,12 @@
 (global-hl-line-mode +1)
 
 ;; nice scrolling
-(setq scroll-margin 0
+(setq scroll-margin 8
       scroll-conservatively 100000
       scroll-preserve-screen-position 1)
+
+(setq mouse-wheel-progressive-speed nil)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
 
 
 (require 'ansi-color)

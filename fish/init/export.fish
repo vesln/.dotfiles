@@ -26,7 +26,12 @@ set -x GOPATH ~/.go
 # fzf
 set -x FZF_DEFAULT_COMMAND 'ag -g ""'
 set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
-set -x FZF_DEFAULT_OPTS "--color light"
+
+if test $LIGHT_COLORS
+  set -x FZF_DEFAULT_OPTS "--color light"
+else
+  set -x FZF_DEFAULT_OPTS "--color fg:188,bg:233,hl:103,fg+:222,bg+:234,hl+:104 --color info:183,prompt:110,spinner:107,pointer:167,marker:215"
+end
 
 # AWS credentials
 set -x AWS_CREDENTIAL_FILE ~/.eb_aws_cred
@@ -39,3 +44,5 @@ set -x NVM_DIR ~/.nvm
 
 # Disable the greeting message
 set -U fish_greeting ""
+
+set -x CMDLINE_SHELL "fish"

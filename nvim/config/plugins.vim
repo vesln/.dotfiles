@@ -4,6 +4,7 @@ function! NeoVimHeight(cmd)
 endfunction
 let g:test#custom_strategies = {'neovimheight': function('NeoVimHeight')}
 let g:test#strategy = 'neovimheight'
+let test#runners = {'JavaScript': ['Npmmocha']}
 
 " Fzf prefix
 let g:fzf_command_prefix = 'Fzf'
@@ -38,8 +39,11 @@ let g:EasyMotion_keys = 'asdghklqwertyuiopzxcvbnmfj'
 
 " UltiSnips mappings
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-f>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Do not map any keys, toggle list
 let g:toggle_list_no_mappings = 1
+
+" Allow netrw to delete directory with files
+let g:netrw_localrmdir='rm -r'

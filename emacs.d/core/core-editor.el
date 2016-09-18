@@ -76,9 +76,22 @@
 (put 'narrow-to-region 'disabled nil)
 (put 'narrow-to-page 'disabled nil)
 (put 'narrow-to-defun 'disabled nil)
-(set-default 'truncate-lines nil)
+(set-default 'truncate-lines t)
 
-(require 'windmove)
-(windmove-default-keybindings)
+(defadvice split-window-horizontally (after rebalance-windows activate)
+  (balance-windows))
+(ad-activate 'split-window-horizontally)
+
+(defadvice delete-window (after rebalance-windows activate)
+  (balance-windows))
+(ad-activate 'delete-window)
+
+(defadvice isearch-search (after isearch-no-fail activate)
+  (unless isearch-success
+    (ad-disable-advice 'isearch-search 'after 'isearch-no-fail)
+    (ad-activate 'isearch-search)
+    (isearch-repeat (if isearch-forward 'forward))
+    (ad-enable-advice 'isearch-search 'after 'isearch-no-fail)
+    (ad-activate 'isearch-search)))
 
 (provide 'core-editor)

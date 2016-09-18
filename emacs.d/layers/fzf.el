@@ -1,2 +1,3 @@
 (use-package fzf
-  :ensure t)
+  :ensure t
+  :bind ("s-t" . fzf))

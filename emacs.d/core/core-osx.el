@@ -5,10 +5,10 @@
                     (font-spec :name "Apple Color Emoji") nil 'prepend))
 
 ;; change alt to super
-(setq mac-option-modifier 'super)
+;; (setq mac-option-modifier 'super)
 
 ;; change command to meta
-(setq mac-command-modifier 'meta)
+(setq mac-command-modifier 'super)
 
 (use-package exec-path-from-shell
   :ensure t

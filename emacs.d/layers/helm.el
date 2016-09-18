@@ -24,12 +24,12 @@
 
 (helm-mode 1)
 
-(global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "M-y") 'helm-show-kill-ring)
-(global-set-key (kbd "M-t") 'helm-projectile)
-
+(global-set-key (kbd "s-x") 'helm-M-x)
+;; (global-set-key (kbd "s-t") 'helm-projectile)
 (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-x C-b") 'helm-mini)
+(global-set-key (kbd "s-r") 'helm-mini)
+(global-set-key (kbd "M-y") 'helm-show-kill-ring)
 
 (setq helm-buffers-fuzzy-matching t
       helm-recentf-fuzzy-match    t)

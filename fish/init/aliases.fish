@@ -7,7 +7,8 @@ alias l='ls -1A'
 abbr gco "git checkout"
 abbr gbd "git branch -D"
 
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gl="gll -7"
+alias gll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gpr="git pull --rebase"
 alias gb="git branch"
 
@@ -52,4 +53,4 @@ alias d="desk"
 alias d.="desk ."
 
 # Docker
-alias compose='eval (docker-machine env); docker-compose'
+alias compose='docker-compose'
