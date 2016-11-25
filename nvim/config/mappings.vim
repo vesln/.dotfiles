@@ -43,8 +43,8 @@ nnoremap <Leader>af :FzfAg<CR>
 nnoremap <silent> <Leader>t :FZF<CR>
 nnoremap <silent> <Leader>b :FzfBuffers<CR>
 
-" Open GitX
-nnoremap <Leader>gx :Gitx<CR>
+" Promote to let
+nnoremap <Leader>p :call PromoteToLet()<cr>
 
 " Fast save & quit
 nmap <Leader>w :w!<cr>
@@ -81,6 +81,3 @@ omap t <Plug>(easymotion-tl)
 
 " Edit file in current files' directory
 map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-
-" Toggle the location list
-nmap <script> <silent> <leader>l :call ToggleLocationList()<CR>
