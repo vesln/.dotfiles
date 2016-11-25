@@ -37,7 +37,7 @@ alias gmf='git merge --ff-only'
 
 # Ruby / Rails
 alias be="bundle exec"
-alias rc="bundle exec rails console"
+alias rc="env NO_RENDERER=1 bundle exec rails console"
 alias rdm="bundle exec rake db:migrate"
 
 # Vim
@@ -45,7 +45,6 @@ alias vi="nvim"
 alias vim="nvim"
 
 # tmux
-alias cmux="tmux new -n mux -s "
 alias mux="tmuxinator"
 
 # Desk
