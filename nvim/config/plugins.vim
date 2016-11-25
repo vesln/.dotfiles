@@ -35,7 +35,7 @@ let g:EasyMotion_smartcase = 1
 let g:EasyMotion_do_shade = 0
 
 " The keys to be used for motion targets (defaults minus ;)
-let g:EasyMotion_keys = 'asdghklqwertyuiopzxcvbnmfj'
+let g:EasyMotion_keys = 'asdfghjkl'
 
 " UltiSnips mappings
 let g:UltiSnipsExpandTrigger="<tab>"

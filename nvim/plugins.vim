@@ -2,7 +2,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'dag/vim-fish'                                               " Fish syntax
 Plug 'ekalinin/Dockerfile.vim'                                    " Dockerfile syntax
-Plug 'rust-lang/rust.vim'                                         " Rust syntax
 Plug 'fatih/vim-go'                                               " Go syntax
 Plug 'kchmck/vim-coffee-script'                                   " CoffeeScript syntax
 Plug 'keith/rspec.vim'                                            " RSpec syntax
@@ -39,5 +38,6 @@ Plug 'milkypostman/vim-togglelist'                                " toggle the l
 Plug 'tpope/vim-fugitive'                                         " toggle the location list
 Plug 'nanotech/jellybeans.vim'                                    " colors
 Plug 'AndrewRadev/switch.vim'                                     " switch
+Plug 'ecomba/vim-ruby-refactoring'                                " ruby refactoring
 
 call plug#end()
