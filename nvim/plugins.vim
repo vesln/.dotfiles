@@ -30,7 +30,6 @@ Plug 'tpope/vim-surround'                                         " Quoting/pare
 Plug 'tpope/vim-unimpaired'                                       " Pairs of handy bracket mappings
 Plug 'easymotion/vim-easymotion'                                  " Easy motion
 Plug 'godlygeek/tabular'                                          " Text filtering and alignment
-Plug 'frankier/neovim-colors-solarized-truecolor-only'            " Solarized
 Plug 'jiangmiao/auto-pairs'                                       " Auto Pairs
 Plug 'SirVer/ultisnips'                                           " Snippets
 Plug 'tpope/vim-vinegar'                                          " netrw improvements
@@ -38,6 +37,5 @@ Plug 'milkypostman/vim-togglelist'                                " toggle the l
 Plug 'tpope/vim-fugitive'                                         " toggle the location list
 Plug 'nanotech/jellybeans.vim'                                    " colors
 Plug 'AndrewRadev/switch.vim'                                     " switch
-Plug 'ecomba/vim-ruby-refactoring'                                " ruby refactoring
 
 call plug#end()
