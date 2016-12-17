@@ -1,13 +1,25 @@
 snippet cl "console.log" b
+// FIXME(vesln): remove me
 console.log(${1:value});
 endsnippet
 
-snippet debug "console.log" b
-console.log('⚠️ ---------------------------');
-console.log('')
-console.log(\`${1:value}\`);
-console.log('')
-console.log('⚠️ ---------------------------');
+snippet cll "console.log" b
+// FIXME(vesln): remove me
+console.log(${1:value});
+endsnippet
+
+snippet todo "TODO(vesln)"
+// TODO(vesln): ${1}
+endsnippet
+
+snippet note "NOTE(vesln)"
+// NOTE(vesln): ${1}
+endsnippet
+
+snippet comp "React stateless component"
+export function ${1:Component}(${2:{ arg }}: ${3:{ arg: boolean }}) {
+	${VISUAL}$0
+}
 endsnippet
 
 snippet exd "export default"
