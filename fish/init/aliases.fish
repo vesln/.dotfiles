@@ -34,6 +34,7 @@ alias gdm="git delete-merged-branches"
 
 alias gm='git merge --no-ff'
 alias gmf='git merge --ff-only'
+alias gfix='eval $EDITOR (git diff --name-only | uniq)'
 
 # Ruby / Rails
 alias be="bundle exec"
