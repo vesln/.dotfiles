@@ -81,6 +81,7 @@ omap t <Plug>(easymotion-tl)
 
 " Edit file in current files' directory
 map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+
 " CamelCaseMotion
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> b <Plug>CamelCaseMotion_b
@@ -91,3 +92,11 @@ sunmap b
 sunmap e
 sunmap ge
 
+" Mimic Emacs in insert mode
+inoremap <C-A> <Home>
+inoremap <C-B> <Left>
+inoremap <C-E> <End>
+inoremap <C-F> <Right>
+inoremap <C-K> <Esc>lDa
+inoremap <C-U> <Esc>d0xi
+inoremap <C-Y> <Esc>Pa
