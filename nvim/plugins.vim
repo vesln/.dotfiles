@@ -37,5 +37,6 @@ Plug 'milkypostman/vim-togglelist'                                " toggle the l
 Plug 'tpope/vim-fugitive'                                         " toggle the location list
 Plug 'nanotech/jellybeans.vim'                                    " colors
 Plug 'AndrewRadev/switch.vim'                                     " switch
+Plug 'bkad/CamelCaseMotion'
 
 call plug#end()
