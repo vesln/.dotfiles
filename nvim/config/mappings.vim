@@ -1,6 +1,9 @@
 " leader key
 let mapleader = ","
 
+" Essential
+map ; :
+
 " Convenient ESC in insert mode
 inoremap jk <esc>
 
@@ -49,6 +52,7 @@ nnoremap <Leader>p :call PromoteToLet()<cr>
 " Fast save & quit
 nmap <Leader>w :w!<cr>
 nmap <Leader>q :q<cr>
+nmap <Leader>` :qa!<cr>
 
 " File/dir manupulation
 nmap <silent> <leader>md :silent !mkdir -p %:p:h<CR>
