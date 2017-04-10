@@ -27,7 +27,8 @@ nnoremap <leader><leader> <c-^>
 " Copy
 vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
 
-" Sort
+" Sort imports
+nnoremap <Leader>s :call SortImports()<CR>
 vmap <Leader>s :sort<CR>
 
 " More reasonable scroll
