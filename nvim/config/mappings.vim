@@ -7,9 +7,11 @@ map ; :
 " Convenient ESC in insert mode
 inoremap jk <esc>
 
-" Remove "Q" and "S"
+" Remove "Q"
 nnoremap Q <Nop>
-nnoremap S <Nop>
+
+" Switch
+nnoremap S :Switch<CR>
 
 " Clear search results
 nnoremap <silent> <space> :nohlsearch<CR>
