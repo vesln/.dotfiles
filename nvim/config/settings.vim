@@ -152,3 +152,6 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=
 " Min width of wins
 set winwidth=79
 set winminwidth=24
+
+" Don't mess with the cursor
+set guicursor=
