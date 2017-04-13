@@ -39,5 +39,6 @@ Plug 'nanotech/jellybeans.vim'                                    " colors
 Plug 'AndrewRadev/switch.vim'                                     " switch
 Plug 'bkad/CamelCaseMotion'                                       " camel case motion
 Plug 'christoomey/vim-sort-motion'                                " sort motion
+Plug 'AndrewRadev/splitjoin.vim'                                  " Multiple/single-line transitions
 
 call plug#end()
