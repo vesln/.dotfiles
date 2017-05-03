@@ -83,8 +83,13 @@ inoremap <C-a> <C-o>^
 inoremap <C-k> <C-o>C
 
 " Easy motion
-nmap s <Plug>(easymotion-bd-f)
+"nmap s <Plug>(easymotion-bd-f)
+nmap s <Plug>(easymotion-overwin-f)
 omap t <Plug>(easymotion-tl)
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
 
 " Edit file in current files' directory
 map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
@@ -107,3 +112,6 @@ inoremap <C-F> <Right>
 inoremap <C-K> <Esc>lDa
 inoremap <C-U> <Esc>d0xi
 inoremap <C-Y> <Esc>Pa
+
+" Autocomplete line from the entire project
+inoremap <expr> <c-x><c-l> fzf#complete({ 'prefix': '^.*$', 'source': 'ag . --nogroup --nofilename' })

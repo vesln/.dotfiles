@@ -18,7 +18,7 @@ endsnippet
 
 snippet comp "React stateless component"
 export function ${1:Component}(${2:{ arg }}: ${3:{ arg: boolean }}) {
-	${VISUAL}$0
+	return null;$0
 }
 endsnippet
 
@@ -96,7 +96,29 @@ snippet flow "flow annotation"
 /* @flow */
 endsnippet
 
+snippet scomp "Statless react component template"
+/* @flow */
+
+import React from 'react';
+
+type Props = {
+	arg: any,
+};
+
+export default function `!v expand('%:p:h:t')`({ ${1:arg} }: Props) {
+	${2:return null;}
+}
+endsnippet
+
 snippet ireact "import react"
+import React from 'react';
+endsnippet
+
+snippet irea "import react"
+import React from 'react';
+endsnippet
+
+snippet ire "import react"
 import React from 'react';
 endsnippet
 
@@ -109,6 +131,10 @@ import paths from 'ph/paths';
 endsnippet
 
 snippet istyles "import styles"
+import styles from './styles.css';
+endsnippet
+
+snippet icss "import styles"
 import styles from './styles.css';
 endsnippet
 
