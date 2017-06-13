@@ -153,5 +153,5 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=
 set winwidth=79
 set winminwidth=24
 
-" Don't mess with the cursor
-set guicursor=
+" Use the block cursor
+set guicursor=a:block-blinkon0
