@@ -30,7 +30,6 @@ alias gd="git diff"
 alias gdc="git diff --cached"
 
 alias gst="git status --short"
-alias gdm="git delete-merged-branches"
 
 alias gm='git merge --no-ff'
 alias gmf='git merge --ff-only'
