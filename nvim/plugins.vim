@@ -41,5 +41,6 @@ Plug 'bkad/CamelCaseMotion'                                       " camel case m
 Plug 'christoomey/vim-sort-motion'                                " sort motion
 Plug 'AndrewRadev/splitjoin.vim'                                  " Multiple/single-line transitions
 Plug 'jparise/vim-graphql'
+Plug 'sbdchd/neoformat'
 
 call plug#end()
