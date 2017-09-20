@@ -34,9 +34,6 @@ set incsearch
 " Automatically read a file that has changed on disk
 set autoread
 
-" Syntax coloring lines that are too long just slows down the world
-set synmaxcol=128
-
 " Show relative numbers
 "set relativenumber
 "set number
