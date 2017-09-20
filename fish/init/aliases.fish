@@ -14,7 +14,7 @@ alias gb="git branch"
 
 alias gp="git push"
 alias gpu="git-push-with-tracking"
-alias gpf="git push --force-with-lease"
+alias gpf="git push -u --force-with-lease"
 
 alias ga="git add"
 alias gaa="git add -A"
@@ -33,7 +33,6 @@ alias gst="git status --short"
 
 alias gm='git merge --no-ff'
 alias gmf='git merge --ff-only'
-alias gfix='eval $EDITOR (git diff --name-only | uniq)'
 
 # Ruby / Rails
 alias be="bundle exec"
@@ -46,10 +45,6 @@ alias vim="nvim"
 
 # tmux
 alias mux="tmuxinator"
-
-# Desk
-alias d="desk"
-alias d.="desk ."
 
 # Docker
 alias compose='docker-compose'
