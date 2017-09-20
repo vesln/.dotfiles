@@ -57,6 +57,9 @@ nmap <Leader>w :w!<cr>
 nmap <Leader>q :q<cr>
 nmap <Leader>` :qa!<cr>
 
+" Open a window to show the location list for the current window
+nmap <Leader>l :lopen<cr>
+
 " File/dir manupulation
 nmap <silent> <leader>md :silent !mkdir -p %:p:h<CR>
 nnoremap <Leader>r :call RenameFile()<cr>
@@ -84,7 +87,7 @@ inoremap <C-k> <C-o>C
 
 " Easy motion
 "nmap s <Plug>(easymotion-bd-f)
-nmap s <Plug>(easymotion-overwin-f)
+nmap s <Plug>(easymotion-overwin-f2)
 omap t <Plug>(easymotion-tl)
 
 " JK motions: Line motions
