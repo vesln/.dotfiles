@@ -28,7 +28,7 @@
 [difftool]
   prompt = false
 [push]
-  default = tracking
+	default = current
 [core]
   excludesfile = /Users/vesln/.gitignore_global
   trustctime = false
