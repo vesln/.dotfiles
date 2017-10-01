@@ -122,6 +122,19 @@ snippet ire "import react"
 import React from 'react';
 endsnippet
 
+snippet des "mocha describe"
+describe('${1:desc}', () => {
+	${VISUAL}$0
+});
+endsnippet
+
+snippet it "mocha describe"
+it('${1:desc}', () => {
+	${VISUAL}$0
+});
+endsnippet
+
+
 snippet iicon "import Icon"
 import Icon from 'ph/components/Icon';
 endsnippet
@@ -158,14 +171,14 @@ snippet icc "import createContainer"
 import { createContainer } from 'ph/lib/container';
 endsnippet
 
-snippet des "mocha describe"
-describe('${1:desc}', () => {
-	${VISUAL}$0
-});
+snippet iemoji "import Emoji"
+import Emoji from 'ph/components/Emoji';
 endsnippet
 
-snippet it "mocha describe"
-it('${1:desc}', () => {
-	${VISUAL}$0
-});
+snippet ibtn "import Button"
+import Button from 'ph/components/Button';
+endsnippet
+
+snippet ifont "import Font"
+import Font from 'ph/components/Font';
 endsnippet

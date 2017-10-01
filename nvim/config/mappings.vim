@@ -86,8 +86,7 @@ inoremap <C-a> <C-o>^
 inoremap <C-k> <C-o>C
 
 " Easy motion
-"nmap s <Plug>(easymotion-bd-f)
-nmap s <Plug>(easymotion-overwin-f2)
+nmap s <Plug>(easymotion-bd-f)
 omap t <Plug>(easymotion-tl)
 
 " JK motions: Line motions
