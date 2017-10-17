@@ -38,6 +38,9 @@ alias gmf='git merge --ff-only'
 alias be="bundle exec"
 alias rc="env NO_RENDERER=1 bundle exec rails console"
 alias rdm="bundle exec rake db:migrate"
+alias rdr="bundle exec rake db:rollback"
+alias rdf="bundle exec rake database:fetch"
+alias rdi="bundle exec rake database:import"
 
 # Vim
 alias vi="nvim"
