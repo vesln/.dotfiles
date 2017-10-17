@@ -42,5 +42,6 @@ Plug 'christoomey/vim-sort-motion'                                " sort motion
 Plug 'AndrewRadev/splitjoin.vim'                                  " Multiple/single-line transitions
 Plug 'jparise/vim-graphql'
 Plug 'sbdchd/neoformat'
+Plug 'DeleteTrailingWhitespace'
 
 call plug#end()
