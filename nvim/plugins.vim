@@ -17,7 +17,7 @@ Plug 'ervandew/supertab'                                          " Allows you t
 Plug 'janko-m/vim-test'                                           " A Vim wrapper for running tests on different granularities.
 Plug 'junegunn/fzf.vim'                                           " A command-line fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " A command-line fuzzy finder
-Plug 'l9'                                                         " Utility functions and commands
+Plug 'vim-scripts/l9'                                             " Utility functions and commands
 Plug 'michaeljsmith/vim-indent-object'                            " Defines a new text object representing lines of code at the same indent level
 Plug 'rking/ag.vim'                                               " Plugin for ag
 Plug 'scrooloose/nerdcommenter'                                   " Easy comments
@@ -42,6 +42,6 @@ Plug 'christoomey/vim-sort-motion'                                " sort motion
 Plug 'AndrewRadev/splitjoin.vim'                                  " Multiple/single-line transitions
 Plug 'jparise/vim-graphql'
 Plug 'sbdchd/neoformat'
-Plug 'DeleteTrailingWhitespace'
+Plug 'vim-scripts/DeleteTrailingWhitespace'
 
 call plug#end()
