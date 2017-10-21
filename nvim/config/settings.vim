@@ -146,9 +146,5 @@ set undofile
 " Minimalistic statusline
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=
 
-" Min width of wins
-set winwidth=79
-set winminwidth=24
-
 " Use the block cursor
 set guicursor=a:block-blinkon0
