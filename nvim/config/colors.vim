@@ -1,3 +1,5 @@
+set background=dark
+
 if !empty($LIGHT_COLORS)
   set background=light
   let g:solarized_contrast=1
@@ -21,8 +23,6 @@ if !empty($LIGHT_COLORS)
   let g:terminal_color_14 = "#93a1a1"
   let g:terminal_color_15 = "#fdf6e3"
 else
-  set background=dark
-
   let g:jellybeans_overrides = {
         \    'background': { 'guibg': 'none', 'ctermbg': 'none', '256ctermbg': 'none' },
         \}

@@ -32,7 +32,7 @@ let g:EasyMotion_leader_key = ',m'
 let g:EasyMotion_smartcase = 1
 
 " Disable the shade
-let g:EasyMotion_do_shade = 0
+let g:EasyMotion_do_shade = 1
 
 " The keys to be used for motion targets (defaults minus ;)
 let g:EasyMotion_keys = 'asdfghjklqwertyuiop'

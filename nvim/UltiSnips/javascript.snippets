@@ -99,7 +99,7 @@ endsnippet
 snippet scomp "Statless react component template"
 /* @flow */
 
-import React from 'react';
+import * as React from 'react';
 
 type Props = {
 	arg: any,
@@ -156,7 +156,7 @@ import { extractEdgeNodes } from 'ph/utils/graphql';
 endsnippet
 
 snippet ilink "import Link"
-import { Link } from 'react-router';
+import { Link } from 'found';
 endsnippet
 
 snippet icls "import classNames"
@@ -185,4 +185,12 @@ endsnippet
 
 snippet igql "import GraphQL"
 import { graphql } from 'react-apollo';
+endsnippet
+
+snippet ivisible "import Visible"
+import Visible from 'ph/components/Visible';
+endsnippet
+
+snippet ipush "import push"
+import { push } from 'ph/utils/shims/routes';
 endsnippet
