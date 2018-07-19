@@ -15,3 +15,6 @@ function! AddDummySign()
 endfunction
 
 au BufEnter * :call AddDummySign()
+
+" Disable numbers in terminal
+au TermOpen * setlocal nonumber norelativenumber

@@ -36,7 +36,7 @@ set autoread
 
 " Show relative numbers
 "set relativenumber
-"set number
+set number
 
 " Set default encoding to UTF-8
 set encoding=utf-8

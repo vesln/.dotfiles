@@ -110,6 +110,22 @@ export default function `!v expand('%:p:h:t')`({ ${1:arg} }: Props) {
 }
 endsnippet
 
+snippet scls "React Component"
+/* @flow */
+
+import * as React from 'react';
+
+type Props = {
+	arg: any,
+};
+
+export default class `!v expand('%:p:h:t')` extends React.Component<Props> {
+	render() {
+
+	}
+}
+endsnippet
+
 snippet ireact "import react"
 import React from 'react';
 endsnippet
