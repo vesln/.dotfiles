@@ -47,3 +47,5 @@ let g:toggle_list_no_mappings = 1
 
 " Allow netrw to delete directory with files
 let g:netrw_localrmdir='rm -r'
+
+let g:nvim_typescript#diagnostics_enable = 0

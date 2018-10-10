@@ -43,5 +43,7 @@ Plug 'AndrewRadev/splitjoin.vim'                                  " Multiple/sin
 Plug 'jparise/vim-graphql'
 Plug 'sbdchd/neoformat'
 Plug 'vim-scripts/DeleteTrailingWhitespace'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 
 call plug#end()
