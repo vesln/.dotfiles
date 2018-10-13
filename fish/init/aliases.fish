@@ -52,3 +52,5 @@ alias mux="tmuxinator"
 
 # Docker
 alias compose='docker-compose'
+
+alias todos='ag "TODO\(vesln\)"'
