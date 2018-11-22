@@ -1,3 +1,7 @@
-/node_modules/
+node_modules/
 /tmp/
 /.git/
+schema.json
+schema.server.ts
+schema.ts
+schema.graphql

@@ -42,6 +42,7 @@ alias rdm="bundle exec rake db:migrate"
 alias rdr="bundle exec rake db:rollback"
 alias rdf="bundle exec rake database:fetch"
 alias rdi="bundle exec rake database:import"
+alias rdtp="bundle exec rake db:test:prepare "
 
 # Vim
 alias vi="nvim"
@@ -53,4 +54,5 @@ alias mux="tmuxinator"
 # Docker
 alias compose='docker-compose'
 
+# Search for todos
 alias todos='ag "TODO\(vesln\)"'

@@ -18,3 +18,15 @@ au BufEnter * :call AddDummySign()
 
 " Disable numbers in terminal
 au TermOpen * setlocal nonumber norelativenumber
+
+augroup netrw_mapping
+  autocmd!
+  autocmd filetype netrw call NetrwMapping()
+augroup END
+
+function! NetrwMapping()
+  nnoremap <buffer> i <Nop>
+  nnoremap <buffer> s <Nop>
+  nnoremap <buffer> r <Nop>
+  nnoremap <buffer> a <Nop>
+endfunction

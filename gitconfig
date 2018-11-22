@@ -1,6 +1,6 @@
 [user]
-  name = Veselin Todorov
-  email = veselin@veselin.bg
+	name = Veselin Todorov
+	email = veselin@veselin.bg
 [github]
   user = vesln
 [alias]
@@ -36,8 +36,9 @@
   autosetuprebase = always
 [filter "lfs"]
   required = true
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 [mergetool]
   prompt = true
 [mergetool "vimdiff"]

@@ -21,7 +21,7 @@ function! s:OpenJS(name, from, ...)
   let path = s:findJsPath(a:name, a:from)
 
   if empty(path) && exists('g:js_base_path')
-    let path = s:findJsPath(g:js_base_path . a:name, a:from)
+    let path = s:findJsPath(g:js_base_path . substitute(a:name, '\~\/', '/', ''), a:from)
   endif
 
   if empty(path)
@@ -31,4 +31,15 @@ function! s:OpenJS(name, from, ...)
   exe "e " . fnameescape(path)
 endfunction
 
+function! s:CreateJS(name, from, ...)
+  if empty(a:name) | return | endif
+
+  let dir = isdirectory(a:from) ? a:from : fnamemodify(a:from, ":h")
+
+  if a:name !~# '^\v(/|\./|\.\./)'
+    exe "e " . fnameescape(dir . "/" . a:name)
+  endif
+endfunction
+
 command! OpenJS :call <SID>OpenJS(expand("<cfile>"), bufname("%"))
+command! CreateJS :call <SID>CreateJS(expand("<cfile>"), bufname("%"))

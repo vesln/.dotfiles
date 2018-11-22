@@ -45,5 +45,7 @@ Plug 'sbdchd/neoformat'
 Plug 'vim-scripts/DeleteTrailingWhitespace'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'tpope/vim-haml'
+Plug 'styled-components/vim-styled-components'
 
 call plug#end()

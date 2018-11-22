@@ -1,15 +1,3 @@
-snippet ilink "import Link"
-import { Link } from '~/routes';
-endsnippet
-
-snippet icss "import styles"
-import styles from './styles.sass';
-endsnippet
-
-snippet icls "import classNames"
-import classNames from 'classnames';
-endsnippet
-
 snippet todo "TODO(vesln)"
 // TODO(vesln): ${1}
 endsnippet
@@ -18,3 +6,124 @@ snippet note "NOTE(vesln)"
 // NOTE(vesln): ${1}
 endsnippet
 
+snippet cl "console.log" b
+// FIXME(vesln): remove me
+console.log(${1:value});
+endsnippet
+
+snippet icss "import styles"
+import styles from './styles.scss';
+endsnippet
+
+snippet icls "import classNames"
+import classNames from 'classnames';
+endsnippet
+
+snippet ireact "import React"
+import React from 'react';
+endsnippet
+
+snippet iexenv "import canUseDOM"
+import { canUseDOM } from 'exenv';
+endsnippet
+
+snippet igql "import gql"
+import gql from 'graphql-tag';
+endsnippet
+
+snippet iidx "import idx"
+import idx from 'idx';
+endsnippet
+
+snippet iview "import View"
+import View from './View';
+endsnippet
+
+snippet tcls "className"
+className?: string;
+endsnippet
+
+snippet cls "className"
+className={styles.${1}}
+endsnippet
+
+snippet tag "html tag"
+<${1}>${2}</$1>
+endsnippet
+
+snippet tag. "html tag with className"
+<${1} className={styles.${2}}>${3}</$1>
+endsnippet
+
+snippet div "div"
+<div>${1}</div>
+endsnippet
+
+snippet div. "div with className"
+<div className={styles.${1}}>${2}</div>
+endsnippet
+
+snippet a "a"
+<a>${1}</a>
+endsnippet
+
+snippet a. "div with className"
+<a className={styles.${1}}>${2}</a>
+endsnippet
+
+snippet p "p"
+<p>${1}</p>
+endsnippet
+
+snippet p. "p with className"
+<p className={styles.${1}}>${2}</p>
+endsnippet
+
+snippet span "span"
+<span>${1}</span>
+endsnippet
+
+snippet span. "span with className"
+<span className={styles.${1}}>${2}</span>
+endsnippet
+
+snippet scomp "Statless react component template"
+import React from 'react';
+
+interface Props {
+	arg: any;
+}
+
+export default function `!v expand('%:p:h:t')`({ ${1:arg} }: Props) {
+	${2:return null;}
+}
+endsnippet
+
+snippet rcls "React Class"
+import React from 'react';
+
+interface Props {
+	arg: any;
+}
+
+export default class `!v expand('%:p:h:t')` extends React.Component<Props> {
+	render() {
+		return null;
+	}
+}
+endsnippet
+
+snippet gfragment "GraphQL fragment"
+import gql from 'graphql-tag';
+import { $2$1Fragment as $1 } from '~/schema';
+
+const ${1:Name}Fragment = gql\`
+  fragment ${2}$1Fragment on ${3:Type} {
+    id
+    $0
+  }
+\`;
+
+export default $1Fragment;
+export { $1 };
+endsnippet

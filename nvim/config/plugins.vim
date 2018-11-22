@@ -41,6 +41,7 @@ let g:EasyMotion_keys = 'asdfghjklqwertyuiop'
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-f>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetDirectories = ['UltiSnips', 'UltiSnipsPrivate']
 
 " Do not map any keys, toggle list
 let g:toggle_list_no_mappings = 1
