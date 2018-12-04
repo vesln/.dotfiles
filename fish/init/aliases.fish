@@ -44,6 +44,8 @@ alias rdf="bundle exec rake database:fetch"
 alias rdi="bundle exec rake database:import"
 alias rdtp="bundle exec rake db:test:prepare "
 
+alias rgm="bundle exec rails g migration"
+
 # Vim
 alias vi="nvim"
 alias vim="nvim"
