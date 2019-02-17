@@ -4,7 +4,7 @@ function! NeoVimHeight(cmd)
 endfunction
 let g:test#custom_strategies = {'neovimheight': function('NeoVimHeight')}
 let g:test#strategy = 'neovimheight'
-let test#runners = {'JavaScript': ['Npmmocha']}
+let test#runners = {'TypeScript': ['Jest']}
 
 " Fzf prefix
 let g:fzf_command_prefix = 'Fzf'

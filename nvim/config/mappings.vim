@@ -64,6 +64,7 @@ nmap <Leader>l :lopen<cr>
 " File/dir manupulation
 nmap <silent> <leader>md :silent !mkdir -p %:p:h<CR>
 nnoremap <Leader>r :call RenameFile()<cr>
+nnoremap <Leader>o :call OpenDirectory()<cr><cr>
 
 " Search for Git conflict
 nmap <silent> <leader>x <ESC>/\v^[<=>]{7}( .*\|$)<CR>
