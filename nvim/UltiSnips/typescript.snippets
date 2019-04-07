@@ -105,6 +105,28 @@ export default function `!v expand('%:p:h:t')`() {
 }
 endsnippet
 
+snippet jestc "Jest Test Component"
+import Component from '../';
+import Fragment from '../Fragment';
+import { factory, createRenderer } from '~/lib/testing';
+
+describe('`!v expand('%:p:h:t')`', () => {
+  const render = createRenderer(Component, {
+    defaultProps: {},
+  });
+
+  it('renders', async () => {
+    const input = await factory({
+      fragment: Fragment,
+    });
+
+    const wrapper = render({ input });
+
+		expect(wrapper).toExists();
+  });
+});
+endsnippet
+
 snippet rcls "React Class"
 import React from 'react';
 
