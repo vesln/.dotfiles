@@ -91,10 +91,6 @@ inoremap <C-k> <C-o>C
 nmap s <Plug>(easymotion-bd-f)
 omap t <Plug>(easymotion-tl)
 
-" JK motions: Line motions
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-
 " Edit file in current files' directory
 map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
