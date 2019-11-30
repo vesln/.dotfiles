@@ -29,4 +29,6 @@ function! NetrwMapping()
   nnoremap <buffer> s <Nop>
   nnoremap <buffer> r <Nop>
   nnoremap <buffer> a <Nop>
+  nnoremap <buffer> t <Nop>
+  nnoremap <buffer> tl :tabnext<CR>
 endfunction
