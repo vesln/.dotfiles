@@ -58,6 +58,10 @@ nmap <Leader>w :w!<cr>
 nmap <Leader>q :q<cr>
 nmap <Leader>` :qa!<cr>
 
+
+" Format
+nnoremap <silent> <Leader>n :Neoformat<CR>:w!<CR>
+
 " Open a window to show the location list for the current window
 nmap <Leader>l :lopen<cr>
 
