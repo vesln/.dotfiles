@@ -32,3 +32,22 @@ function! NetrwMapping()
   nnoremap <buffer> t <Nop>
   nnoremap <buffer> tl :tabnext<CR>
 endfunction
+
+function! s:rmdir()
+  let b = &ft ==? 'dirvish' ? getline('.') : fnamemodify(bufname(''),':p').getline('.')
+  if input('delete '.b.' ? (y/n)') ==# 'y'
+    if !delete(b,'rf')
+      let a = getpos('.')
+      if &ft ==? 'dirvish'
+        e
+        call setpos('.',a)
+      elseif &ft ==? 'netrw'
+        if search('^\.\/$','Wb')
+          exe "norm \<cr>"
+          call setpos('.',a)
+        endif
+      endif
+    endif
+  endif
+endfunction
+command! Rmnetrw call <SID>rmdir()
