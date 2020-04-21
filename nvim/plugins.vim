@@ -5,7 +5,9 @@ Plug 'ekalinin/Dockerfile.vim'                                    " Dockerfile s
 Plug 'fatih/vim-go'                                               " Go syntax
 Plug 'kchmck/vim-coffee-script'                                   " CoffeeScript syntax
 Plug 'keith/rspec.vim'                                            " RSpec syntax
-Plug 'mxw/vim-jsx'                                                " JSX syntax
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'                                    " JavaScript syntax
 Plug 'tpope/vim-rails'                                            " Rails syntax
 Plug 'vim-ruby/vim-ruby'                                          " Ruby syntax
@@ -43,7 +45,6 @@ Plug 'AndrewRadev/splitjoin.vim'                                  " Multiple/sin
 Plug 'jparise/vim-graphql'
 Plug 'sbdchd/neoformat'
 Plug 'vim-scripts/DeleteTrailingWhitespace'
-Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'tpope/vim-haml'
 Plug 'styled-components/vim-styled-components'
