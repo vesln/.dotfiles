@@ -77,6 +77,7 @@ nmap <silent> <leader>x <ESC>/\v^[<=>]{7}( .*\|$)<CR>
 nnoremap th :tabprev<CR>
 nnoremap tl :tabnext<CR>
 nnoremap tn :tabnew<CR>
+nnoremap tc :tabclose<CR>
 
 " Split screens movement
 nnoremap <C-h> <C-w>h
