@@ -53,6 +53,9 @@ nnoremap <silent> <Leader>b :FzfBuffers<CR>
 " Promote to let
 nnoremap <Leader>p :call PromoteToLet()<cr>
 
+" Strip trailing whitespace
+nnoremap <leader><space> :call StripTrailingWhitespace()<CR>
+
 " Fast save & quit
 nmap <Leader>w :w!<cr>
 nmap <Leader>q :q<cr>
@@ -119,3 +122,6 @@ inoremap <C-Y> <Esc>Pa
 
 " Autocomplete line from the entire project
 inoremap <expr> <c-x><c-l> fzf#complete({ 'prefix': '^.*$', 'source': 'ag . --nogroup --nofilename' })
+
+" Toggle tagbar
+nnoremap <leader>] :TagbarToggle<CR>

@@ -50,5 +50,6 @@ Plug 'tpope/vim-haml'
 Plug 'styled-components/vim-styled-components'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
