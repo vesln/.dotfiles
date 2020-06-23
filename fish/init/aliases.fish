@@ -34,6 +34,8 @@ alias gst="git status --short"
 alias gm='git merge --no-ff'
 alias gmf='git merge --ff-only'
 
+alias master="git checkout master"
+
 # Ruby / Rails
 alias b="bundle"
 alias be="bundle exec"

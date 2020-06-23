@@ -6,5 +6,4 @@ schema.server.ts
 schema.ts
 schema.graphql
 frontend/yir/
-frontend/talent/
 frontend/fundraising/
