@@ -5,7 +5,6 @@ if !empty($LIGHT_COLORS)
   let g:solarized_contrast=1
   colorscheme solarized
 
-  set termguicolors
   let g:terminal_color_0 = "#002b36"
   let g:terminal_color_1 = "#dc322f"
   let g:terminal_color_2 = "#719e07"
