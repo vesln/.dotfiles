@@ -81,6 +81,15 @@ nnoremap th :tabprev<CR>
 nnoremap tl :tabnext<CR>
 nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>
+nnoremap t1 1gt<CR>
+nnoremap t2 2gt<CR>
+nnoremap t3 3gt<CR>
+nnoremap t4 4gt<CR>
+nnoremap t5 5gt<CR>
+nnoremap t6 6gt<CR>
+nnoremap t7 7gt<CR>
+nnoremap t8 8gt<CR>
+nnoremap t9 9gt<CR>
 
 " Split screens movement
 nnoremap <C-h> <C-w>h

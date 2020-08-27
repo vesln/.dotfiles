@@ -51,5 +51,6 @@ Plug 'styled-components/vim-styled-components'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'majutsushi/tagbar'
+Plug 'mkitt/tabline.vim'
 
 call plug#end()

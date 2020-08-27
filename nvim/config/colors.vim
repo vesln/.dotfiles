@@ -24,6 +24,7 @@ if !empty($LIGHT_COLORS)
 else
   let g:jellybeans_overrides = {
         \    'background': { 'guibg': 'none', 'ctermbg': 'none', '256ctermbg': 'none' },
+        \    'SignColumn': { 'guibg': 'none', 'ctermbg': 'none', '256ctermbg': 'none' },
         \}
   colorscheme jellybeans
 endif
