@@ -50,3 +50,18 @@ let g:toggle_list_no_mappings = 1
 let g:netrw_localrmdir='rm -r'
 
 let g:nvim_typescript#diagnostics_enable = 0
+
+let g:deoplete#enable_at_startup = 1
+
+call deoplete#custom#option({
+\ 'max_list': 10,
+\ 'refresh_always': v:false,
+\ })
+
+function Multiple_cursors_before()
+  let g:deoplete#disable_auto_complete = 1
+endfunction
+
+function Multiple_cursors_after()
+  let g:deoplete#disable_auto_complete = 0
+endfunction

@@ -7,8 +7,6 @@ Plug 'kchmck/vim-coffee-script'                                   " CoffeeScript
 Plug 'keith/rspec.vim'                                            " RSpec syntax
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'pangloss/vim-javascript'                                    " JavaScript syntax
 Plug 'tpope/vim-rails'                                            " Rails syntax
 Plug 'vim-ruby/vim-ruby'                                          " Ruby syntax
 Plug 'moll/vim-node'                                              " Node.js
@@ -45,12 +43,14 @@ Plug 'AndrewRadev/splitjoin.vim'                                  " Multiple/sin
 Plug 'jparise/vim-graphql'
 Plug 'sbdchd/neoformat'
 Plug 'vim-scripts/DeleteTrailingWhitespace'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'tpope/vim-haml'
-Plug 'styled-components/vim-styled-components'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'majutsushi/tagbar'
 Plug 'mkitt/tabline.vim'
+Plug 'Shougo/deoplete.nvim'
+Plug 'junkblocker/patchreview-vim'
 
 call plug#end()
