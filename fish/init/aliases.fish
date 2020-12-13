@@ -6,6 +6,7 @@ alias l='ls -1A'
 # Git
 abbr gco "git checkout"
 abbr gbd "git branch -D"
+abbr gbda "git for-each-ref --format '%(refname:short)' refs/heads | grep -v master | xargs git branch -D"
 
 alias gl="gll -7"
 alias gll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"

@@ -58,10 +58,14 @@ call deoplete#custom#option({
 \ 'refresh_always': v:false,
 \ })
 
-function Multiple_cursors_before()
-  let g:deoplete#disable_auto_complete = 1
+function! Multiple_cursors_before()
+  call deoplete#custom#option({
+  \ 'auto_complete': v:false,
+  \ })
 endfunction
 
-function Multiple_cursors_after()
-  let g:deoplete#disable_auto_complete = 0
+function! Multiple_cursors_after()
+  call deoplete#custom#option({
+  \ 'auto_complete': v:true,
+  \ })
 endfunction

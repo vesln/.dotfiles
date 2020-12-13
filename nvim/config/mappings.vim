@@ -49,6 +49,7 @@ nnoremap <Leader>af :FzfAg<CR>
 nnoremap <Leader>ad :call fzf#run(fzf#wrap({ 'source': 'find . -type d -not -path "./node_modules/*" -not -path ".git/*"' }))<CR>
 nnoremap <silent> <Leader>t :FZF<CR>
 nnoremap <silent> <Leader>b :FzfBuffers<CR>
+nnoremap <silent> <Leader>c :FzfCommands<CR>
 
 " Promote to let
 nnoremap <Leader>p :call PromoteToLet()<cr>

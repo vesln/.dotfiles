@@ -4,6 +4,7 @@ SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_gbd:git\x20branch\x20\x2dD
+SETUVAR _fish_abbr_gbda:git\x20for\x2deach\x2dref\x20\x2d\x2dformat\x20\x27\x25\x28refname\x3ashort\x29\x27\x20refs/heads\x20\x7c\x20grep\x20\x2dv\x20master\x20\x7c\x20xargs\x20git\x20branch\x20\x2dD
 SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR fish_color_autosuggestion:969896
 SETUVAR fish_color_cancel:\x2dr
