@@ -10,9 +10,6 @@ inoremap jk <esc>
 " Remove "Q"
 nnoremap Q <Nop>
 
-" Switch
-nnoremap S :Switch<CR>
-
 " Clear search results
 nnoremap <silent> <space> :nohlsearch<CR>
 
@@ -62,12 +59,8 @@ nmap <Leader>w :w!<cr>
 nmap <Leader>q :q<cr>
 nmap <Leader>` :qa!<cr>
 
-
 " Format
 nnoremap <silent> <Leader>n :Neoformat<CR>:w!<CR>
-
-" Open a window to show the location list for the current window
-nmap <Leader>l :lopen<cr>
 
 " File/dir manupulation
 nmap <silent> <leader>md :silent !mkdir -p %:p:h<CR>
@@ -132,6 +125,3 @@ inoremap <C-Y> <Esc>Pa
 
 " Autocomplete line from the entire project
 inoremap <expr> <c-x><c-l> fzf#complete({ 'prefix': '^.*$', 'source': 'ag . --nogroup --nofilename' })
-
-" Toggle tagbar
-nnoremap <leader>] :TagbarToggle<CR>

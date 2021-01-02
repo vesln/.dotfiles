@@ -5,14 +5,14 @@ Plug 'ekalinin/Dockerfile.vim'                                    " Dockerfile s
 Plug 'fatih/vim-go'                                               " Go syntax
 Plug 'kchmck/vim-coffee-script'                                   " CoffeeScript syntax
 Plug 'keith/rspec.vim'                                            " RSpec syntax
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'yuezk/vim-js'
+Plug 'HerringtonDarkholme/yats.vim'                               " JavaScript syntax
+Plug 'yuezk/vim-js'                                               " More JavaScript
 Plug 'tpope/vim-rails'                                            " Rails syntax
 Plug 'vim-ruby/vim-ruby'                                          " Ruby syntax
+Plug 'tpope/vim-haml'                                             " HAML syntax
+Plug 'jparise/vim-graphql'                                        " GraphQL syntax
 Plug 'moll/vim-node'                                              " Node.js
-Plug 'digitaltoad/vim-pug'                                        " jade/pug syntax
 Plug 'Chun-Yang/vim-action-ag'                                    " This plugin map gag to do Ag search.
-Plug 'benekastah/neomake'                                         " A plugin for asynchronous :make
 Plug 'ervandew/supertab'                                          " Allows you to use <Tab> for all your insert completion needs<Paste>
 Plug 'janko-m/vim-test'                                           " A Vim wrapper for running tests on different granularities.
 Plug 'junegunn/fzf.vim'                                           " A command-line fuzzy finder
@@ -22,35 +22,24 @@ Plug 'michaeljsmith/vim-indent-object'                            " Defines a ne
 Plug 'rking/ag.vim'                                               " Plugin for ag
 Plug 'scrooloose/nerdcommenter'                                   " Easy comments
 Plug 'terryma/vim-multiple-cursors'                               " Multiple cursors
-Plug 'ton/vim-bufsurf'                                            " Enables surfing through buffers based on viewing history per window
 Plug 'tpope/vim-abolish'                                          " Easily search for, substitute, and abbreviate multiple variants of a word
 Plug 'tpope/vim-endwise'                                          " Wisely add 'end' in ruby, endfunction/endif/more in vim script, etc.
 Plug 'tpope/vim-repeat'                                           " Enable repeating supported plugin maps
 Plug 'tpope/vim-surround'                                         " Quoting/parenthesizing made simple
 Plug 'tpope/vim-unimpaired'                                       " Pairs of handy bracket mappings
+Plug 'tpope/vim-vinegar'                                          " netrw improvements
+Plug 'tpope/vim-fugitive'                                         " git wrapper
 Plug 'easymotion/vim-easymotion'                                  " Easy motion
-Plug 'godlygeek/tabular'                                          " Text filtering and alignment
 Plug 'jiangmiao/auto-pairs'                                       " Auto Pairs
 Plug 'SirVer/ultisnips'                                           " Snippets
-Plug 'tpope/vim-vinegar'                                          " netrw improvements
-Plug 'milkypostman/vim-togglelist'                                " toggle the location list
-Plug 'tpope/vim-fugitive'                                         " toggle the location list
 Plug 'nanotech/jellybeans.vim'                                    " colors
-Plug 'AndrewRadev/switch.vim'                                     " switch
 Plug 'bkad/CamelCaseMotion'                                       " camel case motion
 Plug 'christoomey/vim-sort-motion'                                " sort motion
-Plug 'AndrewRadev/splitjoin.vim'                                  " Multiple/single-line transitions
-Plug 'jparise/vim-graphql'
-Plug 'sbdchd/neoformat'
-Plug 'vim-scripts/DeleteTrailingWhitespace'
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-Plug 'tpope/vim-haml'
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-notes'
-Plug 'majutsushi/tagbar'
-Plug 'mkitt/tabline.vim'
-Plug 'Shougo/deoplete.nvim'
-Plug 'junkblocker/patchreview-vim'
+Plug 'sbdchd/neoformat'                                           " Code formatting
+Plug 'vim-scripts/DeleteTrailingWhitespace'                       " Delete trailing whitespace
+Plug 'mkitt/tabline.vim'                                          " Tab labels
+Plug 'Shougo/deoplete.nvim'                                       " Autocomplete
+Plug 'dense-analysis/ale'                                         " Syntax checks
+Plug 'NLKNguyen/papercolor-theme'                                 " Light colors
 
 call plug#end()

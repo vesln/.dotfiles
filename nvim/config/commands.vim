@@ -2,9 +2,6 @@
 au BufReadPost * if &filetype !~ '^git\c' && line("'\"") > 0 && line("'\"") <= line("$")
   \| exe "normal! g`\"" | endif
 
-" Run neomake on save
-autocmd! BufWritePost * Neomake
-
 " Always show the sign column
 function! AddDummySign()
   if !exists('b:dummy_sign')

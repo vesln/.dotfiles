@@ -12,13 +12,6 @@ let g:fzf_command_prefix = 'Fzf'
 " Do not create default mappings
 let g:NERDCreateDefaultMappings = 0
 
-" Neomake - open the location list or the quickfix list
-let g:neomake_open_list = 0
-
-" Neomake - loclist & quickfix height
-let g:neomake_list_height = 5
-let g:neomake_verbose = 0
-
 " Default completion settings
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
@@ -69,3 +62,6 @@ function! Multiple_cursors_after()
   \ 'auto_complete': v:true,
   \ })
 endfunction
+
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
