@@ -41,5 +41,6 @@ Plug 'mkitt/tabline.vim'                                          " Tab labels
 Plug 'Shougo/deoplete.nvim'                                       " Autocomplete
 Plug 'dense-analysis/ale'                                         " Syntax checks
 Plug 'NLKNguyen/papercolor-theme'                                 " Light colors
+Plug 'majutsushi/tagbar'
 
 call plug#end()
