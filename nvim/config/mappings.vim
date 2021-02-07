@@ -85,6 +85,17 @@ nnoremap t7 7gt<CR>
 nnoremap t8 8gt<CR>
 nnoremap t9 9gt<CR>
 
+nnoremap <F1> 1gt<CR>
+nnoremap <F2> 2gt<CR>
+nnoremap <F3> 3gt<CR>
+nnoremap <F4> 4gt<CR>
+nnoremap <F5> 5gt<CR>
+nnoremap <F6> 6gt<CR>
+nnoremap <F7> 7gt<CR>
+nnoremap <F8> 8gt<CR>
+nnoremap <F9> 9gt<CR>
+nnoremap <F12> :tabnew<CR>
+
 " Split screens movement
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j

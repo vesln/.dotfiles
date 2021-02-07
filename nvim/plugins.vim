@@ -42,5 +42,6 @@ Plug 'Shougo/deoplete.nvim'                                       " Autocomplete
 Plug 'dense-analysis/ale'                                         " Syntax checks
 Plug 'NLKNguyen/papercolor-theme'                                 " Light colors
 Plug 'majutsushi/tagbar'
+Plug 'kshenoy/vim-signature'
 
 call plug#end()
