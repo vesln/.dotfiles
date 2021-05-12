@@ -43,5 +43,6 @@ Plug 'dense-analysis/ale'                                         " Syntax check
 Plug 'NLKNguyen/papercolor-theme'                                 " Light colors
 Plug 'majutsushi/tagbar'
 Plug 'kshenoy/vim-signature'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
