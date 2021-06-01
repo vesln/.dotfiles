@@ -44,5 +44,6 @@ Plug 'NLKNguyen/papercolor-theme'                                 " Light colors
 Plug 'majutsushi/tagbar'
 Plug 'kshenoy/vim-signature'
 Plug 'junegunn/goyo.vim'
+Plug 'rakr/vim-one'
 
 call plug#end()
