@@ -52,7 +52,7 @@ nnoremap <silent> <Leader>c :FzfCommands<CR>
 nnoremap <Leader>p :call PromoteToLet()<cr>
 
 " Strip trailing whitespace
-nnoremap <leader><space> :call StripTrailingWhitespace()<CR>
+nnoremap <leader><space> :DeleteTrailingWhitespace<CR>
 
 " Fast save & quit
 nmap <Leader>w :w!<cr>

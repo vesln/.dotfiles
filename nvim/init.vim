@@ -1,4 +1,4 @@
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
 
 runtime plugins.vim
 runtime config/settings.vim
