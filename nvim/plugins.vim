@@ -45,5 +45,6 @@ Plug 'majutsushi/tagbar'
 Plug 'kshenoy/vim-signature'
 Plug 'junegunn/goyo.vim'
 Plug 'rakr/vim-one'
+Plug 'tomlion/vim-solidity'
 
 call plug#end()
