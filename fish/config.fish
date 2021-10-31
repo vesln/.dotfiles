@@ -14,3 +14,4 @@ eval (/opt/homebrew/bin/brew shellenv)
 set -g fish_user_paths "/usr/local/opt/mysql-client@5.7/bin" $fish_user_paths
 fish_add_path /opt/homebrew/opt/mysql-client@5.7/bin
 fish_add_path /opt/homebrew/opt/node@14/bin
+fish_add_path ~/.go/bin

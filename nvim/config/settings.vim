@@ -148,3 +148,6 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=
 
 " Use the block cursor
 set guicursor=a:block-blinkon0
+
+" Do not show the scratch window when autocompleting
+set completeopt-=preview
