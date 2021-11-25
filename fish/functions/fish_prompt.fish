@@ -18,8 +18,6 @@ function fish_prompt
 
   set -l prefix "   "
 
-  set -l arrow "$magenta ƒ$normal"
-
   set -l pwd (prompt_pwd)
   set -l expr "s|/|"$magenta"/"$normal"|g"
 

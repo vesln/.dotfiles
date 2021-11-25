@@ -1,11 +1,19 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR ZO_CMD:zo
+SETUVAR Z_CMD:z
+SETUVAR Z_DATA:/Users/vesln/\x2elocal/share/z/data
+SETUVAR Z_DATA_DIR:/Users/vesln/\x2elocal/share/z
+SETUVAR Z_EXCLUDE:\x5e/Users/vesln\x24
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_gbd:git\x20branch\x20\x2dD
 SETUVAR _fish_abbr_gbda:git\x20for\x2deach\x2dref\x20\x2d\x2dformat\x20\x27\x25\x28refname\x3ashort\x29\x27\x20refs/heads\x20\x7c\x20grep\x20\x2dv\x20master\x20\x7c\x20xargs\x20git\x20branch\x20\x2dD
 SETUVAR _fish_abbr_gco:git\x20checkout
+SETUVAR _fisher_jethrokuan_2F_z_files:/Users/vesln/\x2econfig/fish/functions/__z\x2efish\x1e/Users/vesln/\x2econfig/fish/functions/__z_add\x2efish\x1e/Users/vesln/\x2econfig/fish/functions/__z_clean\x2efish\x1e/Users/vesln/\x2econfig/fish/functions/__z_complete\x2efish\x1e/Users/vesln/\x2econfig/fish/conf\x2ed/z\x2efish
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/Users/vesln/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/Users/vesln/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/Users/vesln/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/Users/vesln/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/Users/vesln/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/vesln/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/Users/vesln/\x2econfig/fish/completions/nvm\x2efish
+SETUVAR _fisher_plugins:jethrokuan/z\x1ejorgebucaran/nvm\x2efish
 SETUVAR fish_color_autosuggestion:969896
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:c397d8
@@ -38,3 +46,5 @@ SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_user_abbreviations:gco\x20git\x20checkout\x1egbd\x20git\x20branch\x20\x2dD
 SETUVAR fish_user_paths:/Users/vesln/\x2efzf/bin\x1e/usr/local/opt/fzf/bin
 SETUVAR fisher_dependency_count:bass
+SETUVAR nvm_data:/Users/vesln/\x2elocal/share/nvm
+SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist
